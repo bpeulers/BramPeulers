@@ -309,7 +309,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
 .zoom .zx{position:fixed;top:20px;right:var(--pad)}
 @media (max-width:960px){
   .hdr.solid{background:var(--bg);box-shadow:0 1px 0 var(--line)}
-  .nav,.hdr .lang,.hdr .btn{display:none}.burger{display:block}
+  .nav,.hdr .btn,.mlang{display:none!important}.hdr{gap:12px}.burger{display:block}
   .svc{grid-template-columns:repeat(2,minmax(0,1fr))}
   .svc>div,.svc>div:not(:nth-child(3n+1)){padding:24px 20px 36px 0;border-left:0}
   .svc>div:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
@@ -388,3 +388,5 @@ html{transition:background-color .4s}
 :root[data-theme=dark] .facts{background:#1c1f25;--bg:#1c1f25;box-shadow:inset 0 0 0 1px rgba(240,241,243,.08)}
 @media (max-width:720px){.hero .facts{max-width:none;width:100%}}
 .facts .go{grid-column:1/-1;white-space:nowrap}
+
+@media (max-width:400px){.logo .lg{height:30px}.hdr .lang a{padding-inline:7px}}
