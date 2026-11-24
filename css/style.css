@@ -433,3 +433,25 @@ html{transition:background-color .4s}
 .clinks{display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px;padding:clamp(22px,2.4vw,32px);max-width:440px}
 .clinks .label{margin-bottom:4px}
 .skills{align-items:start}
+/* ===== Claude-achtige gradient-randen + glas voor knoppen ===== */
+@property --ga{syntax:"<angle>";inherits:false;initial-value:0deg}
+:root{--cg1:#d97757;--cg2:#c15f9c;--cg3:#4128ff}
+:is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks){position:relative;border-color:transparent!important}
+:is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks)::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;
+ background:conic-gradient(from var(--ga),var(--cg1),var(--cg2),var(--cg3),var(--cg2),var(--cg1));opacity:.6;
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);
+ animation:gspin 14s linear infinite}
+@keyframes gspin{to{--ga:360deg}}
+.svc>div:hover::after{opacity:1}
+@media (prefers-reduced-motion:reduce){:is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks)::after{animation:none}}
+/* glassy knoppen */
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button){position:relative;color:var(--ink);background:linear-gradient(180deg,rgba(255,255,255,.75),rgba(255,255,255,.4));-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);border:1px solid transparent!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(var(--inkrgb),.05),0 6px 20px -8px rgba(65,40,255,.18)}
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button)::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(120deg,var(--cg1),var(--cg2),var(--cg3));opacity:.55;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);transition:opacity .3s}
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.qnav button):hover{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.6))}
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.qnav button):hover::after{opacity:1}
+.go:hover i{color:var(--ink);transform:rotate(-45deg)}
+.filters button.on{color:var(--ink);background:linear-gradient(180deg,rgba(65,40,255,.14),rgba(65,40,255,.06))}
+:root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button){background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 6px 20px -8px rgba(0,0,0,.5)}
+:root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.qnav button):hover{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.07))}
+.burger i{background:var(--ink)}
+@media (max-width:720px){.hero h1{max-width:none;font-size:clamp(40px,14.6vw,64px);line-height:1.08;letter-spacing:-.045em}}
