@@ -381,9 +381,7 @@ html{transition:background-color .4s}
 @media (max-width:960px){.hdr>.theme{margin-left:auto}}
 @media (max-width:720px){.logo .lg{height:36px}}
 /* hero facts als donker blok */
-.facts{--ink:#f0f1f3;--ink2:#c3c7cd;--mute:#8e939b;--line:rgba(240,241,243,.16);--inkrgb:240,241,243;--bg:#121417;background:#121417;color:var(--ink);border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px);max-width:600px}
-.facts div{color:var(--ink)}
-:root[data-theme=dark] .facts{background:#1c1f25;--bg:#1c1f25;box-shadow:inset 0 0 0 1px rgba(240,241,243,.08)}
+.facts{position:relative;border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px);max-width:600px;background:transparent}
 @media (max-width:720px){.hero .facts{max-width:none;width:100%}}
 .facts .go{grid-column:1/-1;white-space:nowrap}
 
@@ -400,12 +398,9 @@ html{transition:background-color .4s}
 
 /* wat ik doe: blokjes met gekleurde rand in de kleuren van de cases */
 .svc{border-top:0;gap:clamp(14px,1.6vw,22px)}
-.svc>div{--c:#8c8cc5;padding:clamp(24px,2.4vw,34px) clamp(22px,2.2vw,32px) clamp(30px,3vw,42px);border:1.5px solid var(--c);border-radius:clamp(16px,2vw,28px);background:transparent;transition:transform .6s var(--out)}
+.svc>div{--c:#8c8cc5;padding:clamp(24px,2.4vw,34px) clamp(22px,2.2vw,32px) clamp(30px,3vw,42px);border:0;position:relative;border-radius:clamp(16px,2vw,28px);background:transparent;transition:transform .6s var(--out)}
 .svc>div:hover{transform:translateY(-4px)}
-.svc>div .label{color:var(--c);font-weight:600}
-.svc>div:nth-child(6n+1){--c:#e889b0}
-.svc>div:nth-child(6n+2){--c:#4b9a9b}
-.svc>div:nth-child(6n+3){--c:#8c8cc5}
-.svc>div:nth-child(6n+4){--c:#5fbfa6}
-.svc>div:nth-child(6n+5){--c:#3fcf7f}
-.svc>div:nth-child(6n+6){--c:#6fa9bd}
+
+/* gradient-rand (zelfde verloop als 'getest prototype') */
+.svc>div::before,.facts::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:linear-gradient(90deg,var(--a1) -40%,var(--a2) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none}
+.svc>div .label{background:linear-gradient(90deg,var(--a1) -40%,var(--a2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;align-self:flex-start}
