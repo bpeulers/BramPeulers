@@ -50,6 +50,7 @@ home:()=>`
 <section class="hero">
   <h1 class="h1 split-in">${L(['Van vaag idee naar','<span class="grad">getest prototype</span>,','met AI en echte gebruikers.'])}</h1>
   <div class="facts">
+    <p class="avail rv"><i aria-hidden="true"></i>Beschikbaar: 1 april 2027</p>
     <div class="rv d1"><span class="label">Rol</span>Product designer, regisseur én snelle bouwer</div>
     <div class="rv d2"><span class="label">Aanpak</span>Facilitatie + AI-prototyping</div>
     <div class="rv d3"><span class="label">Sectoren</span>Energie, finance, verzekeringen, zorg, e-commerce & retail</div>
@@ -218,6 +219,7 @@ home:()=>`
 <section class="hero">
   <h1 class="h1 split-in">${L(['From vague idea to','<span class="grad">tested prototype</span>,','with AI and real users.'])}</h1>
   <div class="facts">
+    <p class="avail rv"><i aria-hidden="true"></i>Available: 1 April 2027</p>
     <div class="rv d1"><span class="label">Role</span>Product designer, director and fast builder</div>
     <div class="rv d2"><span class="label">Approach</span>Facilitation + AI prototyping</div>
     <div class="rv d3"><span class="label">Sectors</span>Energy, finance, insurance, healthcare, e-commerce & retail</div>
