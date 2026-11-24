@@ -415,3 +415,7 @@ html{transition:background-color .4s}
 :root{--rad:28px}
 @media (max-width:720px){:root{--rad:16px}}
 .card .media,.pitem .media,.cimg .media,.slide,.cvid video,.ccard .media,.cgrid>.cimg .media{border-radius:var(--rad)!important}
+/* glassy cards */
+.svc>div,.facts,.form{background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.42))!important;-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(var(--inkrgb),.04),0 12px 40px -12px rgba(65,40,255,.14)}
+:root[data-theme=dark] .svc>div,:root[data-theme=dark] .facts,:root[data-theme=dark] .form{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 12px 40px -12px rgba(0,0,0,.5)}
+.svc>div:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(var(--inkrgb),.04),0 18px 50px -14px rgba(65,40,255,.22)}
