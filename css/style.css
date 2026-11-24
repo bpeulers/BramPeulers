@@ -411,3 +411,7 @@ html{transition:background-color .4s}
 /* contactformulier als blok */
 .form{border:1px solid color-mix(in srgb,var(--a2) 50%,transparent);border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px)}
 .form .note:empty{display:none}@media (max-width:720px){.form{margin-top:24px}}
+/* cases: zelfde hoekradius als het highlight-blok */
+:root{--rad:28px}
+@media (max-width:720px){:root{--rad:16px}}
+.card .media,.pitem .media,.cimg .media,.slide,.cvid video,.ccard .media,.cgrid>.cimg .media{border-radius:var(--rad)!important}
