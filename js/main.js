@@ -77,7 +77,7 @@ home:()=>`
 </section>
 ${closer()}`,
 
-portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3]===k).length;return `
+portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').includes(k)).length;return `
 <section class="ph"><h1 class="h1">${L(['Portfolio: bekijk','mijn <span class="grad">werk</span>.'])}</h1>
 <p class="lead rv d2">Apps, websites, portalen en design systems voor onder meer Essent, Achmea, Eneco, SNS, ASN Bank, Triodos en VGZ. Klik op een project voor de volledige case.</p></section>
 <section class="sec" style="padding-top:0">
@@ -246,7 +246,7 @@ home:()=>`
 </section>
 ${closer()}`,
 
-portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3]===k).length;return `
+portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').includes(k)).length;return `
 <section class="ph"><h1 class="h1">${L(['Portfolio: explore','my <span class="grad">work</span>.'])}</h1>
 <p class="lead rv d2">Apps, websites, portals and design systems for clients including Essent, Achmea, Eneco, SNS, ASN Bank, Triodos and VGZ. Click a project to read the full case.</p></section>
 <section class="sec" style="padding-top:0">
