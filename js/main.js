@@ -582,7 +582,7 @@ function loop(t){
   if(!RM){
     const vh=innerHeight;
     for(const p of pars){ const r=p.parentElement.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; const k=(r.top+r.height/2-vh/2)/vh; p.style.transform=`translate3d(0,${Math.max(-9,Math.min(9,-k*12)).toFixed(2)}%,0)`; }
-    if(growEl){ const r=growEl.getBoundingClientRect(); const k=Math.max(0,Math.min(1,1-(r.top-vh*.15)/(vh*.75))); growEl.style.transform=`scale(${(.86+.14*k).toFixed(4)})`; growEl.style.borderRadius=`${(28*(1-k)).toFixed(1)}px`; const gi=growEl.querySelector('.gstack'); if(gi){ const c=(r.top+r.height/2-vh/2)/vh; gi.style.transform=`translate3d(0,${Math.max(-11,Math.min(11,-c*16)).toFixed(2)}%,0)`; } }
+    if(growEl){ const r=growEl.getBoundingClientRect(); const k=Math.max(0,Math.min(1,1-(r.top-vh*.15)/(vh*.75))); const gsc=.86+.14*k; growEl.style.transform=`scale(${gsc.toFixed(4)})`; growEl.style.borderRadius=`${(28/gsc).toFixed(1)}px`; const gi=growEl.querySelector('.gstack'); if(gi){ const c=(r.top+r.height/2-vh/2)/vh; gi.style.transform=`translate3d(0,${Math.max(-11,Math.min(11,-c*16)).toFixed(2)}%,0)`; } }
   }
   cx2.clearRect(0,0,W,H); const ox=(mx/W-.5)*10, oy=(my/H-.5)*10;
   for(const s of stars){ s.p+=s.s; if(!RM){ s.y-=s.z*.05; if(s.y<-2) s.y=H+2; } const a=s.a*(.55+.45*Math.sin(s.p)); cx2.fillStyle=`rgba(${STAR},${(a*(DARK?.16:.13)).toFixed(3)})`; const px=s.x+ox*s.z,py=(s.y-y*.03*s.z%H+H)%H+oy*s.z,R=s.r,k=R*.14; cx2.beginPath(); cx2.moveTo(px,py-R); cx2.quadraticCurveTo(px+k,py-k,px+R,py); cx2.quadraticCurveTo(px+k,py+k,px,py+R); cx2.quadraticCurveTo(px-k,py+k,px-R,py); cx2.quadraticCurveTo(px-k,py-k,px,py-R); cx2.fill(); }
