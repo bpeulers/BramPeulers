@@ -5,7 +5,7 @@ PICTURE: grote mock-ups van echte cases, portret in zwart-wit, zachte sterrenhem
 COLOUR and TYPE: #121417 grond, bijna-wit tekst, één verloop van zandgeel naar lavendel; Source Serif 4 light + Hanken Grotesk.
 LAYOUT: vaste header, grote serif-koppen, verspringend 2-koloms werkgrid, genummerde dienstenraster, enorme afsluiter.
 */
-:root{color-scheme:light;--bgrgb:250,250,250;--inkrgb:18,20,23;--star:70,62,150;--bg:#fafafa;--bg2:#efeff0;--ink:#121417;--ink2:#3b3f46;--mute:#686d75;--line:rgba(var(--inkrgb),.13);--a1:#b8892a;--a2:#6a5ff0;--dark:#121417;--serif:"Source Serif 4",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--pad:clamp(20px,2.8vw,40px);--ease:cubic-bezier(.76,0,.24,1);--out:cubic-bezier(.16,1,.3,1)}
+:root{color-scheme:light;--bgrgb:250,250,250;--inkrgb:18,20,23;--star:106,95,240;--bg:#fafafa;--bg2:#efeff0;--ink:#121417;--ink2:#3b3f46;--mute:#686d75;--line:rgba(var(--inkrgb),.13);--a1:#b8892a;--a2:#6a5ff0;--dark:#121417;--serif:"Source Serif 4",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--pad:clamp(20px,2.8vw,40px);--ease:cubic-bezier(.76,0,.24,1);--out:cubic-bezier(.16,1,.3,1)}
 *{box-sizing:border-box;min-width:0}
 html{background:var(--bg)}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
@@ -371,7 +371,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
 .acover .cimg{max-width:1040px;margin:0 auto}
 
 /* dark mode */
-:root[data-theme=dark]{color-scheme:dark;--bgrgb:15,17,20;--inkrgb:240,241,243;--star:190,185,255;--bg:#0f1114;--bg2:#1a1d22;--ink:#f0f1f3;--ink2:#c3c7cd;--mute:#8e939b;--line:rgba(240,241,243,.14);--a1:#d9ad52;--a2:#9b91ff;--dark:#f0f1f3}
+:root[data-theme=dark]{color-scheme:dark;--bgrgb:15,17,20;--inkrgb:240,241,243;--star:155,145,255;--bg:#0f1114;--bg2:#1a1d22;--ink:#f0f1f3;--ink2:#c3c7cd;--mute:#8e939b;--line:rgba(240,241,243,.14);--a1:#d9ad52;--a2:#9b91ff;--dark:#f0f1f3}
 :root[data-theme=dark] .media::before{opacity:.5}
 :root[data-theme=dark] .form input::placeholder,:root[data-theme=dark] .form textarea::placeholder{color:#6b7078}
 html{transition:background-color .4s}
