@@ -229,8 +229,8 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
 .tile:hover .media img{filter:grayscale(0) brightness(.8)}
 .tile h3{color:#fff;position:absolute;left:20px;bottom:18px;font:300 clamp(26px,2.6vw,38px)/1 var(--serif);letter-spacing:-.03em;z-index:2}
 .tile small{position:absolute;right:20px;bottom:22px;z-index:2;font-size:12px;color:#e6e6e6}
-.alist>div{display:grid;grid-template-columns:160px minmax(0,1fr) auto;gap:28px;align-items:center;padding:22px 0;border-top:1px solid var(--line)}
-.alist>div:last-child{border-bottom:1px solid var(--line)}
+.alist>a{display:grid;grid-template-columns:160px minmax(0,1fr) auto;gap:28px;align-items:center;padding:22px 0;border-top:1px solid var(--line)}
+.alist>a:last-child{border-bottom:1px solid var(--line)}
 .alist h3{font:300 clamp(22px,2.2vw,30px)/1.2 var(--serif);letter-spacing:-.02em;transition:transform .6s var(--out)}
 .alist a:hover h3{transform:translateX(10px)}
 .alist p{margin:6px 0 0;color:var(--mute);font-size:14px}
@@ -347,7 +347,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .grid2>.card:nth-child(even){margin-top:0}
   .svc{grid-template-columns:1fr}.svc>div:nth-child(even){padding-left:0;border-left:0}
   .tiles{grid-template-columns:1fr}.tile .media{aspect-ratio:4/3}
-  .alist>div{grid-template-columns:96px minmax(0,1fr)}.alist>div>span:last-child{display:none}
+  .alist>a{grid-template-columns:96px minmax(0,1fr)}.alist>a>span:last-child{display:none}
   .qa,.qnav,.qdots{text-align:left;justify-content:flex-start}
   .grow .media{border-radius:16px;aspect-ratio:4/3}
 .gcap{font-size:12px;padding:7px 12px}
@@ -358,3 +358,16 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   *,*::before,*::after{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important}
   .ln>span,.rv{transform:none;opacity:1}
 }
+
+/* artikelen */
+.alist .label{display:block;margin-bottom:6px}
+.alist .ar{font-size:22px;color:var(--mute);transition:transform .6s var(--out),color .3s}
+.alist a:hover .ar{transform:translateX(6px);color:var(--ink)}
+.ah1{max-width:18em}
+.atext .cx{max-width:40em;margin:0 auto}
+.atext .cx h2{font-size:clamp(26px,2.6vw,38px);margin-top:44px}
+.atext .cx h2:first-child{margin-top:0}
+.atext .cx em{font-style:italic}
+.atext .cx>p:first-child{font:300 clamp(20px,1.8vw,24px)/1.5 var(--serif);color:var(--ink)}
+.atext .cx a{text-decoration:underline;text-decoration-color:var(--a2);text-underline-offset:.18em}
+.acover .cimg{max-width:1040px;margin:0 auto}

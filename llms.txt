@@ -14,7 +14,8 @@
 - [About (EN)](https://www.brampeulers.com/en/about/) · [Over mij (NL)](https://www.brampeulers.com/over-mij/)
 - [Portfolio (EN)](https://www.brampeulers.com/en/portfolio/) · [Portfolio (NL)](https://www.brampeulers.com/portfolio/)
 - [Contact (EN)](https://www.brampeulers.com/en/contact/) · [Contact (NL)](https://www.brampeulers.com/contact/)
-- [Full text of all cases](https://www.brampeulers.com/llms-full.txt)
+- [Articles (EN)](https://www.brampeulers.com/en/articles/) · [Artikelen (NL)](https://www.brampeulers.com/artikelen/)
+- [Full text of all cases and articles](https://www.brampeulers.com/llms-full.txt)
 
 ## Case studies
 - [Essent — Digital customer journeys I Use & I Pay](https://www.brampeulers.com/en/cases/essent/): UX designer, 2026 – present.
@@ -35,6 +36,14 @@
 - [Ockto — App design](https://www.brampeulers.com/en/cases/ockto-app/): UX designer, 2022.
 - [DAK — Mortgage portal](https://www.brampeulers.com/en/cases/dak/): UX designer, 2020 – 2021.
 - [MDT Sport — New brand identity and website](https://www.brampeulers.com/en/cases/mdt/): Visual designer, 2020.
+
+## Articles
+- [UX, UI or visual design: what are the differences?](https://www.brampeulers.com/en/articles/ux-ui-visual-design/): The terms are often used interchangeably. A clear explanation of three different disciplines.
+- [The benefits of a design system](https://www.brampeulers.com/en/articles/design-system/): How a design system helps organisations keep their digital products consistent.
+- [Why does a consistent brand identity matter?](https://www.brampeulers.com/en/articles/huisstijl/): Recognisability builds trust. Why consistency pays off for every brand.
+- [Smart navigation for higher conversion on your website](https://www.brampeulers.com/en/articles/navigatie/): A clear navigation structure helps visitors find what they are looking for — and increases conversion.
+- [How do you map a customer journey?](https://www.brampeulers.com/en/articles/customer-journey/): A tutorial for making your customer’s journey visible before, during and after the purchase.
+- [How do you develop a persona?](https://www.brampeulers.com/en/articles/persona/): How to put the customer truly at the centre of your project, with a persona as the starting point.
 
 ## Contact
 - Email: info@demerkenstudio.nl

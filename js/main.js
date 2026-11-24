@@ -18,7 +18,7 @@ const FEAT=[['essent','Energie-inzicht en betaalprocessen helder gemaakt in de E
  ['eneco-app','Nieuwe app-producten voor Eneco en Oxxio, van dynamische tarieven tot de "app van de toekomst".',['App design','Multi-brand','UX-lab']],
  ['ockto-ds','Eén centrale Figma-bibliotheek voor alle Ockto-ontwerpen: white-label, iOS, Android en dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
-const HOMECASES=[...CASES,...CD.filter(c=>!CASES.some(x=>x.slug===c.slug)).map(c=>({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:c.intro.replace(/<[^>]+>/g,'').replace(/&amp;/g,'&'),tags:[]}))];
+const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
 const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digitale producten'],['2210-triodos-3','triodos','Triodos — Hypotheekstraat'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
@@ -37,12 +37,7 @@ const QUOTES=[['Bram is sterk in het vertalen van onze requirements naar mobile 
  ['Bram luistert goed naar je wensen en komt met een duidelijk plan. Wij zijn zeer tevreden met het resultaat.','E3DV','Opdrachtgever']];
 
 
-const ARTS=[['1512-fonts-1','UX, UI of visual design: wat zijn de verschillen?','','De termen worden vaak door elkaar gebruikt. Een heldere uitleg van drie verschillende vakgebieden.',''],
- ['2208-design-system-ockto-2x','De voordelen van een design system','','Hoe een design system organisaties helpt hun digitale producten consistent te houden.',''],
- ['1607-brandguid-melrose-2','Waarom is een consistente huisstijl belangrijk?','','Herkenbaarheid bouwt vertrouwen. Waarom consistentie loont voor elk merk.',''],
- ['2203-merkenstudio','Een slimme navigatie voor meer conversie','','Een duidelijke navigatiestructuur helpt bezoekers vinden wat ze zoeken — en verhoogt de conversie.',''],
- ['1612-brainstorm2','Hoe breng je een customer journey in kaart?','','Een tutorial om de reis van je klant vóór, tijdens en na de aankoop zichtbaar te maken.',''],
- ['1608-persona','Hoe ontwikkel je een persona?','','Zo zet je de klant écht centraal in je project, met een persona als vertrekpunt.','']];
+const ARTS=window.ARTICLES.nl;
 
 
 const closer=(cs)=>`<section class="closer"><p class="label rv">Laten we samenwerken</p><a class="big" href="#contact" data-c="link">Plan een kennismaking <em>→</em></a></section>
@@ -66,8 +61,8 @@ home:()=>`
 <section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carrousel" aria-label="Uitgelicht werk"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Vorig project">←</button><button class="sx" id="gx" aria-label="Volgend project">→</button></div></section>
 <section class="sec">
-  <div class="head"><h2 class="h2">${L(['Geselecteerd werk'])}</h2><a class="ulink rv" href="#portfolio">Alle cases →</a></div>
-  <div class="slider wsl rv"><div class="strack" tabindex="0" aria-label="Geselecteerde cases">${HOMECASES.map((c,i)=>card(c,i).replace('class="card rv','class="card wcard')).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${HOMECASES.length}</span><button class="sp" aria-label="Vorige case">←</button><button class="sx" aria-label="Volgende case">→</button></div></div>
+  <div class="head"><h2 class="h2">${L(['Uitgelichte cases'])}</h2><a class="ulink rv" href="#portfolio">Alle cases →</a></div>
+  <div class="slider wsl rv"><div class="strack" tabindex="0" aria-label="Uitgelichte cases">${HOMECASES.map((c,i)=>card(c,i).replace('class="card rv','class="card wcard')).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${HOMECASES.length}</span><button class="sp" aria-label="Vorige case">←</button><button class="sx" aria-label="Volgende case">→</button></div></div>
 </section>
 <section class="marq" aria-label="Opdrachtgevers"><div class="tr">${marq()}</div></section>
 <section class="sec">
@@ -94,11 +89,20 @@ portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3]===k).length;re
  <div class="txt"><span class="label" id="lbc"></span><h2 class="h2" id="lbt" style="margin:12px 0 20px"></h2><p id="lbd"></p><a class="btn" id="lbl" data-c="link">Bekijk project</a><div class="nx"><button class="btn ghost" id="lbp">← Vorige</button><button class="btn ghost" id="lbn">Volgende →</button></div></div>
 </div>${closer()}`},
 
+art:(a)=>{const i=ARTS.indexOf(a),n=ARTS[(i+1)%ARTS.length];
+ return `
+<section class="ph aph"><a class="ulink rv" href="#artikelen">← Alle artikelen</a>
+ <span class="label rv d1" style="display:block;margin-top:28px">Artikel · ${a.cat}</span>
+ <h1 class="h1 ah1" style="margin-top:14px">${L([a.title])}</h1></section>
+<section class="cmedia acover"><figure class="cimg full rv" style="--r:${(()=>{const d=DIMS[a.img]||[16,9];return (d[0]/d[1]).toFixed(4)})()}"><div class="media ok"><img src="/media/${a.img}.webp" alt="${a.title}" decoding="async" fetchpriority="high" data-z></div></figure></section>
+<section class="ctext w1 atext"><div class="prose cx rv">${a.body}</div></section>
+<a class="next" href="#art-${n.slug}" data-c="view"><span class="label">Volgend artikel</span><span class="big nbig">${n.title} <em>→</em></span></a>${closer()}`},
+
 artikelen:()=>`
 <section class="ph"><h1 class="h1">${L(['Artikelen over UX,','design systems en <span class="grad">merken</span>.'])}</h1>
 <p class="lead rv d2">Wat ik in de praktijk leer over gebruikerservaring, design systems en merkidentiteit, uitgeschreven voor wie er zelf mee aan de slag wil.</p></section>
 <section class="sec" style="padding-top:0">
-<div class="alist">${ARTS.map(a=>`<div class="rv">${media(a[0],'r43',false,'')}<span><h3>${a[1]}</h3><p>${a[3]}</p></span><span></span></div>`).join('')}</div></section>${closer()}`,
+<div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
 <section class="ph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1></section>
@@ -182,7 +186,7 @@ const FEAT=[['essent','Energy insight and payment processes made clear in the Es
  ['eneco-app','New app products for Eneco and Oxxio, from dynamic pricing to the "app of the future".',['App design','Multi-brand','UX lab']],
  ['ockto-ds','One central Figma library for all Ockto designs: white-label, iOS, Android and dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
-const HOMECASES=[...CASES,...CD.filter(c=>!CASES.some(x=>x.slug===c.slug)).map(c=>({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:c.intro.replace(/<[^>]+>/g,'').replace(/&amp;/g,'&'),tags:[]}))];
+const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
 const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digital products'],['2210-triodos-3','triodos','Triodos — Mortgage journey'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
@@ -201,12 +205,7 @@ const QUOTES=[['Bram is strong at translating our requirements into mobile desig
  ['Bram listens carefully to your wishes and comes up with a clear plan. We are very happy with the result.','E3DV','Client']];
 
 
-const ARTS=[['1512-fonts-1','UX, UI or visual design: what are the differences?','','The terms are often used interchangeably. A clear explanation of three different disciplines.',''],
- ['2208-design-system-ockto-2x','The benefits of a design system','','How a design system helps organisations keep their digital products consistent.',''],
- ['1607-brandguid-melrose-2','Why does a consistent brand identity matter?','','Recognisability builds trust. Why consistency pays off for every brand.',''],
- ['2203-merkenstudio','Smart navigation for higher conversion','','A clear navigation structure helps visitors find what they are looking for — and increases conversion.',''],
- ['1612-brainstorm2','How do you map a customer journey?','','A tutorial for making your customer\'s journey visible before, during and after the purchase.',''],
- ['1608-persona','How do you develop a persona?','','How to put the customer truly at the centre of your project, with a persona as the starting point.','']];
+const ARTS=window.ARTICLES.en;
 
 
 const closer=(cs)=>`<section class="closer"><p class="label rv">Let’s work together</p><a class="big" href="#contact" data-c="link">Schedule an intro call <em>→</em></a></section>
@@ -230,7 +229,7 @@ home:()=>`
 <section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carousel" aria-label="Featured work"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Previous project">←</button><button class="sx" id="gx" aria-label="Next project">→</button></div></section>
 <section class="sec">
-  <div class="head"><h2 class="h2">${L(['Selected work'])}</h2><a class="ulink rv" href="#portfolio">All cases →</a></div>
+  <div class="head"><h2 class="h2">${L(['Featured cases'])}</h2><a class="ulink rv" href="#portfolio">All cases →</a></div>
   <div class="slider wsl rv"><div class="strack" tabindex="0" aria-label="Selected cases">${HOMECASES.map((c,i)=>card(c,i).replace('class="card rv','class="card wcard')).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${HOMECASES.length}</span><button class="sp" aria-label="Previous case">←</button><button class="sx" aria-label="Next case">→</button></div></div>
 </section>
 <section class="marq" aria-label="Clients"><div class="tr">${marq()}</div></section>
@@ -258,11 +257,20 @@ portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3]===k).length;re
  <div class="txt"><span class="label" id="lbc"></span><h2 class="h2" id="lbt" style="margin:12px 0 20px"></h2><p id="lbd"></p><a class="btn" id="lbl" data-c="link">View project</a><div class="nx"><button class="btn ghost" id="lbp">← Previous</button><button class="btn ghost" id="lbn">Next →</button></div></div>
 </div>${closer()}`},
 
+art:(a)=>{const i=ARTS.indexOf(a),n=ARTS[(i+1)%ARTS.length];
+ return `
+<section class="ph aph"><a class="ulink rv" href="#artikelen">← All articles</a>
+ <span class="label rv d1" style="display:block;margin-top:28px">Article · ${a.cat}</span>
+ <h1 class="h1 ah1" style="margin-top:14px">${L([a.title])}</h1></section>
+<section class="cmedia acover"><figure class="cimg full rv" style="--r:${(()=>{const d=DIMS[a.img]||[16,9];return (d[0]/d[1]).toFixed(4)})()}"><div class="media ok"><img src="/media/${a.img}.webp" alt="${a.title}" decoding="async" fetchpriority="high" data-z></div></figure></section>
+<section class="ctext w1 atext"><div class="prose cx rv">${a.body}</div></section>
+<a class="next" href="#art-${n.slug}" data-c="view"><span class="label">Next article</span><span class="big nbig">${n.title} <em>→</em></span></a>${closer()}`},
+
 artikelen:()=>`
 <section class="ph"><h1 class="h1">${L(['Articles on UX,','design systems and <span class="grad">brands</span>.'])}</h1>
 <p class="lead rv d2">What I learn in practice about user experience, design systems and brand identity, written up for anyone who wants to put it to work.</p></section>
 <section class="sec" style="padding-top:0">
-<div class="alist">${ARTS.map(a=>`<div class="rv">${media(a[0],'r43',false,'')}<span><h3>${a[1]}</h3><p>${a[3]}</p></span><span></span></div>`).join('')}</div></section>${closer()}`,
+<div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
 <section class="ph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1></section>
@@ -356,7 +364,7 @@ const STR={
 let S=STR.nl;
 const SITE='https://www.brampeulers.com';
 const SEG={nl:{home:'',portfolio:'portfolio',artikelen:'artikelen',about:'over-mij',contact:'contact'},en:{home:'',portfolio:'portfolio',artikelen:'articles',about:'about',contact:'contact'}};
-const pathOf=(l,h)=>{ const p=h.startsWith('case-')?'cases/'+h.slice(5):(SEG[l][h]??''); return '/'+(l==='en'?'en/':'')+(p?p+'/':''); };
+const pathOf=(l,h)=>{ const p=h.startsWith('case-')?'cases/'+h.slice(5):h.startsWith('art-')?SEG[l].artikelen+'/'+h.slice(4):(SEG[l][h]??''); return '/'+(l==='en'?'en/':'')+(p?p+'/':''); };
 const hl=r=>pathOf(LANG,r);
 const fixLinks=root=>{ root.querySelectorAll('a[href^="#"]').forEach(a=>{const h=a.getAttribute('href'); if(h.length>1) a.setAttribute('href',hl(h.slice(1)))}); };
 const META={
@@ -379,15 +387,17 @@ function setHead(r,h){
   const url=SITE+pathOf(LANG,h), img=SITE+'/og-image.jpg';
   document.title=r.full; meta('name','description',r.desc);
   link('canonical',null,url); link('alternate','nl',SITE+pathOf('nl',h)); link('alternate','en',SITE+pathOf('en',h)); link('alternate','x-default',SITE+pathOf('nl',h));
-  meta('property','og:title',r.full); meta('property','og:description',r.desc); meta('property','og:url',url); meta('property','og:type',r.c?'article':'website');
-  meta('property','og:image',r.c?SITE+'/media/'+r.c.thumb+'.webp':img); meta('property','og:locale',LANG==='en'?'en_GB':'nl_NL'); meta('property','og:site_name','Bram Peulers');
+  meta('property','og:title',r.full); meta('property','og:description',r.desc); meta('property','og:url',url); meta('property','og:type',(r.c||r.a)?'article':'website');
+  meta('property','og:image',r.c?SITE+'/media/'+r.c.thumb+'.webp':r.a?SITE+'/media/'+r.a.img+'.webp':img); meta('property','og:locale',LANG==='en'?'en_GB':'nl_NL'); meta('property','og:site_name','Bram Peulers');
   meta('name','twitter:card','summary_large_image');
   const ld=setTag('script#ld-page',()=>{const sc=document.createElement('script');sc.type='application/ld+json';sc.id='ld-page';return sc});
   const crumbs=[{'@type':'ListItem',position:1,name:'Home',item:SITE+pathOf(LANG,'home')}];
-  if(h!=='home') crumbs.push({'@type':'ListItem',position:2,name:r.c?'Portfolio':r.title,item:SITE+pathOf(LANG,r.c?'portfolio':h)});
+  if(h!=='home') crumbs.push({'@type':'ListItem',position:2,name:r.c?'Portfolio':r.a?S.titles.artikelen:r.title,item:SITE+pathOf(LANG,r.c?'portfolio':r.a?'artikelen':h)});
+  if(r.a) crumbs.push({'@type':'ListItem',position:3,name:r.a.title,item:url});
   if(r.c) crumbs.push({'@type':'ListItem',position:3,name:r.c.client+' — '+r.c.title,item:url});
   const g=[{'@type':'WebPage','@id':url,url,name:r.full,description:r.desc,inLanguage:LANG,isPartOf:{'@id':SITE+'/#website'},about:{'@id':SITE+'/#person'}},{'@type':'BreadcrumbList',itemListElement:crumbs}];
   if(r.c) g.push({'@type':'CreativeWork',name:r.c.client+' — '+r.c.title,description:r.desc,url,image:SITE+'/media/'+r.c.thumb+'.webp',creator:{'@id':SITE+'/#person'},inLanguage:LANG,temporalCoverage:r.c.period,keywords:[r.c.role,CAT[r.c.cat],r.c.client].join(', ')});
+  if(r.a) g.push({'@type':'Article',headline:r.a.title,description:r.desc,url,mainEntityOfPage:url,image:SITE+'/media/'+r.a.img+'.webp',author:{'@id':SITE+'/#person'},publisher:{'@id':SITE+'/#person'},inLanguage:LANG,articleSection:r.a.cat});
   ld.textContent=JSON.stringify({'@context':'https://schema.org','@graph':g});
 }
 function setLang(l){
@@ -405,10 +415,11 @@ const route=()=>{
   if(parts[0]==='en'){ l='en'; parts.shift(); }
   let h='home';
   if(parts[0]==='cases'&&parts[1]) h='case-'+parts[1];
+  else if((parts[0]==='artikelen'||parts[0]==='articles')&&parts[1]) h='art-'+parts[1];
   else if(parts[0]){ const k=Object.keys(SEG[l]).find(x=>SEG[l][x]===parts[0])||Object.keys(SEG.nl).find(x=>SEG.nl[x]===parts[0])||Object.keys(SEG.en).find(x=>SEG.en[x]===parts[0]); h=k||({work:'portfolio',personal:'artikelen'}[parts[0]])||'home'; }
   return {l,h};
 };
-(()=>{ const hs=location.hash.slice(1); if(!hs||hs.length<2) return; let l='nl',h=hs; if(h==='en'||h.startsWith('en-')){l='en';h=h.slice(3)||'home'} if(!/^(home|portfolio|artikelen|about|contact|work|personal|case-[\w-]+)$/.test(h)) return; h={work:'portfolio',personal:'artikelen'}[h]||h; history.replaceState(null,'',pathOf(l,h)); })();
+(()=>{ const hs=location.hash.slice(1); if(!hs||hs.length<2) return; let l='nl',h=hs; if(h==='en'||h.startsWith('en-')){l='en';h=h.slice(3)||'home'} if(!/^(home|portfolio|artikelen|about|contact|work|personal|case-[\w-]+|art-[\w-]+)$/.test(h)) return; h={work:'portfolio',personal:'artikelen'}[h]||h; history.replaceState(null,'',pathOf(l,h)); })();
 const nav=(url)=>{ if(url!==location.pathname){ history.pushState(null,'',url); go(); } else { document.documentElement.classList.remove('menu-open'); } };
 document.querySelectorAll('[data-l]').forEach(a=>a.addEventListener('click',e=>{ e.preventDefault(); nav(pathOf(a.dataset.l,route().h)); }));
 document.addEventListener('click',e=>{ const a=e.target.closest('a[href^="/"]'); if(!a||a.target||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0) return; const u=a.getAttribute('href'); if(u.startsWith('/media/')) return; e.preventDefault(); nav(u); });
@@ -512,7 +523,8 @@ setInterval(clock,20000);
 function resolve(){
   const rt=route(); setLang(rt.l); const h=rt.h;
   if(h.startsWith('case-')){ const AL={eneco:'eneco-app',ockto:'ockto-ds'}; const sl=AL[h.slice(5)]||h.slice(5); const c=CD.find(x=>x.slug===sl); if(c) return {key:'portfolio',h:'case-'+c.slug,c,html:V.case(c),title:c.client+' — '+c.title,full:c.client+': '+c.title+' — Bram Peulers',desc:clip(c.intro)}; }
-  const k=V[h]&&h!=='case'?h:'home';
+  if(h.startsWith('art-')){ const a=ARTS.find(x=>x.slug===h.slice(4)); if(a) return {key:'artikelen',h,a,html:V.art(a),title:a.title,full:a.title+' — Bram Peulers',desc:clip(a.summary+' '+a.body)}; }
+  const k=V[h]&&h!=='case'&&h!=='art'?h:'home';
   return {key:k,h:k,html:V[k](),title:S.titles[k],full:k==='home'?'Bram Peulers — '+S.titles.home:S.titles[k]+' — Bram Peulers',desc:META[LANG][k]};
 }
 function render(){

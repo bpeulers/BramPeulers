@@ -457,3 +457,229 @@ Anneleen and Michel had a fresh, colourful look & feel in mind that would convey
 ### Finally
 Project leaders Anneleen Ypma – Diedering and Michel Hofstede asked me to create a platform that would appeal to a broad, young target group. On the platform, young people should be inspired by other MDT participants and then be able to sign up easily for the MDT Sport programme.
 With moving images, playful graphic elements and an energetic look & feel, we believe we can appeal to young people! Curious? Visit the website at mdtsport.nl.
+
+
+## Article: UX, UI or visual design: what are the differences?
+
+URL: https://www.brampeulers.com/en/articles/ux-ui-visual-design/
+
+UX, UI and visual design are three important aspects of the design process of a (digital) product. Although these terms are often used interchangeably, each has its own definition and focus. In this article I explain what that focus is and what the differences are.
+
+### Aspect 1: UX design
+UX, or user experience, is about how users experience the product: how the product works, how easy it is to use and how it helps users reach their goals. UX designers focus on the user’s entire journey through the product, taking into account factors such as ease of use, functionality and satisfaction.
+
+### Aspect 2: UI design
+UI, or user interface, is about the visual side of the product: what the product looks like and how the user interacts with it. UI designers focus on presenting information and on interaction with the user, taking into account factors such as layout, typography and use of colour.
+
+### Aspect 3: Visual design
+Visual design is about the aesthetic side of the product. Visual designers focus on creating a unique and recognisable style for the product. This includes factors such as colour, typography, imagery and icons.
+
+### In conclusion
+UX design is about how the product works, UI design about how it looks and how users interact with it, and visual design about how the product looks and how that contributes to its recognisability. Together, these three aspects create a product that is both user-friendly and attractive.
+
+Want to know more about how I work as a product designer? Read more about me.
+
+
+## Article: The benefits of a design system
+
+URL: https://www.brampeulers.com/en/articles/design-system/
+
+A design system is a powerful tool for creating consistency within an organisation. It ensures that all the building blocks used to design digital products fit together, so teams can collaborate more effectively and develop better experiences faster. By establishing a shared design language, it brings clarity to the design process.
+
+A design system can align the whole organisation on design principles. With a streamlined approach, everyone in the organisation can quickly understand how different components should be used and combined. Ultimately this shortens development time and improves consistency across projects and platforms. By setting up a strong design system, organisations can save time and resources while still producing high-quality digital products tailored to their audience.
+
+### What does a design system do?
+At its core, a design system should provide the basic building blocks for creating digital products. This includes elements such as typography, colour schemes, iconography, layout grids, animation patterns and more. By breaking complex designs down into smaller components, designers are better able to create coherent user experiences that meet usability and accessibility requirements.
+
+### A shared language between designers and developers
+By creating a shared language between designers and developers, a design system bridges the communication gap between teams. Designers can focus on creating innovative solutions that meet user needs, while developers can turn those ideas into code quickly and with less guesswork. This streamlines product development by removing redundant work, which in turn reduces errors and delays.
+
+### Consistency across products
+A well-defined design system also safeguards consistency across products, which increases brand recognition and user trust. When the same visual elements appear consistently across products, users quickly become familiar with the brand and can easily move from one product to another. This consistent experience – combined with greater efficiency – lets companies deliver better experiences faster and ultimately improve customer satisfaction. A design system often goes hand in hand with a consistent brand identity.
+
+All in all, a strong design system is essential for any organisation that values innovation and user experience. By creating an effective system, teams can build better experiences more efficiently without compromising on quality or usability. In short, it’s a win-win for organisations and their customers alike.
+
+Curious what that looks like in practice? See the Ockto design system case.
+
+
+## Article: Why does a consistent brand identity matter?
+
+URL: https://www.brampeulers.com/en/articles/huisstijl/
+
+A brand identity is the visual expression of a company’s values, mission and positioning. It helps build trust and recognition with customers, and has a major influence on the decisions customers make when considering a brand or product. A recognisable brand identity sets a company apart from its competitors. Let’s look at why brand identity matters for your business.
+
+### From visuals to voice
+A brand identity is a holistic approach to branding that covers every aspect of your business – from visuals (logos, colours) to voice (tone of communication). It lets you create a consistent look and feel for your products and services that resonates with your audience. This includes logo design, typography, colours, language and more. By creating a coherent message across all platforms, customers form an emotional bond with your brand, making them more likely to do business with you in the future.
+
+### Why a brand identity is so important
+A brand identity matters because it lays the foundation for how people see your brand – and ultimately whether they decide to do business with you. Done well, it sets you apart from competitors by creating an authentic connection between you and potential customers. A strong brand identity also helps retain customers: they know what to expect from your brand, whenever they interact with it.
+
+### Defining a consistent tone of voice
+Creating an effective brand identity starts with defining a consistent tone of voice for your brand that reflects its values and mission. This can range from playful language if you target children to formal language if you offer high-end services to professionals. The key is consistency: by using this voice across all communication channels (email newsletters, social media accounts), customers form an emotional bond with your brand that goes beyond yet another company selling products or services online.
+
+### Conclusion
+In conclusion, a brand identity plays an important role in building customer trust and recognition for businesses of every size – from start-ups to established companies. Creating an effective brand identity requires careful planning, based on research into the needs of current and potential customers and into the company’s own values. By creating a consistent tone of voice across all platforms while producing visuals that are both attractive and relevant, customers will form a stronger bond with your business, you’ll become recognisable and you’ll grow. With these tips in mind, any business can create a successful brand identity that stands out from the competition in its sector!
+
+
+## Article: Smart navigation for higher conversion on your website
+
+URL: https://www.brampeulers.com/en/articles/navigatie/
+
+Your website is essentially your company’s digital business card. It’s where you present your services and products and attract new customers. A good navigation structure is therefore very important – for your visibility in Google, but also to help visitors find relevant information as quickly as possible. In short: a solid foundation gives your conversion a positive boost.
+
+### Where do you start?
+It’s tempting to dive straight into your website’s content. Still, it’s wise to think about the structure first. The time you invest in the navigation structure can save you hours of work later. A good plan is half the battle.
+
+### Start with a good tree structure
+Your website’s tree structure shows its hierarchy at a glance. You can use this structure for the navigation menu, but also in the footer. The benefit of a clear structure is that Google reads it the same way your visitors do, which has a positive effect on your search engine visibility (SEO). Visitors can also find what they’re looking for quickly, which leads to good conversion (CTR). It works the other way round too: if the structure falls short, your search ranking suffers and your bounce rate (the share of visitors who leave your site immediately) goes up.
+
+### Define your main navigation
+So how do you organise the main menu? Start by putting the homepage at the top of the tree – it’s the most important page of your website. Next to the homepage you add a number of other main themes (pillar pages). Say you run a bakery: you could organise your website as Bread, Pastry, Holidays, Team, Blog, Contact. The next step is to define sub-themes (the landing pages) that belong to the main themes. For the bakery, these could be pages such as St Nicholas, King’s Day, Christmas, New Year’s Eve and Easter under ‘Holidays’.
+
+### Think from the visitor’s perspective
+What works well in this example is that the website is organised around the visitor rather than the company’s own view. So always try to base it on data or user research. With Google Analytics you can analyse how users navigate your website, and with user research you can find out what visitors would look for on your site. Base your main menu on these findings. From this data you could also create personas of your target audience.
+
+### Guide your visitor
+Now that the tree structure is clear, you can organise the navigation menu. Keep your visitors’ customer journeys in mind: how does your visitor move through the website, and what end goal do they want to reach? By steering on this, visitors quickly find relevant information and get a good overview of the site. A tip to help visitors find things even faster is adding a search bar and a prominent contact button to the main menu. Don’t make the main menu too extensive: use a maximum of 6 main themes and a maximum of 6 sub-themes per theme.
+
+### Organising the footer
+With the main menu in place, you can move on to the footer (the bottom of your page). What’s often overlooked is that many visitors scroll down and then lose their overview of the website, because the main menu is no longer in view. It’s therefore wise to repeat the tree structure in the footer. The footer is also a good place for your contact details and links to your social media channels. There are often a few ‘other pages’ that matter to have on your website but are less relevant to visitors, such as a privacy policy or company information. Those can easily be ‘tucked away’ in the footer.
+
+### Questions about conversion?
+Need help with your website or have questions about increasing conversion? Feel free to get in touch to discuss the options.
+
+
+## Article: How do you map a customer journey?
+
+URL: https://www.brampeulers.com/en/articles/customer-journey/
+
+The customer journey is, loosely translated, ‘the customer’s journey before, during and after buying a product’. By creating a customer journey map, you make this journey visible. The method can improve the user experience of your (online) customers. It’s no coincidence that large companies such as Ikea and Starbucks shape their marketing strategy around it. In this article I show you how to map a customer journey in 6 steps.
+
+### ‘What’s in it for me?’
+A customer journey sounds nice, but why invest time in it? It’s actually very simple. By mapping the customer experience and the shortcomings of your organisation, you start thinking more from the customer’s perspective and see what your customer needs. The result is a better customer experience, higher conversion in the sales process and more customer focus in your organisation.
+
+### Think from the customer, not from sales
+Marketers who create a customer journey reason from the customer, not from sales. They ask questions such as: how do customers orient themselves, who do they talk to, what do they do and how do they think? Which channels do you choose as a seller? And which message fits which moment? With a customer journey you map the customer experience as a process, from the customer’s perspective.
+
+### Visualising the customer’s journey
+The customer’s journey can be mapped with a customer journey map. This method lets you visualise and improve processes from the customer’s point of view. Many formats are in circulation, each with its own pros and cons, but there are no strict rules such a map must follow.
+
+These are the steps:
+- Describe your brand & product
+- Create a customer description and persona
+- Describe the goals and phases in the buying process
+- Identify the right touch points
+- Create time frames
+- Note the gaps in your customer journey map
+
+### A customer journey map in 6 steps
+
+### Step 1: Describe your brand and product
+Describe your brand and the product being sold. You need to know what you want and can do as an organisation.
+Tip! Ask yourself: what makes your company and product unique? What are your unique selling points (USPs)?
+
+### Step 2: Create a customer description and persona
+Describe your customers and create one or more personas: vivid descriptions of typical, fictional people from your target audience. A persona has specific characteristics, wishes and behaviours. It’s an invented person, but a concrete description turns it into a typical customer of your business. Read more about creating a persona.
+
+- Tip 1: Use the questionnaire at the bottom of this article
+- Tip 2: Analyse customer behaviour through data (e.g. Google Analytics)
+- Tip 3: Run a survey among employees and (potential) customers
+- Tip 4: Interview your key customers
+- Tip 5: Look for customer reactions in reviews and on social media
+
+### Step 3: Describe the goals and phases in the buying process
+Describe the phases and goals the persona goes through when getting to know your product or brand and eventually buying it.
+Tip! Ask yourself which questions, problems and emotions the persona has in this phase. And how can you respond to them?
+
+### Step 4: Identify the right touch points
+Map which moments of contact (touch points) are needed to help the persona reach their goals. Think of communication channels such as websites, social media or face-to-face contact.
+
+### Step 5: Create time frames
+Create time frames based on data. How long does it take for the persona to reach the end goal?
+Tip! Use usability tests, in which users carry out tasks on your website. This is measurable.
+
+### Step 6: Note the gaps in your customer journey map
+Every system has flaws, and so does your customer journey map. Write them down.
+
+### Finally
+Now that you’ve completed the 6 steps, you can visualise the customer journey map. Put all your ideas in one file and look at what goes well in the customer journey and what could be better. Need help creating a customer journey? Feel free to get in touch.
+
+### Questions for describing your target audience
+
+### Answer the following questions
+- What are the driving factors behind a new purchase?
+- And what are the pain points?
+- Who and what influences buying behaviour?
+- What is the customer’s role in the moment of decision?
+- What are the most common barriers to buying the product?
+- Where does the customer get information?
+- What content does the customer need during the buying process?
+- Who or what influences the customer during the buying process?
+
+### Use of the product or service
+- Reason, on which occasion
+- At what moment
+- How often
+- Where
+- Use of orientation, purchase and usage channels
+- Manner and/or extent of use
+- Degree of loyalty
+- Lifestyle
+- Media use
+
+### Socio-demographics (who are your customers?)
+- Place of residence (postcode)
+- Gender
+- Age and/or life stage
+- Ethnicity
+- Income and/or social class
+- Education
+- Household type and composition
+- Physical characteristics: height, weight, health
+- Additionally for B2B: revenue, number of employees, industry
+
+### Attitude (what do customers think and feel?)
+- Beliefs
+- Motivations
+- Wishes and needs
+- Preferences
+- Buying motives
+- Attitude towards specific topics
+
+
+## Article: How do you develop a persona?
+
+URL: https://www.brampeulers.com/en/articles/persona/
+
+‘We need to put the customer first’ and ‘the customer is king’. Two ambitious clichés that regularly come up in the creative sessions of many start-ups. But when push comes to shove, the customer is often forgotten and the focus shifts to the product and sales. If you really want to put your customer first, writing buyer personas (personas for short) is a very effective – and affordable – method. It’s mainly used in advertising. But how do you write a good persona? And how do you then apply it together with a customer journey? Read it in this tutorial.
+
+### A persona? That’s a fictional person
+Personas are models of the prospects and customers you want to reach. They’re increasingly used to turn target groups into something tangible and human. In fact, personas are vivid descriptions of fictional people from an organisation’s target audience.
+Each persona has specific characteristics, wishes and behaviours. It’s an invented person, but a concrete description turns it into a typical customer of your business. Well-written personas lead to more prospects, higher conversion and loyal customers. They are the reference people you tailor your messages to, and they even guide decisions about investments.
+
+### Define your target audience
+Before you start writing, you need to gather knowledge and specific characteristics of your target audiences. Below you can read how to gather them in five steps. Planning to write several personas? Go through these steps separately for each target group.
+
+- Questionnaire – Start by filling in a questionnaire about your target audience, for example the questionnaire at the bottom of my article on customer journeys. Once you’ve answered the questions, you can already give a comprehensive description of your target group(s).
+- Data analysis – Analyse the behaviour of your website visitors through data, for example in Google Analytics or with heatmaps that show click behaviour.
+- Survey – Run a survey among your (potential) target groups.
+- Interviews – Interview your most important customers, the ‘key customers’.
+- Look for reviews – By searching reviews and reactions on social media you can learn a lot about the interests and preferences of your audience.
+
+### From data to ‘real people’
+Once you’ve gathered as much data as possible, you can work out the persona. Each persona gets the following characteristics:
+- name
+- gender
+- hobbies
+- age
+- personal goals
+- motivations and frustrations
+- description of notable traits
+- psychological characteristics
+Giving personas psychological characteristics adds depth. You can go a step further than a written description by giving personas a visual identity with a photo or illustration. That makes them ‘real people’ who come alive for your colleagues.
+
+### Next step: working out the customer journey
+Once your personas are ready, you’re ready for the final step: describing the cycle personas go through before reaching their end goal. This is also called the customer journey. In my article on customer journeys you can read how to create one. Good luck!
+
+### Need help?
+Need help creating a persona? Feel free to get in touch.

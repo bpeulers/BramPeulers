@@ -24,12 +24,12 @@ SEG = {'nl': {'home': '', 'portfolio': 'portfolio', 'artikelen': 'artikelen', 'a
        'en': {'home': '', 'portfolio': 'portfolio', 'artikelen': 'articles', 'about': 'about', 'contact': 'contact'}}
 
 def path_of(l, h):
-    p = 'cases/' + h[5:] if h.startswith('case-') else SEG[l][h]
+    p = 'cases/' + h[5:] if h.startswith('case-') else (SEG[l]['artikelen'] + '/' + h[4:] if h.startswith('art-') else SEG[l][h])
     return '/' + ('en/' if l == 'en' else '') + (p + '/' if p else '')
 
 def case_data():
-    js = ("global.window={};require('./js/cases.js');require('./js/cases-en.js');"
-          "console.log(JSON.stringify({nl:window.CASEDATA,en:window.CASEDATA_EN}))")
+    js = ("global.window={};require('./js/cases.js');require('./js/cases-en.js');require('./js/articles.js');"
+          "console.log(JSON.stringify({nl:window.CASEDATA,en:window.CASEDATA_EN,arts:window.ARTICLES}))")
     return json.loads(subprocess.check_output(['node', '-e', js], cwd=ROOT))
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -97,7 +97,8 @@ def main():
     cd = case_data()
     slugs = [c['slug'] for c in cd['nl']]
     pages = ['home', 'portfolio', 'artikelen', 'about', 'contact']
-    routes = [(l, h) for l in ('nl', 'en') for h in pages + ['case-' + s for s in slugs]]
+    arts = ['art-' + a['slug'] for a in cd['arts']['nl']]
+    routes = [(l, h) for l in ('nl', 'en') for h in pages + ['case-' + s for s in slugs] + arts]
     res = asyncio.run(render_all(routes))
 
     for (l, h), r in res.items():
@@ -106,7 +107,7 @@ def main():
 
     today = datetime.date.today().isoformat()
     urls = []
-    for h in pages + ['case-' + s for s in slugs]:
+    for h in pages + ['case-' + s for s in slugs] + arts:
         for l in ('nl', 'en'):
             alt = ''.join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{SITE}{path_of(x, h)}"/>' for x in ('nl', 'en'))
             alt += f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{path_of("nl", h)}"/>'
@@ -136,10 +137,11 @@ def main():
 - [About (EN)]({SITE}/en/about/) · [Over mij (NL)]({SITE}/over-mij/)
 - [Portfolio (EN)]({SITE}/en/portfolio/) · [Portfolio (NL)]({SITE}/portfolio/)
 - [Contact (EN)]({SITE}/en/contact/) · [Contact (NL)]({SITE}/contact/)
-- [Full text of all cases]({SITE}/llms-full.txt)
+- [Articles (EN)]({SITE}/en/articles/) · [Artikelen (NL)]({SITE}/artikelen/)
+- [Full text of all cases and articles]({SITE}/llms-full.txt)
 
 ## Case studies
-""" + '\n'.join(case_line(c, 'en') for c in cd['en']) + f"""
+""" + '\n'.join(case_line(c, 'en') for c in cd['en']) + '\n\n## Articles\n' + '\n'.join(f"- [{a['title']}]({SITE}{path_of('en', 'art-' + a['slug'])}): {a['summary']}" for a in cd['arts']['en']) + f"""
 
 ## Contact
 - Email: info@demerkenstudio.nl
@@ -155,6 +157,8 @@ def main():
             if b[0] == 't': full.append(txt(b[1]) + '\n')
             elif b[0] == 'q': full.append('> ' + txt(b[1]).replace('\n', '\n> ') + f'\n> — {b[2]}\n')
             elif b[0] == 'c': full.extend(f"### {x[1]}\n{txt(x[2])}\n" for x in b[1])
+    for a in cd['arts']['en']:
+        full.append(f"\n## Article: {a['title']}\n\nURL: {SITE}{path_of('en', 'art-' + a['slug'])}\n\n{txt(a['body'])}\n")
     write('llms-full.txt', '\n'.join(full))
     print(f'Gebouwd: {len(res)} pagina\'s, sitemap ({len(urls)} URL\'s), robots.txt, llms.txt, llms-full.txt, 404.html')
 
