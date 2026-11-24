@@ -408,3 +408,6 @@ html{transition:background-color .4s}
 .hdr.solid{background:#fff!important;box-shadow:0 1px 0 var(--line)!important}
 :root[data-theme=dark] .hdr.solid{background:var(--bg)!important}
 .hero+.marq{margin-bottom:clamp(40px,5vw,72px)}
+/* contactformulier als blok */
+.form{border:1px solid color-mix(in srgb,var(--a2) 50%,transparent);border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px)}
+.form .note:empty{display:none}@media (max-width:720px){.form{margin-top:24px}}
