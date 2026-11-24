@@ -47,7 +47,7 @@ window.CASEDATA=[
  ['i',['2405-eneco1'],1]
  ]},
 
-{slug:'sns',client:'SNS',title:'Redesign',role:'UX / UI designer',period:'2022 – 2023',cat:'web',thumb:'2307-sns-home',
+{slug:'sns',client:'SNS',title:'Redesign',role:'UX / UI designer',period:'2022 – 2023',cat:'web brand',thumb:'2307-sns-home',
  intro:'Tijdens de digitale restyling van SNS kregen de website, de app en de klantomgevingen een make-over die aansluit bij de nieuwe koers van de bank. Hier leg ik stap-voor-stap uit hoe ik dit project samen met een UX-collega heb aangepakt. Een mooi project dat ik in dienst van de Volksbank heb uitgevoerd.',
  blocks:[
  ['s',['2307-sns-home','2307-sns-large-2','2307-sns-large','2209-groeicoaching-1','2207-snsredesign']],

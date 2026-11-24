@@ -172,7 +172,7 @@ case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  return `
 <section class="ph"><a class="ulink rv" href="#portfolio">← Alle projecten</a>
  <h1 class="h1" style="margin-top:28px">${L([c.client+' —',`<span class="grad">${c.title}</span>`])}</h1>
- <div class="cmeta"><div class="rv"><span class="label">Klant</span>${c.client}</div><div class="rv d1"><span class="label">Rol</span>${c.role}</div><div class="rv d2"><span class="label">Periode</span>${c.period}</div><div class="rv d3"><span class="label">Type</span>${CAT[c.cat]||''}</div></div>
+ <div class="cmeta"><div class="rv"><span class="label">Klant</span>${c.client}</div><div class="rv d1"><span class="label">Rol</span>${c.role}</div><div class="rv d2"><span class="label">Periode</span>${c.period}</div><div class="rv d3"><span class="label">Type</span>${c.cat.split(' ').map(x=>CAT[x]).join(', ')}</div></div>
  <p class="cintro serif rv d2">${c.intro}</p></section>
 <div class="case">${B}</div>
 <a class="next" href="#case-${n.slug}" data-c="view"><span class="label">Volgende case</span><span class="big nbig">${n.client} — ${n.title} <em>→</em></span></a>${closer(true)}`}
@@ -341,7 +341,7 @@ case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  return `
 <section class="ph"><a class="ulink rv" href="#portfolio">← All projects</a>
  <h1 class="h1" style="margin-top:28px">${L([c.client+' —',`<span class="grad">${c.title}</span>`])}</h1>
- <div class="cmeta"><div class="rv"><span class="label">Client</span>${c.client}</div><div class="rv d1"><span class="label">Role</span>${c.role}</div><div class="rv d2"><span class="label">Period</span>${c.period}</div><div class="rv d3"><span class="label">Type</span>${CAT[c.cat]||''}</div></div>
+ <div class="cmeta"><div class="rv"><span class="label">Client</span>${c.client}</div><div class="rv d1"><span class="label">Role</span>${c.role}</div><div class="rv d2"><span class="label">Period</span>${c.period}</div><div class="rv d3"><span class="label">Type</span>${c.cat.split(' ').map(x=>CAT[x]).join(', ')}</div></div>
  <p class="cintro serif rv d2">${c.intro}</p></section>
 <div class="case">${B}</div>
 <a class="next" href="#case-${n.slug}" data-c="view"><span class="label">Next case</span><span class="big nbig">${n.client} — ${n.title} <em>→</em></span></a>${closer(true)}`}
@@ -398,7 +398,7 @@ function setHead(r,h){
   if(r.a) crumbs.push({'@type':'ListItem',position:3,name:r.a.title,item:url});
   if(r.c) crumbs.push({'@type':'ListItem',position:3,name:r.c.client+' — '+r.c.title,item:url});
   const g=[{'@type':'WebPage','@id':url,url,name:r.full,description:r.desc,inLanguage:LANG,isPartOf:{'@id':SITE+'/#website'},about:{'@id':SITE+'/#person'}},{'@type':'BreadcrumbList',itemListElement:crumbs}];
-  if(r.c) g.push({'@type':'CreativeWork',name:r.c.client+' — '+r.c.title,description:r.desc,url,image:SITE+'/media/'+r.c.thumb+'.webp',creator:{'@id':SITE+'/#person'},inLanguage:LANG,temporalCoverage:r.c.period,keywords:[r.c.role,CAT[r.c.cat],r.c.client].join(', ')});
+  if(r.c) g.push({'@type':'CreativeWork',name:r.c.client+' — '+r.c.title,description:r.desc,url,image:SITE+'/media/'+r.c.thumb+'.webp',creator:{'@id':SITE+'/#person'},inLanguage:LANG,temporalCoverage:r.c.period,keywords:[r.c.role,r.c.cat.split(' ').map(x=>CAT[x]).join(', '),r.c.client].join(', ')});
   if(r.a) g.push({'@type':'Article',headline:r.a.title,description:r.desc,url,mainEntityOfPage:url,image:SITE+'/media/'+r.a.img+'.webp',author:{'@id':SITE+'/#person'},publisher:{'@id':SITE+'/#person'},inLanguage:LANG,articleSection:r.a.cat});
   ld.textContent=JSON.stringify({'@context':'https://schema.org','@graph':g});
 }
@@ -473,12 +473,12 @@ let lbI=0;
 function filters(){
   const f=app.querySelector('.filters'); if(!f) return;
   f.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; f.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b)); const k=b.dataset.f;
-    app.querySelectorAll('.pitem').forEach(p=>{ const show=k==='all'||p.dataset.cat===k; p.classList.toggle('out',!show); if(show){p.classList.remove('in');requestAnimationFrame(()=>requestAnimationFrame(()=>p.classList.add('in')))} });
+    app.querySelectorAll('.pitem').forEach(p=>{ const show=k==='all'||p.dataset.cat.split(' ').includes(k); p.classList.toggle('out',!show); if(show){p.classList.remove('in');requestAnimationFrame(()=>requestAnimationFrame(()=>p.classList.add('in')))} });
     if(lenis) lenis.resize(); });
   const lb=document.getElementById('lb');
   const vis=()=>[...app.querySelectorAll('button.pitem:not(.out)')].map(p=>+p.dataset.i);
   const open=i=>{ lbI=i; const p=PF[i]; const im=document.querySelector('#lbm img'); im.src='/media/'+p[0]+'.webp'; im.alt=p[1]+' — '+p[2];
-    document.getElementById('lbc').textContent=CAT[p[3]]; document.getElementById('lbt').textContent=p[1]+' — '+p[2];
+    document.getElementById('lbc').textContent=p[3].split(' ').map(x=>CAT[x]).join(', '); document.getElementById('lbt').textContent=p[1]+' — '+p[2];
     const isCase=p[4].startsWith('case:'); const l=document.getElementById('lbl');
     document.getElementById('lbd').textContent=isCase?S.lbCase:S.lbArch(p[1]);
     if(isCase){l.href=hl('case-'+p[4].slice(5));l.removeAttribute('target');l.textContent=S.lbRead;l.style.display=''}
