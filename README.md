@@ -61,7 +61,7 @@ git push -u origin main
 
 ### Eigen domein (optioneel)
 
-Vul bij **Settings → Pages → Custom domain** je domein in (bijv. `brampeulers.nl`) en zet bij Mijndomein een `CNAME`-record voor `www` naar `<gebruikersnaam>.github.io`. Voor het kale domein gebruik je de A-records van GitHub Pages: 185.199.108.153, 185.199.109.153, 185.199.110.153 en 185.199.111.153.
+Vul bij **Settings → Pages → Custom domain** je domein in (bijv. `brampeulers.com`) en zet bij Mijndomein een `CNAME`-record voor `www` naar `<gebruikersnaam>.github.io`. Voor het kale domein gebruik je de A-records van GitHub Pages: 185.199.108.153, 185.199.109.153, 185.199.110.153 en 185.199.111.153.
 
 ## Lokaal bekijken
 
