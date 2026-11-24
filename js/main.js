@@ -140,7 +140,7 @@ contact:()=>`
 <section class="cgrid">
  <div><h1 class="h1">${L(['Laten we iets','bouwen dat','<span class="grad">werkt</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een idee, een team dat vastzit of een AI-functie die vertrouwen moet winnen? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
- <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
+ <div class="clinks rv d3"><span class="label">Direct contact</span>
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
   <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
@@ -309,7 +309,7 @@ contact:()=>`
 <section class="cgrid">
  <div><h1 class="h1">${L(['Let’s build','something that','<span class="grad">works</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">An idea, a team that’s stuck or an AI feature that needs to earn trust? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
- <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
+ <div class="clinks rv d3"><span class="label">Direct contact</span>
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
   <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
