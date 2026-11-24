@@ -1,6 +1,6 @@
 # Bram Peulers — Product designer & facilitator
 
-> Freelance product designer and facilitator based in the Netherlands. He takes teams and decision-makers from a vague idea to a tested prototype, using AI to make ideas tangible fast and validating with real users. 10+ years of product design. Domain experience in energy (home base: Essent, Eneco), finance, insurance, healthcare, e-commerce and retail. Available for short sprints and long-term engagements (e.g. a year), embedded in one or more teams. The site is available in Dutch (default) and English.
+> Freelance product designer and facilitator based in the Netherlands. He takes teams and decision-makers from an idea to a tested prototype, using AI to make ideas tangible fast and validating with real users. 10+ years of product design. Domain experience in energy (home base: Essent, Eneco), finance, insurance, healthcare, e-commerce and retail. Available for short sprints and long-term engagements (e.g. a year), embedded in one or more teams. The site is available in Dutch (default) and English.
 
 ## Services
 - Product design: end-to-end UX and UI for apps, websites and portals, built on scalable design systems and tested with real users.

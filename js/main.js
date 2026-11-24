@@ -28,7 +28,7 @@ const CAT={all:'Alle',apps:'Apps',web:'Websites',portal:'Portalen & dashboards',
 const SVC=[['Product design','End-to-end UX en UI voor apps, websites en portalen: van user flows en wireframes tot schermen die klaar zijn voor development, gebouwd op een schaalbaar design system en getest met echte gebruikers.'],
  ['UX design','Gebruikersonderzoek, klantbehoeften en interactieontwerp. Ik maak complexe processen begrijpelijk en toegankelijk, zodat gebruikers zonder nadenken hun doel bereiken.'],
  ['Service design','Ik kijk verder dan het scherm: de hele klantreis over kanalen heen, inclusief de processen en systemen erachter. Zo sluiten app, website, klantenservice en backoffice op elkaar aan.'],
- ['Van idee naar prototype','In een paar weken van een vaag idee naar een klikbaar prototype dat met echte gebruikers is getest. Met AI maak ik meerdere richtingen razendsnel tastbaar.'],
+ ['Van idee naar prototype','In een paar weken van een idee naar een klikbaar prototype dat met echte gebruikers is getest. Met AI maak ik meerdere richtingen razendsnel tastbaar.'],
  ['Facilitatie & AI-producten','Ik leid teams en beslissers door workshops naar gedragen keuzes, en help AI-functies ontwerpen die gebruikers begrijpen, vertrouwen en kunnen bijsturen.'],
  ['Sectoren & domeinen','Energie is mijn thuisbasis: verbruiksinzicht, dynamische tarieven, zonnepanelen en betaalprocessen. Daarnaast ervaring in finance, verzekeringen, zorg, e-commerce en retail.']];
 
@@ -69,7 +69,7 @@ home:()=>`
 <section class="sec">
   <h2 class="h2 center" style="margin-bottom:clamp(40px,5vw,72px)">${L(['Wat ik doe'])}</h2>
   <div class="svc">${SVC.map((s,i)=>`<div class="rv d${i%3+1}"><span class="label">0${i+1}</span><h3 class="h3">${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div>
-  <div class="cta rv"><p class="h3" style="margin:0">Een vaag idee dat je snel getest wilt hebben? <span class="grad">Laten we praten.</span></p><a class="btn" href="#contact" data-c="link">Neem contact op</a></div>
+  <div class="cta rv"><p class="h3" style="margin:0">Een idee dat je snel getest wilt hebben? <span class="grad">Laten we praten.</span></p><a class="btn" href="#contact" data-c="link">Neem contact op</a></div>
 </section>
 <section class="sec">
   <h2 class="h2" style="margin-bottom:56px">${L(['Wat klanten zeggen'])}</h2>
@@ -127,7 +127,7 @@ about:()=>`
  </ul>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Bespreek een langer traject</a></div>
 </div></section>
-<section class="sec" style="padding-top:0"><h2 class="h2" style="margin-bottom:20px">${L(['Van vaag idee naar getest prototype'])}</h2><p class="mute rv" style="margin:0 0 40px">Een indicatief traject van een paar weken. Elke opdracht is anders; het ritme blijft.</p>
+<section class="sec" style="padding-top:0"><h2 class="h2" style="margin-bottom:20px">${L(['Van idee naar getest prototype'])}</h2><p class="mute rv" style="margin:0 0 40px">Een indicatief traject van een paar weken. Elke opdracht is anders; het ritme blijft.</p>
  <ol class="steps">${['Week 1 · Samen scherp krijgen — workshop met team en beslissers: wat is het probleem, voor wie, en wanneer is het een succes?','Week 1–2 · Snel tastbaar maken — met AI meerdere richtingen bouwen als klikbaar prototype','Week 2–3 · Testen en kiezen — valideren met echte gebruikers en samen met beslissers een richting kiezen','Week 3–4 · Vastleggen en overdragen — het gekozen concept uitwerken, klaar voor development'].map(s=>`<li class="rv">${s}</li>`).join('')}</ol></section>
 <section class="sec" style="padding-top:0"><div class="skills">
  <div class="rv"><h2 class="h3">Vaardigheden</h2><ul>${['Workshops & facilitatie','Begeleiden van besluitvorming','AI-prototyping','Ontwerpen van AI-producten','User research & validatie','UX & UI design','Design systems','Customer journeys','Webtoegankelijkheid'].map(s=>`<li>${s}</li>`).join('')}</ul></div>
@@ -139,7 +139,7 @@ about:()=>`
 contact:()=>`
 <section class="cgrid">
  <div><h1 class="h1">${L(['Laten we iets','bouwen dat','<span class="grad">werkt</span>.'])}</h1>
- <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een vaag idee, een team dat vastzit of een AI-functie die vertrouwen moet winnen? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
+ <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een idee, een team dat vastzit of een AI-functie die vertrouwen moet winnen? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
  <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
@@ -197,7 +197,7 @@ const CAT={all:'All',apps:'Apps',web:'Websites',portal:'Portals & dashboards',ds
 const SVC=[['Product design','End-to-end UX and UI for apps, websites and portals: from user flows and wireframes to development-ready screens, built on a scalable design system and tested with real users.'],
  ['UX design','User research, customer needs and interaction design. I make complex processes understandable and accessible, so users reach their goal without having to think.'],
  ['Service design','I look beyond the screen: the entire customer journey across channels, including the processes and systems behind it. So app, website, customer service and back office fit together.'],
- ['From idea to prototype','From a vague idea to a clickable prototype tested with real users, in a matter of weeks. With AI I make several directions tangible at high speed.'],
+ ['From idea to prototype','From an idea to a clickable prototype tested with real users, in a matter of weeks. With AI I make several directions tangible at high speed.'],
  ['Facilitation & AI products','I guide teams and decision-makers through workshops towards shared decisions, and help design AI features that users understand, trust and can steer.'],
  ['Sectors & domains','Energy is my home base: usage insight, dynamic pricing, solar panels and payment processes. Plus experience in finance, insurance, healthcare, e-commerce and retail.']];
 
@@ -238,7 +238,7 @@ home:()=>`
 <section class="sec">
   <h2 class="h2 center" style="margin-bottom:clamp(40px,5vw,72px)">${L(['What I do'])}</h2>
   <div class="svc">${SVC.map((s,i)=>`<div class="rv d${i%3+1}"><span class="label">0${i+1}</span><h3 class="h3">${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div>
-  <div class="cta rv"><p class="h3" style="margin:0">A vague idea you want tested fast? <span class="grad">Let’s talk.</span></p><a class="btn" href="#contact" data-c="link">Get in touch</a></div>
+  <div class="cta rv"><p class="h3" style="margin:0">An idea you want tested fast? <span class="grad">Let’s talk.</span></p><a class="btn" href="#contact" data-c="link">Get in touch</a></div>
 </section>
 <section class="sec">
   <h2 class="h2" style="margin-bottom:56px">${L(['Kind words'])}</h2>
@@ -296,7 +296,7 @@ about:()=>`
  </ul>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Discuss a longer engagement</a></div>
 </div></section>
-<section class="sec" style="padding-top:0"><h2 class="h2" style="margin-bottom:20px">${L(['From vague idea to tested prototype'])}</h2><p class="mute rv" style="margin:0 0 40px">An indicative track of a few weeks. Every assignment is different; the rhythm stays the same.</p>
+<section class="sec" style="padding-top:0"><h2 class="h2" style="margin-bottom:20px">${L(['From idea to tested prototype'])}</h2><p class="mute rv" style="margin:0 0 40px">An indicative track of a few weeks. Every assignment is different; the rhythm stays the same.</p>
  <ol class="steps">${['Week 1 · Getting sharp together — workshop with team and decision-makers: what is the problem, for whom, and when is it a success?','Week 1–2 · Making it tangible fast — using AI to build several directions as a clickable prototype','Week 2–3 · Testing and choosing — validating with real users and choosing a direction together with decision-makers','Week 3–4 · Capturing and handing over — working out the chosen concept, ready for development'].map(s=>`<li class="rv">${s}</li>`).join('')}</ol></section>
 <section class="sec" style="padding-top:0"><div class="skills">
  <div class="rv"><h2 class="h3">Skills</h2><ul>${['Workshops & facilitation','Guiding decision-making','AI prototyping','Designing AI products','User research & validation','UX & UI design','Design systems','Customer journeys','Web accessibility'].map(s=>`<li>${s}</li>`).join('')}</ul></div>
@@ -308,7 +308,7 @@ about:()=>`
 contact:()=>`
 <section class="cgrid">
  <div><h1 class="h1">${L(['Let’s build','something that','<span class="grad">works</span>.'])}</h1>
- <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">A vague idea, a team that’s stuck or an AI feature that needs to earn trust? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
+ <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">An idea, a team that’s stuck or an AI feature that needs to earn trust? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
  <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
@@ -370,12 +370,12 @@ const pathOf=(l,h)=>{ const p=h.startsWith('case-')?'cases/'+h.slice(5):h.starts
 const hl=r=>pathOf(LANG,r);
 const fixLinks=root=>{ root.querySelectorAll('a[href^="#"]').forEach(a=>{const h=a.getAttribute('href'); if(h.length>1) a.setAttribute('href',hl(h.slice(1)))}); };
 const META={
- nl:{home:'Bram Peulers is freelance product designer en facilitator. Van vaag idee naar getest prototype, met AI en echte gebruikers. UX, service design en design systems.',
+ nl:{home:'Bram Peulers is freelance product designer en facilitator. Van idee naar getest prototype, met AI en echte gebruikers. UX, service design en design systems.',
   portfolio:'Portfolio van Bram Peulers: apps, websites, portalen en design systems voor Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ en meer.',
   artikelen:'Artikelen van Bram Peulers over UX, UI, design systems, customer journeys, persona’s en merkidentiteit.',
   about:'Over Bram Peulers: product designer en facilitator met ruim 10 jaar ervaring in energie, finance, verzekeringen, zorg, e-commerce en retail. Ook voor lange trajecten.',
   contact:'Neem contact op met Bram Peulers voor product design, UX, service design, AI-prototyping of het faciliteren van workshops.'},
- en:{home:'Bram Peulers is a freelance product designer and facilitator. From vague idea to tested prototype, with AI and real users. UX, service design and design systems.',
+ en:{home:'Bram Peulers is a freelance product designer and facilitator. From idea to tested prototype, with AI and real users. UX, service design and design systems.',
   portfolio:'Portfolio of Bram Peulers: apps, websites, portals and design systems for Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ and more.',
   artikelen:'Articles by Bram Peulers on UX, UI, design systems, customer journeys, personas and brand identity.',
   about:'About Bram Peulers: product designer and facilitator with 10+ years of experience in energy, finance, insurance, healthcare, e-commerce and retail. Also for long-term engagements.',
