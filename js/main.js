@@ -7,7 +7,7 @@ const CLINK={'Essent':'essent','Achmea':'achmea','Centraal Beheer':'achmea','Ene
 const marq=()=>[...CLIENTS,...CLIENTS].map((c,i)=>CLINK[c]?`<a class="mq" href="#case-${CLINK[c]}" data-c="link"${i>=CLIENTS.length?' tabindex="-1" aria-hidden="true"':''}>${c}</a>`:`<span${i>=CLIENTS.length?' aria-hidden="true"':''}>${c}</span>`).join('');
 const CLIENTS=['Essent','Achmea','Eneco','Interpolis','Centraal Beheer','Rabobank','ABN AMRO','de Volksbank','Univé','VGZ','Aegon','PGGM','KNVB','UMC Utrecht','Energiedirect','Oxxio','Heijmans','Kempen'];
 const ext=u=>u?` href="${u}" target="_blank" rel="noopener"`:'';
-const media=(img,ratio,par=true,alt='')=>`<div class="media ${ratio}">${par?'<div class="par">':''}<img src="media/${img}.webp" alt="${alt}" loading="lazy" decoding="async">${par?'</div>':''}</div>`;
+const media=(img,ratio,par=true,alt='')=>`<div class="media ${ratio}">${par?'<div class="par">':''}<img src="/media/${img}.webp" alt="${alt}" loading="lazy" decoding="async">${par?'</div>':''}</div>`;
 const L=(lines)=>lines.map(l=>`<span class="ln"><span>${l}</span></span>`).join('');
 const BUNDLE={
 nl:()=>{
@@ -62,7 +62,7 @@ home:()=>`
   </div>
   <div class="pic rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portret van Bram Peulers').replace('loading="lazy"','loading="eager" fetchpriority="high"')}</div>
 </section>
-<section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carrousel" aria-label="Uitgelicht werk"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
+<section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carrousel" aria-label="Uitgelicht werk"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Vorig project">←</button><button class="sx" id="gx" aria-label="Volgend project">→</button></div></section>
 <section class="sec">
   <div class="head"><h2 class="h2">${L(['Geselecteerd werk'])}</h2><a class="ulink rv" href="#portfolio">Alle cases →</a></div>
@@ -109,7 +109,7 @@ about:()=>`
  <a class="go" href="#contact" data-c="link"><i>↘</i>Vrijblijvend kennismaken</a></div>
  <div class="rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portret van Bram Peulers')}</div>
 </section>
-<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers tijdens een ontwerpsessie" loading="lazy"></div>'}</div></section>
+<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers tijdens een ontwerpsessie" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">
  <div><h2 class="h2">${L(['Ook voor','<span class="grad">lange</span> trajecten.'])}</h2></div>
  <div class="prose rv d1"><p>Naast korte sprints kun je me ook voor een langere periode vastleggen, bijvoorbeeld voor een jaar. Ik draai dan mee in één of meerdere teams, als vast onderdeel van de organisatie, en voeg vanaf de eerste week waarde toe.</p>
@@ -151,13 +151,13 @@ contact:()=>`
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
- const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
+ const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
  const B=c.blocks.map((b,bi)=>{
   if(b[0]==='t') return `<section class="ctext w${b[2]}"><div class="prose cx rv">${b[1]}</div></section>`;
   if(b[0]==='q') return `<section class="ctext w1"><blockquote class="cq rv"><p>${b[1]}</p><cite>${b[2]}</cite></blockquote></section>`;
-  if(b[0]==='v') return `<section class="cmedia"><figure class="cvid rv"><video src="media/${b[1]}.mp4" autoplay muted loop playsinline preload="metadata"></video>${b[2]?`<figcaption>${b[2]}</figcaption>`:''}</figure></section>`;
+  if(b[0]==='v') return `<section class="cmedia"><figure class="cvid rv"><video src="/media/${b[1]}.mp4" autoplay muted loop playsinline preload="metadata"></video>${b[2]?`<figcaption>${b[2]}</figcaption>`:''}</figure></section>`;
   if(b[0]==='c') return `<section class="cmedia"><div class="ccards">${b[1].map((x,k)=>`<div class="ccard rv d${k+1}">${im(x[0])}<h3 class="h3">${x[1]}</h3><p>${x[2]}</p></div>`).join('')}</div></section>`;
-  if(b[0]==='s') return `<section class="cmedia"><div class="slider rv"><div class="strack" tabindex="0" aria-label="Beelden ${c.client}">${b[1].map(k=>`<div class="slide" style="--r:${R(k)}"><img src="media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div>`).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${b[1].length}</span><button class="sp" aria-label="Vorige">←</button><button class="sx" aria-label="Volgende">→</button></div></div></section>`;
+  if(b[0]==='s') return `<section class="cmedia"><div class="slider rv"><div class="strack" tabindex="0" aria-label="Beelden ${c.client}">${b[1].map(k=>`<div class="slide" style="--r:${R(k)}"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div>`).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${b[1].length}</span><button class="sp" aria-label="Vorige">←</button><button class="sx" aria-label="Volgende">→</button></div></div></section>`;
   if(b[0]==='i'){ if(b[2]===1&&b[1].length===1) return `<section class="cmedia">${im(b[1][0],'full')}</section>`;
    return `<section class="cmedia"><div class="cgrid c${b[2]}">${b[1].map(k=>im(k)).join('')}</div></section>`; }
   return '';}).join('');
@@ -224,7 +224,7 @@ home:()=>`
   </div>
   <div class="pic rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portrait of Bram Peulers').replace('loading="lazy"','loading="eager" fetchpriority="high"')}</div>
 </section>
-<section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carousel" aria-label="Featured work"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
+<section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carousel" aria-label="Featured work"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Previous project">←</button><button class="sx" id="gx" aria-label="Next project">→</button></div></section>
 <section class="sec">
   <div class="head"><h2 class="h2">${L(['Selected work'])}</h2><a class="ulink rv" href="#portfolio">All cases →</a></div>
@@ -271,7 +271,7 @@ about:()=>`
  <a class="go" href="#contact" data-c="link"><i>↘</i>Let’s get acquainted</a></div>
  <div class="rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portrait of Bram Peulers')}</div>
 </section>
-<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers during a design session" loading="lazy"></div>'}</div></section>
+<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers during a design session" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">
  <div><h2 class="h2">${L(['Also for','<span class="grad">long-term</span> engagements.'])}</h2></div>
  <div class="prose rv d1"><p>Besides short sprints, you can also book me for a longer period, for example a year. I then work within one or more teams, as a fixed part of the organisation, and add value from the very first week.</p>
@@ -313,13 +313,13 @@ contact:()=>`
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
- const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
+ const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
  const B=c.blocks.map((b,bi)=>{
   if(b[0]==='t') return `<section class="ctext w${b[2]}"><div class="prose cx rv">${b[1]}</div></section>`;
   if(b[0]==='q') return `<section class="ctext w1"><blockquote class="cq rv"><p>${b[1]}</p><cite>${b[2]}</cite></blockquote></section>`;
-  if(b[0]==='v') return `<section class="cmedia"><figure class="cvid rv"><video src="media/${b[1]}.mp4" autoplay muted loop playsinline preload="metadata"></video>${b[2]?`<figcaption>${b[2]}</figcaption>`:''}</figure></section>`;
+  if(b[0]==='v') return `<section class="cmedia"><figure class="cvid rv"><video src="/media/${b[1]}.mp4" autoplay muted loop playsinline preload="metadata"></video>${b[2]?`<figcaption>${b[2]}</figcaption>`:''}</figure></section>`;
   if(b[0]==='c') return `<section class="cmedia"><div class="ccards">${b[1].map((x,k)=>`<div class="ccard rv d${k+1}">${im(x[0])}<h3 class="h3">${x[1]}</h3><p>${x[2]}</p></div>`).join('')}</div></section>`;
-  if(b[0]==='s') return `<section class="cmedia"><div class="slider rv"><div class="strack" tabindex="0" aria-label="Images ${c.client}">${b[1].map(k=>`<div class="slide" style="--r:${R(k)}"><img src="media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div>`).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${b[1].length}</span><button class="sp" aria-label="Vorige">←</button><button class="sx" aria-label="Volgende">→</button></div></div></section>`;
+  if(b[0]==='s') return `<section class="cmedia"><div class="slider rv"><div class="strack" tabindex="0" aria-label="Images ${c.client}">${b[1].map(k=>`<div class="slide" style="--r:${R(k)}"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div>`).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${b[1].length}</span><button class="sp" aria-label="Vorige">←</button><button class="sx" aria-label="Volgende">→</button></div></div></section>`;
   if(b[0]==='i'){ if(b[2]===1&&b[1].length===1) return `<section class="cmedia">${im(b[1][0],'full')}</section>`;
    return `<section class="cmedia"><div class="cgrid c${b[2]}">${b[1].map(k=>im(k)).join('')}</div></section>`; }
   return '';}).join('');
@@ -349,8 +349,42 @@ const STR={
   menu:'Open menu',titles:{home:'Product designer & facilitator',portfolio:'Portfolio',artikelen:'Articles',about:'About',contact:'Contact'}}
 };
 let S=STR.nl;
-const hl=r=>'#'+(LANG==='en'?'en-':'')+r;
-const fixLinks=root=>{ if(LANG!=='en') return; root.querySelectorAll('a[href^="#"]').forEach(a=>{const h=a.getAttribute('href'); if(h.length>1&&!h.startsWith('#en-')) a.setAttribute('href','#en-'+h.slice(1))}); };
+const SITE='https://www.brampeulers.com';
+const SEG={nl:{home:'',portfolio:'portfolio',artikelen:'artikelen',about:'over-mij',contact:'contact'},en:{home:'',portfolio:'portfolio',artikelen:'articles',about:'about',contact:'contact'}};
+const pathOf=(l,h)=>{ const p=h.startsWith('case-')?'cases/'+h.slice(5):(SEG[l][h]??''); return '/'+(l==='en'?'en/':'')+(p?p+'/':''); };
+const hl=r=>pathOf(LANG,r);
+const fixLinks=root=>{ root.querySelectorAll('a[href^="#"]').forEach(a=>{const h=a.getAttribute('href'); if(h.length>1) a.setAttribute('href',hl(h.slice(1)))}); };
+const META={
+ nl:{home:'Bram Peulers is freelance product designer en facilitator. Van vaag idee naar getest prototype, met AI en echte gebruikers. UX, service design en design systems.',
+  portfolio:'Portfolio van Bram Peulers: apps, websites, portalen en design systems voor Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ en meer.',
+  artikelen:'Artikelen van Bram Peulers over UX, UI, design systems, customer journeys, persona’s en merkidentiteit.',
+  about:'Over Bram Peulers: product designer en facilitator met ruim 10 jaar ervaring in energie, finance, verzekeringen, zorg, e-commerce en retail. Ook voor lange trajecten.',
+  contact:'Neem contact op met Bram Peulers voor product design, UX, service design, AI-prototyping of het faciliteren van workshops.'},
+ en:{home:'Bram Peulers is a freelance product designer and facilitator. From vague idea to tested prototype, with AI and real users. UX, service design and design systems.',
+  portfolio:'Portfolio of Bram Peulers: apps, websites, portals and design systems for Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ and more.',
+  artikelen:'Articles by Bram Peulers on UX, UI, design systems, customer journeys, personas and brand identity.',
+  about:'About Bram Peulers: product designer and facilitator with 10+ years of experience in energy, finance, insurance, healthcare, e-commerce and retail. Also for long-term engagements.',
+  contact:'Get in touch with Bram Peulers for product design, UX, service design, AI prototyping or workshop facilitation.'}
+};
+const clip=t=>{ t=t.replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim(); return t.length>158?t.slice(0,155).replace(/\s+\S*$/,'')+'…':t; };
+const setTag=(sel,make)=>{ let el=document.head.querySelector(sel); if(!el){ el=make(); document.head.appendChild(el); } return el; };
+const meta=(attr,key,val)=>setTag(`meta[${attr}="${key}"]`,()=>{const m=document.createElement('meta');m.setAttribute(attr,key);return m}).setAttribute('content',val);
+const link=(rel,hreflang,href)=>setTag(`link[rel="${rel}"]`+(hreflang?`[hreflang="${hreflang}"]`:''),()=>{const m=document.createElement('link');m.rel=rel;if(hreflang)m.hreflang=hreflang;return m}).href=href;
+function setHead(r,h){
+  const url=SITE+pathOf(LANG,h), img=SITE+'/og-image.jpg';
+  document.title=r.full; meta('name','description',r.desc);
+  link('canonical',null,url); link('alternate','nl',SITE+pathOf('nl',h)); link('alternate','en',SITE+pathOf('en',h)); link('alternate','x-default',SITE+pathOf('nl',h));
+  meta('property','og:title',r.full); meta('property','og:description',r.desc); meta('property','og:url',url); meta('property','og:type',r.c?'article':'website');
+  meta('property','og:image',r.c?SITE+'/media/'+r.c.thumb+'.webp':img); meta('property','og:locale',LANG==='en'?'en_GB':'nl_NL'); meta('property','og:site_name','Bram Peulers');
+  meta('name','twitter:card','summary_large_image');
+  const ld=setTag('script#ld-page',()=>{const sc=document.createElement('script');sc.type='application/ld+json';sc.id='ld-page';return sc});
+  const crumbs=[{'@type':'ListItem',position:1,name:'Home',item:SITE+pathOf(LANG,'home')}];
+  if(h!=='home') crumbs.push({'@type':'ListItem',position:2,name:r.c?'Portfolio':r.title,item:SITE+pathOf(LANG,r.c?'portfolio':h)});
+  if(r.c) crumbs.push({'@type':'ListItem',position:3,name:r.c.client+' — '+r.c.title,item:url});
+  const g=[{'@type':'WebPage','@id':url,url,name:r.full,description:r.desc,inLanguage:LANG,isPartOf:{'@id':SITE+'/#website'},about:{'@id':SITE+'/#person'}},{'@type':'BreadcrumbList',itemListElement:crumbs}];
+  if(r.c) g.push({'@type':'CreativeWork',name:r.c.client+' — '+r.c.title,description:r.desc,url,image:SITE+'/media/'+r.c.thumb+'.webp',creator:{'@id':SITE+'/#person'},inLanguage:LANG,temporalCoverage:r.c.period,keywords:[r.c.role,CAT[r.c.cat],r.c.client].join(', ')});
+  ld.textContent=JSON.stringify({'@context':'https://schema.org','@graph':g});
+}
 function setLang(l){
   if(l===LANG) return; LANG=l; S=STR[l];
   ({CD,CASES,HOMECASES,HERO,PF,CAT,SVC,QUOTES,ARTS,V}=BUNDLE[l]());
@@ -361,8 +395,19 @@ function setLang(l){
   document.getElementById('burger').setAttribute('aria-label',S.menu);
   document.getElementById('zoom').setAttribute('aria-label',l==='en'?'Enlarged image':'Vergrote afbeelding');
 }
-const route=()=>{ let h=(location.hash||'#home').slice(1)||'home'; let l='nl'; if(h==='en'||h.startsWith('en-')){ l='en'; h=h.slice(3)||'home'; } return {l,h}; };
-document.querySelectorAll('[data-l]').forEach(a=>a.addEventListener('click',e=>{ e.preventDefault(); const {h}=route(); const nh=(a.dataset.l==='en'?'en-':'')+h; if(('#'+nh)!==location.hash) location.hash=nh; else document.documentElement.classList.remove('menu-open'); }));
+const route=()=>{
+  let parts=location.pathname.replace(/index\.html$/,'').split('/').filter(Boolean), l='nl';
+  if(parts[0]==='en'){ l='en'; parts.shift(); }
+  let h='home';
+  if(parts[0]==='cases'&&parts[1]) h='case-'+parts[1];
+  else if(parts[0]){ const k=Object.keys(SEG[l]).find(x=>SEG[l][x]===parts[0])||Object.keys(SEG.nl).find(x=>SEG.nl[x]===parts[0])||Object.keys(SEG.en).find(x=>SEG.en[x]===parts[0]); h=k||({work:'portfolio',personal:'artikelen'}[parts[0]])||'home'; }
+  return {l,h};
+};
+(()=>{ const hs=location.hash.slice(1); if(!hs||hs.length<2) return; let l='nl',h=hs; if(h==='en'||h.startsWith('en-')){l='en';h=h.slice(3)||'home'} if(!/^(home|portfolio|artikelen|about|contact|work|personal|case-[\w-]+)$/.test(h)) return; h={work:'portfolio',personal:'artikelen'}[h]||h; history.replaceState(null,'',pathOf(l,h)); })();
+const nav=(url)=>{ if(url!==location.pathname){ history.pushState(null,'',url); go(); } else { document.documentElement.classList.remove('menu-open'); } };
+document.querySelectorAll('[data-l]').forEach(a=>a.addEventListener('click',e=>{ e.preventDefault(); nav(pathOf(a.dataset.l,route().h)); }));
+document.addEventListener('click',e=>{ const a=e.target.closest('a[href^="/"]'); if(!a||a.target||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0) return; const u=a.getAttribute('href'); if(u.startsWith('/media/')) return; e.preventDefault(); nav(u); });
+addEventListener('popstate',go);
 
 /* ---------- state & helpers ---------- */
 const app=document.getElementById('app'),hdr=document.getElementById('hdr'),cur=document.getElementById('cur'),curtain=document.getElementById('curtain');
@@ -403,7 +448,7 @@ function filters(){
     if(lenis) lenis.resize(); });
   const lb=document.getElementById('lb');
   const vis=()=>[...app.querySelectorAll('button.pitem:not(.out)')].map(p=>+p.dataset.i);
-  const open=i=>{ lbI=i; const p=PF[i]; const im=document.querySelector('#lbm img'); im.src='media/'+p[0]+'.webp'; im.alt=p[1]+' — '+p[2];
+  const open=i=>{ lbI=i; const p=PF[i]; const im=document.querySelector('#lbm img'); im.src='/media/'+p[0]+'.webp'; im.alt=p[1]+' — '+p[2];
     document.getElementById('lbc').textContent=CAT[p[3]]; document.getElementById('lbt').textContent=p[1]+' — '+p[2];
     const isCase=p[4].startsWith('case:'); const l=document.getElementById('lbl');
     document.getElementById('lbd').textContent=isCase?S.lbCase:S.lbArch(p[1]);
@@ -455,12 +500,12 @@ setInterval(clock,20000);
 /* ---------- router + transitions ---------- */
 function resolve(){
   const rt=route(); setLang(rt.l); const h=rt.h;
-  if(h.startsWith('case-')){ const AL={eneco:'eneco-app',ockto:'ockto-ds'}; const sl=AL[h.slice(5)]||h.slice(5); const c=CD.find(x=>x.slug===sl); if(c) return {key:'portfolio',html:V.case(c),title:c.client+' — '+c.title}; }
-  const k0=h==='personal'?'artikelen':h==='work'?'portfolio':h; const k=V[k0]&&k0!=='case'?k0:'home';
-  return {key:k,html:V[k](),title:S.titles[k]};
+  if(h.startsWith('case-')){ const AL={eneco:'eneco-app',ockto:'ockto-ds'}; const sl=AL[h.slice(5)]||h.slice(5); const c=CD.find(x=>x.slug===sl); if(c) return {key:'portfolio',h:'case-'+c.slug,c,html:V.case(c),title:c.client+' — '+c.title,full:c.client+': '+c.title+' — Bram Peulers',desc:clip(c.intro)}; }
+  const k=V[h]&&h!=='case'?h:'home';
+  return {key:k,h:k,html:V[k](),title:S.titles[k],full:k==='home'?'Bram Peulers — '+S.titles.home:S.titles[k]+' — Bram Peulers',desc:META[LANG][k]};
 }
 function render(){
-  const r=resolve(); app.innerHTML=r.html; fixLinks(app); document.title='Bram Peulers — '+r.title;
+  const r=resolve(); app.innerHTML=r.html; fixLinks(app); setHead(r,r.h); window.__route=r.h; document.querySelectorAll('[data-l]').forEach(x=>x.setAttribute('href',pathOf(x.dataset.l,r.h)));
   document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('on',a.dataset.r===r.key));
   toTop(); initPage(); if(lenis) lenis.resize();
 }
@@ -473,9 +518,7 @@ async function go(){
   if(!RM){ await sleep(80); curtain.classList.add('up'); await sleep(350); }
   startReveal(); busy=false;
 }
-addEventListener('hashchange',go);
 document.getElementById('burger').onclick=()=>document.documentElement.classList.toggle('menu-open');
-document.querySelectorAll('.mmenu a[data-h]').forEach(a=>a.addEventListener('click',()=>{ if(a.getAttribute('href')===location.hash) document.documentElement.classList.remove('menu-open'); }));
 
 /* ---------- start ---------- */
 render();

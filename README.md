@@ -1,12 +1,34 @@
 # Bram Peulers — portfolio website
 
-Statische website (HTML, CSS en JavaScript), klaar voor GitHub Pages of elke andere webhost. Er is geen build-stap nodig.
+Statische website (HTML, CSS en JavaScript), gehost via Vercel op https://www.brampeulers.com.
+
+## Vindbaarheid (SEO en AI)
+
+Elke pagina en elke case heeft een eigen adres met volledige, vooraf gegenereerde HTML, zodat Google, Bing en AI-zoekmachines (ChatGPT, Claude, Perplexity) alle tekst kunnen lezen:
+
+- NL: `/`, `/portfolio/`, `/artikelen/`, `/over-mij/`, `/contact/`, `/cases/<slug>/`
+- EN: `/en/`, `/en/portfolio/`, `/en/articles/`, `/en/about/`, `/en/contact/`, `/en/cases/<slug>/`
+
+Per pagina: titel, beschrijving, canonical, hreflang (nl/en), Open Graph en structured data (Person, ProfessionalService, WebSite, WebPage, BreadcrumbList, CreativeWork). Verder: `sitemap.xml`, `robots.txt` (ook AI-crawlers toegestaan), `llms.txt` en `llms-full.txt` voor AI-assistenten, en `og-image.jpg` voor het delen op LinkedIn.
+
+### Na een wijziging opnieuw bouwen
+
+De pagina's in `cases/`, `en/`, `portfolio/` enz. worden gegenereerd. Pas de inhoud aan in `js/` of `scripts/template.html` en draai daarna:
+
+```bash
+pip install playwright && playwright install chromium
+python3 scripts/build.py
+```
 
 ## Structuur
 
 ```
 bram-peulers-website/
-├── index.html        # Paginastructuur: header, menu, meta-tags
+├── index.html        # Gegenereerde homepage (NL)
+├── scripts/
+│   ├── template.html # Bron-template voor alle pagina's
+│   └── build.py      # Genereert pagina's, sitemap, robots, llms.txt
+├── vercel.json       # Vercel-instellingen (trailing slash, caching)
 ├── css/
 │   └── style.css     # Alle opmaak, kleuren, typografie en animaties
 ├── js/
@@ -15,7 +37,8 @@ bram-peulers-website/
 │   ├── cases-en.js   # Inhoud van de 18 casepagina's (Engels)
 │   └── dims.js       # Afmetingen van de afbeeldingen (voor de juiste verhoudingen)
 ├── media/            # Afbeeldingen (WebP) en de Essent-video (MP4)
-└── .nojekyll         # Zorgt dat GitHub Pages de bestanden ongewijzigd serveert
+├── sitemap.xml, robots.txt, llms.txt, llms-full.txt, og-image.jpg, 404.html
+└── cases/, en/, portfolio/, artikelen/, over-mij/, contact/   # Gegenereerde pagina's
 ```
 
 ## Online zetten met GitHub Pages

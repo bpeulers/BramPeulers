@@ -1,0 +1,459 @@
+# Bram Peulers — case studies (full text)
+
+Source: https://www.brampeulers.com/  ·  English version; Dutch originals at https://www.brampeulers.com/cases/<slug>/
+
+
+## Essent — Digital customer journeys I Use & I Pay
+
+URL: https://www.brampeulers.com/en/cases/essent/
+Role: UX designer · Period: 2026 – present
+
+At Essent I work as a UX designer on two key customer journeys: I Use and I Pay. I improve the digital energy environment and design user-friendly solutions for payment processes, translating complex information and business processes into clear, accessible digital experiences.
+
+### I Use – Insight into energy usage
+Within I Use I work on a renewed energy environment in which customers gain more insight into their usage and energy generation.
+### My work:
+- Designing new dashboards and usage screens
+- Integrating real-time P1 data
+- Visualising solar energy, feed-in and self-consumption
+- Developing a new navigation structure for electricity, gas, costs and solar panels
+- Prototyping and user research
+The goal: translating complex energy data into understandable insights that help customers use energy more wisely.
+
+### I Pay – Payments and contracts
+Within I Pay I improve the customer journey around payments, reminders and welcome discounts.
+One concrete project is optimising the welcome bonus process for MediaMarkt customers, where a discount is part of the energy contract.
+### My work:
+- Designing user flows for application and payout
+- Mapping different customer and cancellation scenarios
+- Improving communication about payments and terms
+- Aligning UX solutions with underlying systems such as SAP and Cockpit
+- Working with product owners, stakeholders and developers
+The challenge: translating complex financial and operational processes into a clear and predictable customer experience.
+
+### Complexity & challenges
+Both journeys require translating complex information and processes into simple solutions.
+- Making energy data understandable and visually accessible
+- Bringing together different customer needs and scenarios
+- Taking technical dependencies and existing systems into account
+- Balancing customer needs, business and technical feasibility
+
+### Approach & collaboration
+From analysis to delivery I work closely with product owners, developers and stakeholders. I organise brainstorm sessions, facilitate discussions and regularly spar with the people involved to sharpen ideas, share insights and arrive at solutions everyone supports.
+- Analysing existing customer journeys and user needs
+- Organising brainstorms and co-creation sessions
+- Translating insights into UX concepts and prototypes in Figma
+- Validating solutions with users and stakeholders
+- Turning designs into feasible solutions
+### Result & impact
+- Innovative concepts for the digital energy environment
+- More insight into energy usage and generation
+- Improved user flows for payment processes
+- Better alignment between stakeholders, business and development
+- User-friendly solutions that connect customer needs and business goals
+
+
+## Achmea — Multi-brand solutions
+
+URL: https://www.brampeulers.com/en/cases/achmea/
+Role: UX designer · Period: 2025 – present
+
+At Achmea I work as a UX designer on a complex and strategic programme: redesigning the claims journey for customers of the organisation’s main brands, Centraal Beheer, Interpolis and FBTO. Where brand-specific solutions used to be the norm, we are now building a multi-label, generic base flow that every brand can use. I design solutions for both the web and the native apps.
+
+As a UX designer within Achmea Generic, I am responsible for both the strategic frameworks and the detailed design.
+### Strategic & conceptual UX work
+- Designing end-to-end claims flows for web and app
+- Translating business goals into scalable UX designs
+- Safeguarding brand needs across channels
+### Stakeholder management
+- Active alignment with stakeholders from Centraal Beheer, Interpolis and FBTO
+- Guiding critical discussions about brand positioning, tone of voice, functional choices and priorities
+- Creating alignment in an environment with diverse interests
+### Cross-functional collaboration
+- Close collaboration with designers, developers, architects and product owners
+- Translating designs into feasible backlog items
+- Continuously testing design decisions on technical feasibility and scalability
+### Integration with the Achmea Mobile & Web Design System (AMDS)
+- Active contribution to the Achmea Design System (AMDS), for both web and app
+- Developing and validating components and patterns that work across labels
+- Safeguarding consistency, accessibility and reusability across platforms
+
+### Complexity & challenges
+This programme is marked by a high degree of complexity.
+- Multiple brands mean multiple interests and different brand strategies
+- The claims experience directly affects customer satisfaction, reputation and operational efficiency
+- Stakeholders are critical and highly involved, which demands clear reasoning and persuasiveness
+- Technical dependencies and existing architecture limit design freedom and call for well-considered, realistic solutions
+This dynamic is exactly where the core of my role lies: giving direction, creating structure and substantiating choices.
+
+### Approach
+The approach is iterative, with continuous alignment between UX, brand and technology.
+- Analysis of existing web and app journeys, data and customer feedback
+- Co-creation with brand teams to surface brand-specific requirements
+- Designing generic flows that can be configured per label
+- Validation together with development and further development within AMDS
+### Results & impact
+- A generic, cross-channel claims solution for web and app
+- Clear UX frameworks for multi-label use within Achmea
+- A stronger and extended Achmea Design System
+- Better alignment between brands, product and development
+- A scalable foundation for future modules within the generic architecture
+
+
+## Interpolis — Online team
+
+URL: https://www.brampeulers.com/en/cases/interpolis/
+Role: UX designer · Period: 2024 – 2025
+
+As a UX designer I am part of the Interpolis Online team. This team works on new online products and solutions for Interpolis customers and prospects. I focus on developing and marketing new products for both web and app.
+
+As a UX designer I organise brainstorm sessions with stakeholders, design interfaces for web and app and hand them over to the development teams. I also play an important role in evolving the Interpolis design system, so that all components and screens in the app keep a consistent look & feel. This keeps most elements reusable and scalable across all brands and digital channels.
+
+The biggest challenge in our team at Interpolis is turning business wishes into concrete designs that our developers can build. Testing and optimising existing products also plays an essential role. Together with stakeholders we regularly go back to the drawing board to refine and improve designs.
+
+
+## Eneco — New Propositions team
+
+URL: https://www.brampeulers.com/en/cases/eneco-np/
+Role: Product designer · Period: 2024
+
+As a product designer I am part of Eneco’s New Propositions team. This team works on new products such as dynamic pricing and smart charging. I focus on developing and marketing new products for both app and web.
+
+My role as a product designer is to organise brainstorms with stakeholders, create designs for web and app and then hand them over to the development teams. Evolving Eneco’s design systems also plays an important role, so that all components and screens in the app share the same look & feel and most components are reusable and scalable across all brands and digital channels.
+
+The biggest challenge in this team is translating business wishes into concrete designs that our developers then build. Testing and optimising existing products also matters, and together with stakeholders we often go back to the drawing board to improve designs.
+
+Eneco projects I was involved in:
+- Project 1: Retail websites
+- Project 2: App team
+- Project 3: New Propositions team
+
+
+## SNS — Redesign
+
+URL: https://www.brampeulers.com/en/cases/sns/
+Role: UX / UI designer · Period: 2022 – 2023
+
+During SNS’s digital restyling, the website, the app and the customer environments got a makeover in line with the bank’s new direction. Here I explain step by step how I approached this project together with a UX colleague. A great project I carried out while working for de Volksbank.
+
+### People first. Then money.
+SNS wants to move from a traditional bank to a bank with an entrepreneurial character. The bank is in the middle of an important repositioning, shifting from ‘cosy families’ to ‘people with dreams and ambitions who want to move forward’. You see this repositioning not only in the offline campaigns, but especially digitally as well.
+The new campaign puts people first, and money second. The new pay-off is therefore ‘People first. Then money.’ With this campaign SNS wants to reach a new target group, the so-called ‘upwardly mobile’: young people (18 to 35) who are career- and status-oriented and looking for new ways to earn money.
+
+### Freedom in our design choices
+In a large organisation like SNS, rolling out a new brand identity is a complex and lengthy process. Fortunately the enthusiasm for the new look & feel was tangible within the organisation, and we were given a lot of freedom in our design choices. That made it a pleasure to work on as a designer. Apart from the SNS logo and the recognisable SNS purple, we were allowed to change everything, as long as the components and the structure of the website in the backend stayed the same.
+A big advantage that let us launch the new design quickly and efficiently across channels was that the bank works with the Volksbank Design System (VDS). Components, typefaces, buttons, colours, grids, styles and guidelines are defined centrally in this environment. Because the whole organisation works with this system, products are built consistently and the user experience is coherent. It also means you can roll out a design from one central place.
+
+### Design principles
+Before we started restyling the channels, we defined a set of design principles. The new digital look & feel had to reflect these core values: clear, straightforward, flexible, dynamic and fun. Another requirement was that our designs had to be accessible to all users and meet WCAG 2.1, at least at level AA. That means, for example, that texts and buttons must be easy to read, that there is sufficient contrast between text and background colours, and that people with a visual impairment can navigate through it as well.
+
+### New visual style
+The new SNS visual style had to tell a story of its own, putting personal growth at the centre rather than the financial details. That is why we built our design around an expressive photographic style, bold typefaces and fresh pastel tones, with the shading behind the titles representing growth bars. On top of that we added a distinctive rectangular style and a striking call-to-action colour (the ‘melon colour’, as we call it).
+Early in the project we defined the fonts. Most importantly, we wanted a bold typeface for the headings and a highly readable typeface for body text. For the headings we chose Dunbar Tall, a characterful typeface that fits the new design direction for SNS well. Behind the titles we even added coloured shading (lilac, salmon pink and light blue) to represent people’s growth. To keep this lively new style calm, we chose the serene Mulish for body text: a Google font that reads well on any device and in any browser.
+
+### Colour palette
+The new colour palette had to feel fresh while conveying the ‘new’ SNS feeling. That meant the recognisable SNS purple had to return, for example in the menu bar and the footer. But because we didn’t want the palette to become too purple, we extended it with pastel tones (salmon pink, baby blue, lilac and light yellow) that we mainly use as background colours.
+
+### From traditional to dynamic photography
+A picture says more than a thousand words, so photography is in fact one of the most important changes in the new style. It instantly sets the mood. We moved from traditional photography to dynamic, urban-style photography. No longer the average Dutch person (Bart), but the positive and sporty Yara. You see this style throughout the website.
+Not only the photography but also the illustration style was overhauled. We wanted a recognisable illustrative style that would set SNS apart from other banks.
+
+### Finally
+SNS 4.0 is now live, and with that the project is complete. I’m proud to have laid the foundation for the new SNS brand identity as a visual designer. Curious? Take a look at SNSbank.nl.
+
+
+## Eneco — App team
+
+URL: https://www.brampeulers.com/en/cases/eneco-app/
+Role: Product designer · Period: 2023
+
+At Eneco I work as a product designer in the app team, developing new products for the app. Eneco’s app design system is connected to this, so that all components and screens in the app share the same look & feel and most components are reusable and scalable across all brands and digital channels. My role is to organise brainstorms with stakeholders, create multi-label designs for the Eneco apps and hand them over to the development teams.
+
+### Dynamic pricing
+Dynamic pricing is a new theme within Eneco and stands for dynamic energy contracts. When I joined the app team the product was still in its infancy, and it is up to my fellow UX designers and me to take it to the next level. Together with marketers and the product owner I organise meetings in which stakeholders think along about the design and the prototypes are presented. In these sessions we define the overall product goals, map customer needs and test prototypes in the UX lab.
+
+### App design system
+For our products we use Eneco’s app design system as much as possible. This creates uniformity across platforms (websites and apps). It also lets designers and developers work together faster, because they speak the same language.
+
+### App of the future
+With the ‘app of the future’ concept we want to bring two Eneco apps together (the regular app and the dynamic pricing app). This prototype is meant to inspire and to kick off the discussion about a new app.
+At the same time we want to make important updates in this new concept, such as a new structure (more layering), a new onboarding (clean & simple), the use of smart content and a new look & feel. The concept is currently in the research phase, and several features are already on the development backlog.
+
+### Oxxio
+The Oxxio brand is part of Eneco. Most of the products we deliver for the app and the retail websites are set up as multi-brand, so they are made available to both Eneco and Oxxio customers. Below is a visual of the Oxxio dynamic pricing app we worked on as a team, which will launch soon.
+
+Eneco projects I was involved in:
+- Project 1: Retail websites
+- Project 2: App team
+- Project 3: New Propositions team
+
+
+## Univé — Digital products
+
+URL: https://www.brampeulers.com/en/cases/unive/
+Role: UX designer · Period: 2022
+
+Together with Yellowtail Conclusion I worked on a number of new (digital) products for Univé during a discovery project. The first product is about applying for term life insurance and the second about disability insurance. Univé wanted tools that let visitors see what their financial situation would be in the event of death or incapacity for work.
+
+### Case
+Yellowtail organised the co-creation sessions in which stakeholders could think along about the design and the prototypes were presented. In these sessions the overall project goals were defined and customer needs were mapped.
+The main UX goals of the project:
+### Goal 1: Focus on user experience
+- Offer ease of use
+- Reduce the number of steps
+- Provide guidance at the right moments
+- Reduce content
+### Goal 2: Focus on navigation
+- Large buttons
+- Clear steps
+- Keep it simple
+### Goal 3: Easy access to an adviser
+- Be able to get in touch anytime, anywhere
+
+### The result
+For this concept we used the Univé brand identity. We started by designing a low-fidelity concept (rough sketches). We then developed the final concept into a high-fidelity clickable prototype in Figma, to be built later and tested with the target group.
+
+
+## Eneco — Retail websites
+
+URL: https://www.brampeulers.com/en/cases/eneco-retail/
+Role: UX designer · Period: 2023
+
+Commissioned by Eneco, I was involved in building a multi-label Digital Experience Platform (DXP). This platform makes it possible to develop sales products for the Eneco, Oxxio and WoonEnergie brands. Eneco’s design system was connected to it, so that all products share the same look & feel and most components are reusable and scalable across all brands and digital channels. My role as a UX designer was to create multi-label designs for various (sales) flows and hand them over to the development teams.
+
+### Case
+The DXP products I designed for include the sales flow, the affiliate flow, the urgent-switch flow and the renewal flow, to serve new and existing customers as well as possible. Together with marketers and the product owner I organised meetings in which stakeholders could think along about the design and the prototypes were presented. In these sessions the overall project goals were defined, customer needs were mapped and the results of UX research were presented. For the products we used Eneco’s design system as much as possible.
+
+### The result
+Once the designs had been agreed with stakeholders and the business, it was my job to hand them over to the development teams. This happened in refinement sessions. Then the build could start, and I gave feedback on it from my role as a designer. The first products are now live, and you can see the result of my work on www.eneco.nl and www.oxxio.nl.
+
+Eneco projects I was involved in:
+- Project 1: Retail websites
+- Project 2: App team
+- Project 3: New Propositions team
+
+
+## Ockto — Design system
+
+URL: https://www.brampeulers.com/en/cases/ockto-ds/
+Role: UX designer · Period: 2022
+
+With the Ockto app you retrieve personal data from government bodies (such as the Tax Administration or the UWV). You may need this data when applying for a mortgage, renting a home or leasing a car. The app makes sure this happens digitally and securely, so you can share your data with the right parties in no time. Ockto asked me to develop a design system in Figma that acts as a central source and is linked to all of the app’s designs.
+
+### Case
+The Ockto Design System is a central place describing components, graphic styles and UX elements such as colours, fonts, buttons, forms, headers, footers and logos. This digital library in Figma is linked to all Ockto designs. Besides the general Ockto elements, the library also covers white-label apps, iOS and Android components and dark mode.
+
+> “Our company recently migrated from Sketch/Zeplin to Figma as our design tool. De Merkenstudio took care of the entire migration, including a complete design system and streamlined designs across both app platforms. Our team really enjoys working with Figma!
+> We also regularly bring in De Merkenstudio for mobile app designs of new features. I find the sessions with Bram very pleasant. Bram is strong at translating our requirements into mobile designs and has a good eye for our product and vision.
+> I can also always turn to him with questions about using Figma, certain design considerations or small changes to our design system. In short, a really great collaboration with De Merkenstudio!”
+> — Martine Laan – Ockto
+
+### The result
+Creating a design system for Ockto brings many benefits, such as: consistency across all digital channels, managing components and elements, maintaining templates and style guides from one library, adapting and creating designs faster, finding the right information faster, and more efficient alignment between designers, information analysts and developers.
+
+### Finally
+I’m a big fan of design systems. By capturing all graphic elements and components in a central library, you create a consistent user experience across all channels and enable design and development teams to work together efficiently. But setting up such a system properly is often a big job. That’s why I’m proud that we managed to create a new design system for Ockto from scratch.
+
+
+## ASN Bank — Platform ‘Zo maakt geld gelukkig’
+
+URL: https://www.brampeulers.com/en/cases/asn/
+Role: UX designer · Period: 2021 – 2022
+
+Zo maakt geld gelukkig (‘This is how money makes you happy’) is ASN Bank’s digital inspiration platform. On the platform, visitors find articles, blogs and videos about how money makes you happy. My goal as a UX designer was to upgrade the existing, static platform into a dynamic and inspiring content platform. In this case you can read how I approached that while working for de Volksbank.
+
+### Case
+‘Visitors should be more inspired on the platform’ and ‘we want to show our sustainable side more’. Two comments from stakeholders that capture the main goals of this project. In the brainstorm sessions I organised, we set the following KPIs:
+- More engagement with the brand
+- A higher NPS score
+- More visitors and customers directed to the platform
+We had a good starting point (the existing platform that was already live) and plenty of data to dive into. The project was mainly about optimising the current platform, which made it a great challenge for me as a UX designer.
+
+### The process
+The project consisted of the following phases: the brainstorm phase, the design phase and the build phase. I was involved as a UX designer in every phase and could apply my knowledge and skills.
+The brainstorm phase was mainly about gathering background knowledge, organising a target group analysis, setting KPIs and benchmarking inside and outside the market. In the creative meetings I had stakeholders actively think along and come up with ideas for the new platform.
+In the design phase I worked out three scenarios: from scenario A (minimal impact for development) to scenario C (maximum impact for development). In the end we jointly chose scenario B, because it fitted the backlog of the retail team that would ultimately develop the designs. The designs covered various pages, such as the landing page and article pages, which I designed for different devices (mobile, tablet and desktop). While designing, the project group mainly considered how to inspire users as much as possible. We gave existing components a new look & feel (the breadcrumbs, cards and main navigation) or designed them from scratch (hero image, highlight block and full-width image).
+In the build phase I was involved as a UX designer in presenting my designs, explaining my choices and handing my designs over to the development team (through reviews, refinements and sprints). Documenting the components and my design choices was also part of this phase.
+
+### Finally
+The new ‘Zo maakt geld gelukkig’ platform is currently being built by the retail team and is not yet live. It was a challenging project for me, because I could apply my skills as a consultant, UX designer and visual designer.
+
+
+## Triodos — Mortgage journey
+
+URL: https://www.brampeulers.com/en/cases/triodos/
+Role: UX/UI designer · Period: 2020
+
+Commissioned by Yellowtail Conclusion, I worked on the new online mortgage journey for Triodos. Their previous journey was badly outdated: it had a long onboarding process, information was hard to find and the ‘Triodos feeling’ was missing. On top of that, it wasn’t responsive. Plenty of work to do. A nice bonus was that Triodos was rolling out a new visual identity at the time, so we were able to use and develop that new style in the new mortgage journey.
+
+### Process
+The goals of this project were to modernise the mortgage journey, map customer needs and define customer journeys and personas. Together with a consultant and another UX designer from Yellowtail, we organised co-creation sessions in which stakeholders could think along about the design and we could present the prototypes.
+
+### UX design goals
+These were the main UX goals:
+### Goal 1: Improve the user experience
+- Offer ease of use
+- Reduce the number of steps
+- Provide guidance at the right moments
+- Reduce content
+### Goal 2: Mobile-first design
+- Large buttons
+- Clear steps
+- Keep it simple
+### Goal 3: Easy access to an adviser
+- Be able to get in touch anytime, anywhere
+
+### The result
+For this concept we used Triodos Bank’s new style. We started by designing a low-fidelity concept (interaction design). In one of the workshops we had the group of stakeholders think along about these concepts. We then developed the final concept into a high-fidelity prototype, to be built later and tested with the target group. An important requirement was that the new style had to evoke a ‘sense of sustainability’. We aimed to achieve this through photography and green tones. We also tried to improve the user experience by making the journey feel less like a ‘form’, using clear CTA buttons and applying micro-animations.
+
+
+## De Hypotheker — Mortgage file
+
+URL: https://www.brampeulers.com/en/cases/hypotheker/
+Role: Visual designer · Period: 2020
+
+Commissioned by Yellowtail Conclusion, I worked on a mortgage file environment for customers of De Hypotheker. The previous version was outdated and not responsive. A nice bonus was that De Hypotheker was rolling out a new visual identity at the time, so we were able to use and develop that new style in the new environment.
+
+### Process
+The goals of this project were to modernise the mortgage file and to guide the customer through the application process for a new mortgage. Together with a consultant and another UX designer from Yellowtail, we organised co-creation sessions in which stakeholders could think along about the design and we could present the prototypes.
+
+### UX design goals
+These were the main UX goals:
+### Goal 1: Improve the user experience
+- Offer ease of use
+- Clear steps in the process
+- Provide guidance at the right moments
+- Reduce content
+### Goal 2: Responsive design
+- Large buttons
+- Clear steps
+- Keep it simple
+### Goal 3: Easy access to an adviser
+- Be able to get in touch anytime, anywhere
+
+### The result
+For this concept we used De Hypotheker’s new brand identity. We started by designing a low-fidelity concept (interaction design). In one of the workshops we had the group of stakeholders think along about these concepts. We then developed the final concept into a high-fidelity prototype, to be built later and tested with the target group. An important requirement was that users had to be guided through the mortgage process with clear steps.
+
+
+## RegioBank — Website optimisation
+
+URL: https://www.brampeulers.com/en/cases/regiobank/
+Role: UX/UI designer · Period: 2021 – 2022
+
+RegioBank calls itself the neighbourly bank and wants to be there for its customers. Because the bank wanted to reach a new target group, become commercially fitter and more service-oriented online, I was asked as a UX designer to refresh the look & feel of their current website. This meant redesigning components, creating a new visual style and developing new features. A great project I carried out while working for de Volksbank.
+
+### Case
+RegioBank wants to become commercially fitter online by attracting more prospects and retaining visitors. It also wants to attract a new target group, ‘the new conservatives’ (financially fit people over 50 with an interest in the stock market), who should be inspired with relevant content across RegioBank’s channels. Finally, RegioBank wants to become more service-oriented online: helping visitors find relevant information quickly and offering a helping hand as soon as a visitor has questions.
+A big advantage was that we could build on the existing pages of RegioBank.nl. There was also plenty of data in Adobe Analytics for our analysis. The project was mainly about redesigning the current website, which made it a great challenge for me as a UX designer. Because we wanted to substantiate our choices, we organised a user test with RegioBank customers in which we tested a clickable demo of the redesign.
+
+### The process
+The project consisted of the following phases: the brainstorm phase, the design phase, user research and the handover to front-end. I was involved as a UX designer in every phase and could apply my knowledge and skills.
+### Brainstorm phase
+The brainstorm phase was mainly about gathering background knowledge, organising a target group analysis, setting KPIs and benchmarking inside and outside the market. In the creative meetings I had stakeholders actively think along and come up with ideas for the new platform.
+### Design phase
+In the design phase I made various sketches of the new web pages and had them reviewed by stakeholders and UX colleagues. After several feedback rounds, we chose to turn the designs into a clickable prototype in InVision to give as realistic a picture as possible during the user test.
+We designed various new pages, such as the homepage, life event pages, landing pages, service pages and article pages, which I designed for different devices (mobile, tablet and desktop). While designing, the project group mainly considered how to inspire users and help them find relevant information quickly. We gave components a new look & feel that later also made its way into the Volksbank design system.
+### User research
+During the user research I was involved as a UX designer in setting up the test (formulating objectives and questions) and taking notes during the customer interviews.
+### Handover to development
+In the final phase (the handover) my work consisted of presenting the designs, explaining the choices and handing the designs over to the development team (through reviews, refinements and sprints). Documenting the components and my design choices was also part of this phase.
+
+### Finally
+The RegioBank redesign is currently being built by the retail team and is not yet live. It was a challenging project for me, because I could apply my skills as a consultant, UX designer and visual designer.
+
+
+## Van Gelder — E-commerce platform
+
+URL: https://www.brampeulers.com/en/cases/vangelder/
+Role: UX designer · Period: 2017
+
+Welcome to the wonderful world of fruit and vegetables, I thought when I started this project. Van Gelder groente & fruit is a fresh produce supplier, mainly active in the hospitality sector. For more than 65 years, this family business has been all about delivering fresh potatoes, vegetables and fruit every day. I was involved as a UX designer in this project, in which I got to design a platform in a completely new world and with its own visual style.
+
+### Case
+Van Gelder asked CloudSuite to design an inspiration platform showing customer-specific information about range, delivery dates, availability and prices, without compromising performance. A platform where customers are inspired through attractive landing pages, blogs, videos and much more. That is something we took into account in the design. The distinctive footer, for example, looks inspiring. Another example is the blog pages with recipes that link to specific products. Before logging in no prices are shown, and after logging in they are, so that only their (hospitality) customers can order products.
+
+### Process
+First of all, it was great to be invited to Van Gelder itself, to see with my own eyes how the wholesale business works and how the fruit and vegetables are distributed. After a number of creative sessions I then started as a UX designer on the most important pages, such as the homepage, product pages, order page and blog pages.
+In the final phase (the handover) my work consisted of presenting the designs, explaining the choices and handing the designs over to the development team (through reviews, refinements and sprints). Documenting the components and my design choices was also part of this phase.
+
+### The result
+Creating a new e-commerce platform for Van Gelder was a challenging but also very enjoyable project for me, because the product had to be designed from scratch and the fruit and vegetable trade was a completely new world to me. For me it has truly become a success now that 98.4% of all orders go through the web shop.
+Feel free to take a look at www.vangeldernederland.nl.
+
+
+## Salut (VGZ) — App design
+
+URL: https://www.brampeulers.com/en/cases/salut/
+Role: Visual designer · Period: 2020
+
+The health app Salut (part of VGZ) makes a user’s health measurable. The app connects data and feelings, letting users indicate how good they feel. I was brought in as a visual designer by Yellowtail Conclusion during the discovery phase of the project. Together with an interaction designer from Yellowtail and the Salut project group, I mainly contributed to the app’s visual style.
+
+### Process
+Salut asked me to create visual designs for the app, to be delivered later as a clickable prototype. In several workshops we thought with stakeholders about what the customer journey and the demo would look like.
+
+### The result
+For this concept I used the Salut brand identity. In one of the workshops we had the group of stakeholders vote for one of the concepts. We developed this winning concept into a high-fidelity prototype, to be built later and tested with the target group. The app is now available to download from the App Store and Google Play Store.
+
+
+## Ockto — App design
+
+URL: https://www.brampeulers.com/en/cases/ockto-app/
+Role: UX designer · Period: 2022
+
+With the Ockto app you retrieve personal data from government bodies (such as the Tax Administration or the UWV). You may need this data when applying for a mortgage, renting a home or leasing a car. The app makes sure this happens digitally and securely, so you can share your data with the right parties in no time. Ockto asked me to develop the app design for both iOS and Android in Figma and to link all components used to the design system (also in Figma).
+
+### Case
+The goal of this project was to make all Ockto designs accessible to developers, stakeholders and other designers, and to manage everything centrally in Figma. The benefits are that designers can develop the app further from one central place and that everyone has insight into the designs from any location. Another advantage of Figma is that prototypes can easily be built and shown to clients.
+In the Figma project we distinguished between the native app, iOS, Android, Ockto’s white-label apps and dark mode. All components are linked to the design library we also developed in Figma.
+
+### The result
+Thanks to designing the app in Figma, everyone at Ockto now has access to the designs, and it offers a number of other benefits:
+- easily switching between designs for light mode, dark mode, iOS, Android or white-label apps
+- consistency across all digital channels
+- adapting and creating designs faster
+- finding the right information faster
+- efficient alignment between designers, information analysts and developers.
+
+### Finally
+I’m very happy with the end result, in which we can continue developing both Android and iOS screens from one Figma project. The big advantage is that everything is transparent and developers are always up to date with the latest designs.
+
+
+## DAK — Mortgage portal
+
+URL: https://www.brampeulers.com/en/cases/dak/
+Role: UX designer · Period: 2020 – 2021
+
+DAK Intermediairscollectief is a collective of and for 1,500 independent advisers in insurance, mortgages and loans. DAK asked Yellowtail Conclusion to develop an online mortgage environment for processing mortgage applications faster, more easily and above all more smartly. The goal was to build a complete tool that would be simple to use and contain all the functionality intermediaries and advisers need to manage their mortgages. In this case you can read how we approached it.
+
+### Case
+While developing the mid-office system, we took into account the wishes of both mortgage advisers and mortgage underwriters. Together with the advisers, the underwriters and our project group, we spent several months optimising the workflow. Using a customer journey and expert interviews, we jointly determined what the product had to do, and also how it could stand out from existing software on the market. The intuitive use of the software means advisers and underwriters can get to work with it quickly and easily. This resulted in a user-friendly and innovative design.
+
+### The process
+The project consisted of the following phases: the brainstorm phase, the design phase and the build phase. I was involved as a UX designer in every phase and could apply my knowledge and skills.
+The brainstorm phase was mainly about gathering background knowledge, organising interviews with experts (advisers and underwriters), setting KPIs and benchmarking inside and outside the market. In the creative meetings we had stakeholders actively think along and come up with ideas for the new platform.
+In the design phase we worked on the design through co-creation sessions. The design focused mainly on desktop, because all users process mortgages from their laptop or PC. While designing, the project group mainly considered how to help users as much as possible and make things as easy as possible for them. Components therefore had to be user-friendly and intuitive. We also gave all components their own look & feel.
+In the build phase I was involved as a UX designer in presenting my designs, explaining my choices and handing my designs over to the development team (through reviews, refinements and sprints).
+
+### Finally
+The new platform is now live and is used by underwriters and mortgage advisers. It was a challenging project for me, because I could apply my skills as a consultant, UX designer and visual designer.
+
+
+## MDT Sport — New brand identity and website
+
+URL: https://www.brampeulers.com/en/cases/mdt/
+Role: Visual designer · Period: 2020
+
+MDT is a national programme of the Dutch Ministry of Health, Welfare and Sport and four major sports federations. MDT stands for Maatschappelijke DienstTijd (Social Community Service) and is a journey of discovery for young people towards the best version of themselves: a chance to discover their talents, be meaningful, meet new people and make choices for the future. MDT Sport focuses on the sports sector, in collaboration with the KNVB (football), KNKV (korfball), NeVoBo (volleyball) and KNLTB (tennis).
+
+### Case
+Anneleen and Michel had a fresh, colourful look & feel in mind that would convey dynamism. That is why we chose ‘slanted’ graphic elements to suggest movement, and a modern colour palette (with blue and yellow as primary tones). This look & feel returns in all brand products (such as stationery, document templates, the website and social media).
+
+### Highlights
+- Building the website
+- Secure environment for sports clubs
+- Developing a new brand identity
+- Applying the brand identity to new products
+
+### Finally
+Project leaders Anneleen Ypma – Diedering and Michel Hofstede asked me to create a platform that would appeal to a broad, young target group. On the platform, young people should be inspired by other MDT participants and then be able to sign up easily for the MDT Sport programme.
+With moving images, playful graphic elements and an energetic look & feel, we believe we can appeal to young people! Curious? Visit the website at mdtsport.nl.

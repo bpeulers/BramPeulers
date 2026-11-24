@@ -1,0 +1,12 @@
+{
+  "trailingSlash": true,
+  "headers": [
+    { "source": "/media/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] },
+    { "source": "/(llms.txt|llms-full.txt)", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
+  ],
+  "redirects": [
+    { "source": "/werk", "destination": "/portfolio/", "permanent": true },
+    { "source": "/en/work", "destination": "/en/portfolio/", "permanent": true }
+  ]
+}
