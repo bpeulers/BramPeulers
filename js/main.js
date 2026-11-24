@@ -106,14 +106,14 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1></section>
-<section class="wrap split">
+<section class="ph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1>
+ <div class="apic rv d2">${media('2408-brampeulers-portret','r11 pf',true,'Portret van Bram Peulers')}</div></section>
+<section class="wrap split solo">
  <div class="prose rv"><p>Ik ben Bram Peulers, freelance product designer en eigenaar van De Merkenstudio. Na ruim tien jaar ontwerpen van apps, websites en digitale omgevingen zie ik mezelf steeds meer als regisseur dan als maker.</p>
  <p>Mijn kracht zit in de combinatie. Ik leid teams en beslissers door het proces, van eerste brainstorm tot besluit, en maak tegelijk met AI razendsnel tastbaar wat er op tafel ligt. Geen weken wachten op een ontwerp, maar binnen dezelfde week een prototype om op te reageren. Die combinatie van facilitator en snelle bouwer is nog vrij zeldzaam.</p>
  <p>Door de jaren heen heb ik gewerkt in sectoren waar veel op het spel staat en processen complex zijn: energie, finance, verzekeringen, zorg, e-commerce, retail en overheid. Ik weet hoe gereguleerde organisaties werken, hoe je ontwerpt rond bestaande systemen en wat er nodig is om business, IT en klant op één lijn te krijgen. Die domeinkennis maakt dat ik snel ingewerkt ben en de juiste vragen stel, in elke nieuwe organisatie.</p>
  <p>Daarnaast verdiep ik me in het ontwerpen van AI-producten zelf. Hoe ontwerp je vertrouwen, fouten en controle in AI-functies? Daar is nog weinig expertise, en juist daar wil ik het verschil maken.</p>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Vrijblijvend kennismaken</a></div>
- <div class="rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portret van Bram Peulers')}</div>
 </section>
 <section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers tijdens een ontwerpsessie" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">
@@ -275,14 +275,14 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1></section>
-<section class="wrap split">
+<section class="ph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1>
+ <div class="apic rv d2">${media('2408-brampeulers-portret','r11 pf',true,'Portrait of Bram Peulers')}</div></section>
+<section class="wrap split solo">
  <div class="prose rv"><p>I’m Bram Peulers, freelance product designer and owner of De Merkenstudio. After more than ten years of designing apps, websites and digital environments, I increasingly see myself as a director rather than a maker.</p>
  <p>My strength lies in the combination. I guide teams and decision-makers through the process, from the first brainstorm to the final decision, and at the same time use AI to make whatever is on the table tangible at speed. No waiting weeks for a design, but a prototype to react to within the same week. That combination of facilitator and fast builder is still fairly rare.</p>
  <p>Over the years I have worked in sectors where a lot is at stake and processes are complex: energy, finance, insurance, healthcare, e-commerce, retail and government. I know how regulated organisations work, how to design around existing systems and what it takes to get business, IT and customer aligned. That domain knowledge means I get up to speed quickly and ask the right questions, in every new organisation.</p>
  <p>I’m also going deeper into designing AI products themselves. How do you design trust, errors and control into AI features? There is still little expertise there, and that is exactly where I want to make a difference.</p>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Let’s get acquainted</a></div>
- <div class="rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portrait of Bram Peulers')}</div>
 </section>
 <section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers during a design session" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">

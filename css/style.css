@@ -395,3 +395,8 @@ html{transition:background-color .4s}
 .avail i::after{content:"";position:absolute;inset:0;border-radius:50%;background:#f5c542;animation:ping 2.2s var(--out) infinite}
 @keyframes ping{0%{transform:scale(1);opacity:.7}80%,100%{transform:scale(2.8);opacity:0}}
 @media (prefers-reduced-motion:reduce){.avail i::after{animation:none}}
+/* over mij: kleine foto onder de titel */
+.apic{width:clamp(140px,14vw,200px);margin-top:clamp(28px,3vw,44px)}
+.apic .media img{object-position:50% 18%}
+.split.solo{grid-template-columns:minmax(0,1fr)}
+.split.solo>.prose{max-width:44em}
