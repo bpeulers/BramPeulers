@@ -48,7 +48,7 @@ const card=(c,i)=>`<a class="card rv ${i%2?'d2':''}" href="#case-${c.slug}" data
 const V={
 home:()=>`
 <section class="hero">
-  <h1 class="h1 split-in">${L(['Van vaag idee naar','<span class="grad">getest prototype</span>,','met AI en echte gebruikers.'])}</h1>
+  <h1 class="h1 split-in">${L(['Van idee naar','<span class="grad">getest prototype</span>,','met AI en echte gebruikers.'])}</h1>
   <div class="facts">
     <p class="avail rv"><i aria-hidden="true"></i>Beschikbaar: 1 april 2027</p>
     <div class="rv d1"><span class="label">Rol</span>Product designer, regisseur én snelle bouwer</div>
@@ -217,7 +217,7 @@ const card=(c,i)=>`<a class="card rv ${i%2?'d2':''}" href="#case-${c.slug}" data
 const V={
 home:()=>`
 <section class="hero">
-  <h1 class="h1 split-in">${L(['From vague idea to','<span class="grad">tested prototype</span>,','with AI and real users.'])}</h1>
+  <h1 class="h1 split-in">${L(['From idea to','<span class="grad">tested prototype</span>,','with AI and real users.'])}</h1>
   <div class="facts">
     <p class="avail rv"><i aria-hidden="true"></i>Available: 1 April 2027</p>
     <div class="rv d1"><span class="label">Role</span>Product designer, director and fast builder</div>
