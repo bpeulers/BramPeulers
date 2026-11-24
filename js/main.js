@@ -59,13 +59,13 @@ home:()=>`
   </div>
   <div class="pic rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portret van Bram Peulers').replace('loading="lazy"','loading="eager" fetchpriority="high"')}</div>
 </section>
+<section class="marq" aria-label="Opdrachtgevers"><div class="tr">${marq()}</div></section>
 <section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carrousel" aria-label="Uitgelicht werk"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Vorig project">←</button><button class="sx" id="gx" aria-label="Volgend project">→</button></div></section>
 <section class="sec">
   <div class="head"><h2 class="h2">${L(['Uitgelichte cases'])}</h2><a class="ulink rv" href="#portfolio">Alle cases →</a></div>
   <div class="slider wsl rv"><div class="strack" tabindex="0" aria-label="Uitgelichte cases">${HOMECASES.map((c,i)=>card(c,i).replace('class="card rv','class="card wcard')).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${HOMECASES.length}</span><button class="sp" aria-label="Vorige case">←</button><button class="sx" aria-label="Volgende case">→</button></div></div>
 </section>
-<section class="marq" aria-label="Opdrachtgevers"><div class="tr">${marq()}</div></section>
 <section class="sec">
   <h2 class="h2 center" style="margin-bottom:clamp(40px,5vw,72px)">${L(['Wat ik doe'])}</h2>
   <div class="svc">${SVC.map((s,i)=>`<div class="rv d${i%3+1}"><span class="label">0${i+1}</span><h3 class="h3">${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div>
@@ -228,13 +228,13 @@ home:()=>`
   </div>
   <div class="pic rv d2">${media('2408-brampeulers-portret','r45 pf',true,'Portrait of Bram Peulers').replace('loading="lazy"','loading="eager" fetchpriority="high"')}</div>
 </section>
+<section class="marq" aria-label="Clients"><div class="tr">${marq()}</div></section>
 <section class="grow"><div class="media ok gcar" id="grow" aria-roledescription="carousel" aria-label="Featured work"><div class="gstack">${HERO.map((h,i)=>`<a class="gs${i?'':' on'}" href="#case-${h[1]}" tabindex="${i?-1:0}" data-c="view"><img src="/media/${h[0]}.webp" alt="${h[2]}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>`).join('')}</div>
 <div class="gbar"><span class="gcap" id="gcap">${HERO[0][2]}</span></div></div><div class="snav gnav"><span class="label"><b class="sn" id="gn">1</b> / ${HERO.length}</span><button class="sp" id="gp" aria-label="Previous project">←</button><button class="sx" id="gx" aria-label="Next project">→</button></div></section>
 <section class="sec">
   <div class="head"><h2 class="h2">${L(['Featured cases'])}</h2><a class="ulink rv" href="#portfolio">All cases →</a></div>
   <div class="slider wsl rv"><div class="strack" tabindex="0" aria-label="Selected cases">${HOMECASES.map((c,i)=>card(c,i).replace('class="card rv','class="card wcard')).join('')}</div><div class="snav"><span class="label"><b class="sn">1</b> / ${HOMECASES.length}</span><button class="sp" aria-label="Previous case">←</button><button class="sx" aria-label="Next case">→</button></div></div>
 </section>
-<section class="marq" aria-label="Clients"><div class="tr">${marq()}</div></section>
 <section class="sec">
   <h2 class="h2 center" style="margin-bottom:clamp(40px,5vw,72px)">${L(['What I do'])}</h2>
   <div class="svc">${SVC.map((s,i)=>`<div class="rv d${i%3+1}"><span class="label">0${i+1}</span><h3 class="h3">${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div>
@@ -430,7 +430,7 @@ addEventListener('popstate',go);
 
 
 /* ---------- theme ---------- */
-let STAR='106,95,240',DARK=false;
+let STAR='65,40,255',DARK=false;
 function applyTheme(t){ const r=document.documentElement; r.dataset.theme=t; DARK=t==='dark'; STAR=getComputedStyle(r).getPropertyValue('--star').trim()||STAR;
   const m=document.querySelector('meta[name="theme-color"]'); if(m) m.content=DARK?'#0f1114':'#fafafa';
   document.querySelectorAll('[data-theme-toggle]').forEach(b=>{ b.setAttribute('aria-pressed',DARK); b.setAttribute('aria-label',(LANG==='en'?(DARK?'Switch to light mode':'Switch to dark mode'):(DARK?'Lichte modus':'Donkere modus'))); }); }
