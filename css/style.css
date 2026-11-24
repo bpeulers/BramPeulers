@@ -136,7 +136,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
 /* services */
 .svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
 .svc>div{padding:28px 28px 44px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
-.svc>div:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
+
 .svc p{margin:0;color:var(--mute);max-width:30em}
 .center{text-align:center}
 .cta{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:56px}
@@ -311,8 +311,6 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .hdr.solid{background:var(--bg);box-shadow:0 1px 0 var(--line)}
   .nav,.hdr .lang,.hdr .btn{display:none}.hdr{gap:8px}.burger{display:block;margin-left:0}.hdr>.theme{width:44px;height:44px}.hdr>.theme svg{width:19px;height:19px}
   .svc{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .svc>div,.svc>div:not(:nth-child(3n+1)){padding:24px 20px 36px 0;border-left:0}
-  .svc>div:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
   .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .lb{grid-template-columns:1fr;overflow:auto;align-content:start}
   .cmeta{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -343,7 +341,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .hero .facts{order:3}
   .grid2,.grid3,.quote,.split,.skills,.cbody,.cgrid,.form{grid-template-columns:minmax(0,1fr)}
   .grid2>.card:nth-child(even){margin-top:0}
-  .svc{grid-template-columns:1fr}.svc>div:nth-child(even){padding-left:0;border-left:0}
+  .svc{grid-template-columns:1fr}
   .tiles{grid-template-columns:1fr}.tile .media{aspect-ratio:4/3}
   .alist>a{grid-template-columns:96px minmax(0,1fr)}.alist>a>span:last-child{display:none}
   .qa,.qnav,.qdots{text-align:left;justify-content:flex-start}
@@ -399,3 +397,15 @@ html{transition:background-color .4s}
 .apic .media img{object-position:50% 18%}
 .split.solo{grid-template-columns:minmax(0,1fr)}
 .split.solo>.prose{max-width:44em}
+
+/* wat ik doe: blokjes met gekleurde rand in de kleuren van de cases */
+.svc{border-top:0;gap:clamp(14px,1.6vw,22px)}
+.svc>div{--c:#8c8cc5;padding:clamp(24px,2.4vw,34px) clamp(22px,2.2vw,32px) clamp(30px,3vw,42px);border:1.5px solid var(--c);border-radius:clamp(16px,2vw,28px);background:color-mix(in srgb,var(--c) 7%,transparent);transition:transform .6s var(--out),background .4s}
+.svc>div:hover{transform:translateY(-4px);background:color-mix(in srgb,var(--c) 13%,transparent)}
+.svc>div .label{color:var(--c);font-weight:600}
+.svc>div:nth-child(6n+1){--c:#e889b0}
+.svc>div:nth-child(6n+2){--c:#4b9a9b}
+.svc>div:nth-child(6n+3){--c:#8c8cc5}
+.svc>div:nth-child(6n+4){--c:#5fbfa6}
+.svc>div:nth-child(6n+5){--c:#3fcf7f}
+.svc>div:nth-child(6n+6){--c:#6fa9bd}
