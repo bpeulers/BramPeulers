@@ -402,7 +402,7 @@ html{transition:background-color .4s}
 .svc>div:hover{transform:translateY(-4px)}
 
 /* gradient-rand (zelfde verloop als 'getest prototype') */
-.svc>div,.facts{border:1px solid var(--a2)!important}
+.svc>div,.facts{border:1px solid color-mix(in srgb,var(--a2) 50%,transparent)!important}
 .svc>div .label{color:var(--a2);font-weight:600}
 /* header bij scrollen: wit met dunne lijn */
 .hdr.solid{background:#fff!important;box-shadow:0 1px 0 var(--line)!important}
