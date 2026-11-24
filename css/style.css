@@ -382,3 +382,9 @@ html{transition:background-color .4s}
 :root[data-theme=dark] .theme .sun{display:inline}:root[data-theme=dark] .theme .moon{display:none}
 @media (max-width:960px){.hdr>.theme{margin-left:auto}}
 @media (max-width:720px){.logo .lg{height:36px}}
+/* hero facts als donker blok */
+.facts{--ink:#f0f1f3;--ink2:#c3c7cd;--mute:#8e939b;--line:rgba(240,241,243,.16);--inkrgb:240,241,243;--bg:#121417;background:#121417;color:var(--ink);border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px);max-width:600px}
+.facts div{color:var(--ink)}
+:root[data-theme=dark] .facts{background:#1c1f25;--bg:#1c1f25;box-shadow:inset 0 0 0 1px rgba(240,241,243,.08)}
+@media (max-width:720px){.hero .facts{max-width:none;width:100%}}
+.facts .go{grid-column:1/-1;white-space:nowrap}
