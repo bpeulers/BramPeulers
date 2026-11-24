@@ -321,6 +321,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .cmeta{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:720px){
+  .h1,.h2{line-height:1.16}.h3,.alist h3{line-height:1.3}.big{line-height:1.08}.nbig{line-height:1.14!important}.cx h2{line-height:1.22}
   .cmedia{padding:10px 0}
   .ctext{padding:28px var(--pad)}
   .cimg .media{border-radius:0}
