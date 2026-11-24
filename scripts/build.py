@@ -71,8 +71,11 @@ async def render_all(routes):
     if errs: print('JS errors:', errs); sys.exit(1)
     return out
 
+VER = datetime.datetime.now().strftime('%Y%m%d%H%M')
+
 def page_html(r, noindex=False):
     t = TEMPLATE.replace('{{LANG}}', r['lang'])
+    t = re.sub(r'(href="/css/[^"?]+|src="/js/[^"?]+)"', lambda m: m.group(1) + '?v=' + VER + '"', t)
     head = f"<title>{html.escape(r['title'])}</title>\n" + '\n'.join(r['head'])
     if noindex: head += '\n<meta name="robots" content="noindex">'
     t = t.replace('<!--HEAD-->', head, 1)
