@@ -33,7 +33,7 @@ h1,h2,h3{margin:0;font-weight:300}
 .hdr.solid{background:linear-gradient(rgba(var(--bgrgb),.92),rgba(var(--bgrgb),0))}
 .brand{display:flex;gap:28px;align-items:center;font-size:13px}
 .logo{display:inline-flex;color:var(--ink)}
-.logo .lg{height:42px;width:auto;display:block;overflow:visible}
+.logo .lg{height:46px;width:auto;display:block;overflow:visible}
 .logo .mark{transform-box:fill-box;transform-origin:center;transition:transform .7s var(--out)}
 .brand:hover .mark{transform:rotate(-12deg)}
 .nav{margin-left:auto;display:flex;gap:28px;align-items:center;font-size:13px}
@@ -379,7 +379,7 @@ html{transition:background-color .4s}
 .theme .sun{display:none}
 :root[data-theme=dark] .theme .sun{display:inline}:root[data-theme=dark] .theme .moon{display:none}
 @media (max-width:960px){.hdr>.theme{margin-left:auto}}
-@media (max-width:720px){.logo .lg{height:36px}}
+@media (max-width:720px){.logo .lg{height:40px}}
 /* hero facts als donker blok */
 .facts{position:relative;border-radius:clamp(16px,2vw,28px);padding:clamp(26px,3vw,40px);max-width:600px;background:transparent}
 @media (max-width:720px){.hero .facts{max-width:none;width:100%}}
