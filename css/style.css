@@ -321,9 +321,20 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .cmeta{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:720px){
+  .cmedia{padding:10px 0}
+  .ctext{padding:28px var(--pad)}
+  .cimg .media{border-radius:0}
+  .cimg.full{width:100%}
+  .cimg.sq .media img{transform:scale(1.1)}
+  .cgrid.c2,.cgrid.c3{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--pad);scrollbar-width:none}
+  .cgrid.c2::-webkit-scrollbar,.cgrid.c3::-webkit-scrollbar{display:none}
+  .cgrid>.cimg{flex:0 0 86%;scroll-snap-align:center}
+  .cgrid>.cimg .media{border-radius:8px}
+  .cgrid.c3>.cimg{flex-basis:72%}
+  .cvid video{border-radius:0}.cvid figcaption{padding:0 var(--pad)}
+  .slider{padding:0}.strack{padding-inline:var(--pad);scroll-padding-inline:var(--pad)}.snav{padding:0 var(--pad)}
   .ctext.w23 .cx,.ctext.w34 .cx,.ctext.w12 .cx,.cq{margin-left:0}
   .cgrid.c3,.ccards{grid-template-columns:minmax(0,1fr)}
-  .cgrid.c3{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .slide{height:min(60vh,460px)}
   .hero{grid-template-columns:1fr;min-height:0}
   .hero{display:flex;flex-direction:column;gap:28px;padding-top:120px}

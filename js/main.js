@@ -154,7 +154,7 @@ contact:()=>`
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
- const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
+ const im=(k,cls='')=>`<figure class="cimg ${cls}${(R(k)>=.85&&R(k)<=1.45)?' sq':''} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
  const B=c.blocks.map((b,bi)=>{
   if(b[0]==='t') return `<section class="ctext w${b[2]}"><div class="prose cx rv">${b[1]}</div></section>`;
   if(b[0]==='q') return `<section class="ctext w1"><blockquote class="cq rv"><p>${b[1]}</p><cite>${b[2]}</cite></blockquote></section>`;
@@ -318,7 +318,7 @@ contact:()=>`
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
- const im=(k,cls='')=>`<figure class="cimg ${cls} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
+ const im=(k,cls='')=>`<figure class="cimg ${cls}${(R(k)>=.85&&R(k)<=1.45)?' sq':''} rv" style="--r:${R(k)}"><div class="media ok"><img src="/media/${k}.webp" alt="${c.client} — ${c.title}" loading="lazy" decoding="async" data-z></div></figure>`;
  const B=c.blocks.map((b,bi)=>{
   if(b[0]==='t') return `<section class="ctext w${b[2]}"><div class="prose cx rv">${b[1]}</div></section>`;
   if(b[0]==='q') return `<section class="ctext w1"><blockquote class="cq rv"><p>${b[1]}</p><cite>${b[2]}</cite></blockquote></section>`;
