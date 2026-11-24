@@ -455,3 +455,12 @@ html{transition:background-color .4s}
 :root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.qnav button):hover{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.07))}
 .burger i{background:var(--ink)}
 @media (max-width:720px){.hero h1{max-width:none;font-size:clamp(40px,14.6vw,64px);line-height:1.08;letter-spacing:-.045em}}
+/* iOS-achtige glasrand: wit met verloop (vervangt de kleurgradient) */
+:root{--gl-a:rgba(255,255,255,1);--gl-b:rgba(var(--inkrgb),.13);--gl-c:rgba(255,255,255,.95)}
+:root[data-theme=dark]{--gl-a:rgba(255,255,255,.42);--gl-b:rgba(255,255,255,.05);--gl-c:rgba(255,255,255,.22)}
+:is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks)::after{background:linear-gradient(calc(var(--ga) + 135deg),var(--gl-a) 0%,var(--gl-b) 45%,var(--gl-b) 60%,var(--gl-c) 100%);opacity:1;animation:gspin 18s linear infinite}
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button)::after{background:linear-gradient(135deg,var(--gl-a) 0%,var(--gl-b) 50%,var(--gl-c) 100%);opacity:1}
+:is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks){box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(var(--inkrgb),.05),0 14px 40px -14px rgba(var(--inkrgb),.16)!important}
+:root[data-theme=dark] :is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks){box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 14px 40px -14px rgba(0,0,0,.55)!important}
+:is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button){box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 1px 2px rgba(var(--inkrgb),.06),0 6px 18px -8px rgba(var(--inkrgb),.18)!important}
+:root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button){box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 6px 18px -8px rgba(0,0,0,.5)!important}
