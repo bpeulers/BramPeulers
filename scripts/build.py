@@ -139,6 +139,7 @@ def main():
 """ + '\n'.join(case_line(c, 'en') for c in cd['en']) + f"""
 
 ## Contact
+- Email: info@demerkenstudio.nl
 - LinkedIn: https://www.linkedin.com/in/brampeulers/
 - Dribbble: https://www.dribbble.com/brampeulers
 """

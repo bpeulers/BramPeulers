@@ -1,5 +1,6 @@
 /* Bram Peulers — site logic: routing, NL/EN, animations */
 {
+const MAIL='info@demerkenstudio.nl';
 const LI='https://www.linkedin.com/in/brampeulers/', DR='https://www.dribbble.com/brampeulers';
 
 const DIMS=window.DIMS||{};
@@ -135,10 +136,12 @@ contact:()=>`
  <div><h1 class="h1">${L(['Laten we iets','bouwen dat','<span class="grad">werkt</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een vaag idee, een team dat vastzit of een AI-functie die vertrouwen moet winnen? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
  <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
+  <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
   <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
  </div></div>
  <form class="form rv d2" id="form" novalidate>
+  <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
   <label><span class="label">Naam</span><input name="n" id="f-n" required placeholder="Je naam" autocomplete="name"></label>
   <label><span class="label">E-mail</span><input name="e" id="f-e" type="email" required placeholder="jij@bedrijf.nl" autocomplete="email"></label>
   <label class="full"><span class="label">Onderwerp</span><select id="f-s"><option>Van idee naar getest prototype</option><option>Workshop of facilitatie</option><option>AI-product of AI-functie ontwerpen</option><option>Product design (UX & UI)</option><option>Iets anders</option></select></label>
@@ -297,10 +300,12 @@ contact:()=>`
  <div><h1 class="h1">${L(['Let’s build','something that','<span class="grad">works</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">A vague idea, a team that’s stuck or an AI feature that needs to earn trust? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
  <div class="rv d3" style="display:flex;flex-direction:column;gap:12px;margin-top:36px;font-size:15px">
+  <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
   <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
  </div></div>
  <form class="form rv d2" id="form" novalidate>
+  <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
   <label><span class="label">Name</span><input name="n" id="f-n" required placeholder="Your name" autocomplete="name"></label>
   <label><span class="label">E-mail</span><input name="e" id="f-e" type="email" required placeholder="you@company.com" autocomplete="email"></label>
   <label class="full"><span class="label">Subject</span><select id="f-s"><option>From idea to tested prototype</option><option>Workshop or facilitation</option><option>Designing an AI product or feature</option><option>Product design (UX & UI)</option><option>Something else</option></select></label>
@@ -341,11 +346,11 @@ let CD,CASES,HOMECASES,HERO,PF,CAT,SVC,QUOTES,ARTS,V,LANG=null;
 const STR={
  nl:{nav_portfolio:'Portfolio',nav_art:'Artikelen',nav_about:'Over mij',sub:'Product designer & facilitator',mtag:'Facilitator · AI-prototyping · Product design',close:'Sluiten ✕',
   view:'Bekijk',zoom:'Vergroot',lbCase:'Dit project is uitgewerkt als volledige case, met uitdaging, aanpak en resultaat.',lbArch:n=>'Een ontwerp voor '+n+' uit mijn archief.',lbRead:'Lees de case',
-  fErr:'Vul je naam, een geldig e-mailadres en je bericht in.',fOk:n=>'Bedankt, '+n+'! Dit formulier is nog niet gekoppeld aan een mailbox. Stuur je bericht via <a class="ulink" href="'+LI+'" target="_blank" rel="noopener">LinkedIn</a>.',
+  fErr:'Vul je naam, een geldig e-mailadres en je bericht in.',fBusy:'Bezig met versturen…',fOk:n=>'Bedankt, '+n+'! Je bericht is verstuurd. Ik neem zo snel mogelijk contact met je op.',fFail:'Versturen lukte niet. Mail je bericht direct naar <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'Nieuw bericht via brampeulers.com',
   menu:'Menu openen',titles:{home:'Product designer & facilitator',portfolio:'Portfolio',artikelen:'Artikelen',about:'Over mij',contact:'Contact'}},
  en:{nav_portfolio:'Portfolio',nav_art:'Articles',nav_about:'About',sub:'Product designer & facilitator',mtag:'Facilitator · AI prototyping · Product design',close:'Close ✕',
   view:'View',zoom:'Zoom',lbCase:'This project is written up as a full case, with challenge, approach and result.',lbArch:n=>'A design for '+n+' from my archive.',lbRead:'Read the case',
-  fErr:'Please enter your name, a valid email address and your message.',fOk:n=>'Thanks, '+n+'! This form is not yet connected to a mailbox. Please send your message via <a class="ulink" href="'+LI+'" target="_blank" rel="noopener">LinkedIn</a>.',
+  fErr:'Please enter your name, a valid email address and your message.',fBusy:'Sending…',fOk:n=>'Thanks, '+n+'! Your message has been sent. I’ll get back to you as soon as possible.',fFail:'Sending failed. Please email your message directly to <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'New message via brampeulers.com (EN)',
   menu:'Open menu',titles:{home:'Product designer & facilitator',portfolio:'Portfolio',artikelen:'Articles',about:'About',contact:'Contact'}}
 };
 let S=STR.nl;
@@ -492,7 +497,13 @@ function form(){
   f.addEventListener('submit',e=>{ e.preventDefault(); const note=document.getElementById('note');
     const n=document.getElementById('f-n').value.trim(),em=document.getElementById('f-e').value.trim(),m=document.getElementById('f-m').value.trim();
     if(!n||!/^\S+@\S+\.\S+$/.test(em)||!m){ note.textContent=S.fErr; return; }
-    note.innerHTML=S.fOk(n.replace(/</g,'&lt;')); });
+    if(document.getElementById('f-h').value){ note.innerHTML=S.fOk(n.replace(/</g,'&lt;')); return; }
+    const btn=f.querySelector('button[type=submit]'); btn.disabled=true; note.textContent=S.fBusy;
+    const subj=document.getElementById('f-s').value;
+    fetch('https://formsubmit.co/ajax/'+MAIL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({naam:n,email:em,onderwerp:subj,bericht:m,taal:LANG,pagina:location.href,_replyto:em,_subject:S.fSubj+' — '+subj,_template:'table',_captcha:'false'})})
+     .then(r=>r.ok?r.json():Promise.reject(r.status)).then(d=>{ if(d&&String(d.success)!=='false'){ note.innerHTML=S.fOk(n.replace(/</g,'&lt;')); f.reset(); } else throw 0; })
+     .catch(()=>{ note.innerHTML=S.fFail; }).finally(()=>{ btn.disabled=false; }); });
 }
 function clock(){ const c=document.getElementById('clock'); if(!c) return; const t=()=>{ try{c.textContent=new Intl.DateTimeFormat('nl-NL',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Amsterdam'}).format(new Date())}catch(e){} }; t(); }
 setInterval(clock,20000);
