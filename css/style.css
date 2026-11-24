@@ -435,7 +435,7 @@ html{transition:background-color .4s}
 .skills{align-items:start}
 /* ===== Claude-achtige gradient-randen + glas voor knoppen ===== */
 @property --ga{syntax:"<angle>";inherits:false;initial-value:0deg}
-:root{--cg1:#d97757;--cg2:#c15f9c;--cg3:#4128ff}
+:root{--cg1:#4128ff;--cg2:#ff2d95;--cg3:#4128ff}
 :is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks){position:relative;border-color:transparent!important}
 :is(.svc>div,.facts,.form,.steps li,.skills>div,.lfacts,.clinks)::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;
  background:conic-gradient(from var(--ga),var(--cg1),var(--cg2),var(--cg3),var(--cg2),var(--cg1));opacity:.6;
@@ -454,4 +454,6 @@ html{transition:background-color .4s}
 :root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.lang,.qnav button){background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 6px 20px -8px rgba(0,0,0,.5)}
 :root[data-theme=dark] :is(.btn,.theme,.burger,.snav button,.go i,.filters button,.qnav button):hover{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.07))}
 .burger i{background:var(--ink)}
-@media (max-width:720px){.hero h1{max-width:none;font-size:clamp(40px,14.6vw,64px);line-height:1.08;letter-spacing:-.045em}}
+@media (max-width:720px){.hero h1{max-width:none;font-size:clamp(36px,12.4vw,56px);line-height:1.08;letter-spacing:-.045em}}
+.hero h1{font-size:clamp(38px,4.8vw,74px)}
+@media (max-width:720px){.hero h1{font-size:clamp(36px,12.4vw,56px)}}
