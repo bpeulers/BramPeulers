@@ -480,3 +480,4 @@ html{transition:background-color .4s}
 .aboutph .apic{grid-column:2;justify-self:end;width:min(100%,520px);margin-top:0}
 .aboutph .apic .media img{object-position:42% 30%}
 @media (max-width:720px){.aboutph{display:flex;flex-direction:column;gap:28px}.aboutph .apic{width:min(52vw,210px);justify-self:auto}.aboutph .apic .media{aspect-ratio:1/1}.aboutph .apic .media img{object-position:42% 22%}}
+.sec>.media.r169{border-radius:var(--rad)!important;overflow:hidden}
