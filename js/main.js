@@ -115,7 +115,7 @@ about:()=>`
  <p>Daarnaast verdiep ik me in het ontwerpen van AI-producten zelf. Hoe ontwerp je vertrouwen, fouten en controle in AI-functies? Daar is nog weinig expertise, en juist daar wil ik het verschil maken.</p>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Vrijblijvend kennismaken</a></div>
 </section>
-<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers tijdens een ontwerpsessie" loading="lazy"></div>'}</div></section>
+<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-bw.webp" alt="Bram Peulers tijdens een ontwerpsessie" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">
  <div><h2 class="h2">${L(['Ook voor','<span class="grad">lange</span> trajecten.'])}</h2></div>
  <div class="prose rv d1"><p>Naast korte sprints kun je me ook voor een langere periode vastleggen, bijvoorbeeld voor een jaar. Ik draai dan mee in één of meerdere teams, als vast onderdeel van de organisatie, en voeg vanaf de eerste week waarde toe.</p>
@@ -284,7 +284,7 @@ about:()=>`
  <p>I’m also going deeper into designing AI products themselves. How do you design trust, errors and control into AI features? There is still little expertise there, and that is exactly where I want to make a difference.</p>
  <a class="go" href="#contact" data-c="link"><i>↘</i>Let’s get acquainted</a></div>
 </section>
-<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-20230222-0026.webp" alt="Bram Peulers during a design session" loading="lazy"></div>'}</div></section>
+<section class="sec"><div class="media r169 rv">${'<div class="par"><img src="/media/2303-dgrop-bw.webp" alt="Bram Peulers during a design session" loading="lazy"></div>'}</div></section>
 <section class="sec long"><div class="split">
  <div><h2 class="h2">${L(['Also for','<span class="grad">long-term</span> engagements.'])}</h2></div>
  <div class="prose rv d1"><p>Besides short sprints, you can also book me for a longer period, for example a year. I then work within one or more teams, as a fixed part of the organisation, and add value from the very first week.</p>
