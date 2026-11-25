@@ -139,7 +139,7 @@ about:()=>`
 contact:()=>`
 <section class="kgrid">
  <div><h1 class="h1">${L(['Laten we iets','bouwen dat','<span class="grad">werkt</span>.'])}</h1>
- <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een idee, een team dat vastzit of een AI-functie die vertrouwen moet winnen? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
+ <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een idee, een team dat vastzit of een concept dat nog ontworpen moet worden? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
  <div class="clinks rv d3"><span class="label">Direct contact</span>
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
@@ -149,7 +149,7 @@ contact:()=>`
   <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
   <label><span class="label">Naam</span><input name="n" id="f-n" required placeholder="Je naam" autocomplete="name"></label>
   <label><span class="label">E-mail</span><input name="e" id="f-e" type="email" required placeholder="jij@bedrijf.nl" autocomplete="email"></label>
-  <label class="full"><span class="label">Onderwerp</span><select id="f-s"><option>Van idee naar getest prototype</option><option>Workshop of facilitatie</option><option>AI-product of AI-functie ontwerpen</option><option>Product design (UX & UI)</option><option>Iets anders</option></select></label>
+  <label class="full"><span class="label">Onderwerp</span><select id="f-s"><option>Van idee naar getest prototype</option><option>Workshop of facilitatie</option><option>Een concept laten ontwerpen</option><option>Product design (UX & UI)</option><option>Iets anders</option></select></label>
   <label class="full"><span class="label">Bericht</span><textarea id="f-m" required placeholder="Vertel kort over het project, de planning of je vraag."></textarea></label>
   <div class="full"><button class="btn" type="submit" data-c="link">Verstuur bericht</button></div>
   <p class="note" id="note" role="status"></p>
@@ -308,7 +308,7 @@ about:()=>`
 contact:()=>`
 <section class="kgrid">
  <div><h1 class="h1">${L(['Let’s build','something that','<span class="grad">works</span>.'])}</h1>
- <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">An idea, a team that’s stuck or an AI feature that needs to earn trust? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
+ <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">An idea, a team that’s stuck or a concept that still needs to be designed? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
  <div class="clinks rv d3"><span class="label">Direct contact</span>
   <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
   <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
@@ -318,7 +318,7 @@ contact:()=>`
   <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
   <label><span class="label">Name</span><input name="n" id="f-n" required placeholder="Your name" autocomplete="name"></label>
   <label><span class="label">E-mail</span><input name="e" id="f-e" type="email" required placeholder="you@company.com" autocomplete="email"></label>
-  <label class="full"><span class="label">Subject</span><select id="f-s"><option>From idea to tested prototype</option><option>Workshop or facilitation</option><option>Designing an AI product or feature</option><option>Product design (UX & UI)</option><option>Something else</option></select></label>
+  <label class="full"><span class="label">Subject</span><select id="f-s"><option>From idea to tested prototype</option><option>Workshop or facilitation</option><option>Designing a concept</option><option>Product design (UX & UI)</option><option>Something else</option></select></label>
   <label class="full"><span class="label">Message</span><textarea id="f-m" required placeholder="Tell me briefly about the project, the timeline or your question."></textarea></label>
   <div class="full"><button class="btn" type="submit" data-c="link">Send message</button></div>
   <p class="note" id="note" role="status"></p>
