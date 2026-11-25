@@ -17,7 +17,7 @@ button{font:inherit;color:inherit}
 #stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 main,header,footer{position:relative;z-index:2}
 .serif{font-family:var(--serif);font-weight:300;letter-spacing:-.035em}
-.grad{font-style:italic;color:var(--a2);text-decoration:underline;text-decoration-color:var(--a2);text-decoration-thickness:.09rem;text-underline-offset:.18em;padding-right:.12em;margin-right:-.12em}
+.grad{font-style:italic;color:var(--a2);text-decoration:none;padding-right:.12em;margin-right:-.12em}
 .label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
 .mute{color:var(--mute)}
 .wrap{padding-inline:var(--pad)}
@@ -234,7 +234,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
 .alist p{margin:6px 0 0;color:var(--mute);font-size:14px}
 
 /* contact */
-.cgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,100px);padding:clamp(130px,17vh,180px) var(--pad) 80px;min-height:100vh}
+.kgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,100px);padding:clamp(130px,17vh,180px) var(--pad) 80px;min-height:100vh}
 .form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 24px;align-content:start}
 .form label{display:flex;flex-direction:column;gap:8px}
 .form .full{grid-column:1/-1}
@@ -339,7 +339,7 @@ a:hover .media.ok img,.media.zoom:hover img{transform:scale(1.035)}
   .hero .pic .media{aspect-ratio:1/1}
   .hero .pic .media img{object-position:50% 18%}
   .hero .facts{order:3}
-  .grid2,.grid3,.quote,.split,.skills,.cbody,.cgrid,.form{grid-template-columns:minmax(0,1fr)}
+  .grid2,.grid3,.quote,.split,.skills,.cbody,.cgrid,.kgrid,.form{grid-template-columns:minmax(0,1fr)}
   .grid2>.card:nth-child(even){margin-top:0}
   .svc{grid-template-columns:1fr}
   .tiles{grid-template-columns:1fr}.tile .media{aspect-ratio:4/3}
@@ -460,3 +460,4 @@ html{transition:background-color .4s}
 :root:not([data-theme=dark]).menu-open .hdr,:root:not([data-theme=dark]).menu-open .hdr.solid{background:transparent!important;box-shadow:none!important}
 :root:not([data-theme=dark]).menu-open .logo{color:#f0f1f3}
 .hdr,.logo,.mmenu{transition:background .4s,color .4s}
+.kgrid{align-items:start}
