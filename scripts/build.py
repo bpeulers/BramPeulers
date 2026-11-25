@@ -20,8 +20,8 @@ SITE = 'https://www.brampeulers.com'
 TEMPLATE = open(os.path.join(ROOT, 'scripts/template.html'), encoding='utf-8').read()
 CHROME = os.environ.get('CHROME') or ('/usr/bin/google-chrome' if os.path.exists('/usr/bin/google-chrome') else None)
 
-SEG = {'nl': {'home': '', 'portfolio': 'portfolio', 'artikelen': 'artikelen', 'about': 'over-mij', 'contact': 'contact'},
-       'en': {'home': '', 'portfolio': 'portfolio', 'artikelen': 'articles', 'about': 'about', 'contact': 'contact'}}
+SEG = {'nl': {'home': '', 'portfolio': 'werk', 'artikelen': 'artikelen', 'about': 'over-mij', 'contact': 'contact'},
+       'en': {'home': '', 'portfolio': 'work', 'artikelen': 'articles', 'about': 'about', 'contact': 'contact'}}
 
 def path_of(l, h):
     p = 'cases/' + h[5:] if h.startswith('case-') else (SEG[l]['artikelen'] + '/' + h[4:] if h.startswith('art-') else SEG[l][h])
@@ -135,7 +135,7 @@ def main():
 ## Key pages
 - [Home (EN)]({SITE}/en/) · [Home (NL)]({SITE}/)
 - [About (EN)]({SITE}/en/about/) · [Over mij (NL)]({SITE}/over-mij/)
-- [Portfolio (EN)]({SITE}/en/portfolio/) · [Portfolio (NL)]({SITE}/portfolio/)
+- [Work (EN)]({SITE}/en/work/) · [Werk (NL)]({SITE}/werk/)
 - [Contact (EN)]({SITE}/en/contact/) · [Contact (NL)]({SITE}/contact/)
 - [Articles (EN)]({SITE}/en/articles/) · [Artikelen (NL)]({SITE}/artikelen/)
 - [Full text of all cases and articles]({SITE}/llms-full.txt)

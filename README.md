@@ -6,8 +6,8 @@ Statische website (HTML, CSS en JavaScript), gehost via Vercel op https://www.br
 
 Elke pagina en elke case heeft een eigen adres met volledige, vooraf gegenereerde HTML, zodat Google, Bing en AI-zoekmachines (ChatGPT, Claude, Perplexity) alle tekst kunnen lezen:
 
-- NL: `/`, `/portfolio/`, `/artikelen/`, `/over-mij/`, `/contact/`, `/cases/<slug>/`
-- EN: `/en/`, `/en/portfolio/`, `/en/articles/`, `/en/about/`, `/en/contact/`, `/en/cases/<slug>/`
+- NL: `/`, `/werk/`, `/artikelen/`, `/over-mij/`, `/contact/`, `/cases/<slug>/`
+- EN: `/en/`, `/en/werk/`, `/en/articles/`, `/en/about/`, `/en/contact/`, `/en/cases/<slug>/`
 
 Per pagina: titel, beschrijving, canonical, hreflang (nl/en), Open Graph en structured data (Person, ProfessionalService, WebSite, WebPage, BreadcrumbList, CreativeWork). Verder: `sitemap.xml`, `robots.txt` (ook AI-crawlers toegestaan), `llms.txt` en `llms-full.txt` voor AI-assistenten, en `og-image.jpg` voor het delen op LinkedIn.
 

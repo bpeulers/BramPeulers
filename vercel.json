@@ -1,12 +1,54 @@
 {
   "trailingSlash": true,
   "headers": [
-    { "source": "/media/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/(llms.txt|llms-full.txt)", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
+    {
+      "source": "/media/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(llms.txt|llms-full.txt)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
   ],
   "redirects": [
-    { "source": "/werk", "destination": "/portfolio/", "permanent": true },
-    { "source": "/en/work", "destination": "/en/portfolio/", "permanent": true }
+    {
+      "source": "/portfolio",
+      "destination": "/werk/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/werk/",
+      "permanent": true
+    },
+    {
+      "source": "/en/portfolio",
+      "destination": "/en/work/",
+      "permanent": true
+    },
+    {
+      "source": "/en/portfolio/",
+      "destination": "/en/work/",
+      "permanent": true
+    }
   ]
 }

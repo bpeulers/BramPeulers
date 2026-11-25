@@ -78,7 +78,7 @@ home:()=>`
 ${closer()}`,
 
 portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').includes(k)).length;return `
-<section class="ph"><h1 class="h1">${L(['Portfolio: bekijk','mijn <span class="grad">werk</span>.'])}</h1>
+<section class="ph"><h1 class="h1">${L(['Bekijk','mijn <span class="grad">werk</span>.'])}</h1>
 <p class="lead rv d2">Apps, websites, portalen en design systems voor onder meer Essent, Achmea, Eneco, SNS, ASN Bank, Triodos en VGZ. Klik op een project voor de volledige case.</p></section>
 <section class="sec" style="padding-top:0">
  <div class="filters rv" role="tablist">${Object.keys(CAT).map(k=>`<button data-f="${k}" class="${k==='all'?'on':''}">${CAT[k]}<sup>${cnt(k)}</sup></button>`).join('')}</div>
@@ -247,7 +247,7 @@ home:()=>`
 ${closer()}`,
 
 portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').includes(k)).length;return `
-<section class="ph"><h1 class="h1">${L(['Portfolio: explore','my <span class="grad">work</span>.'])}</h1>
+<section class="ph"><h1 class="h1">${L(['Explore','my <span class="grad">work</span>.'])}</h1>
 <p class="lead rv d2">Apps, websites, portals and design systems for clients including Essent, Achmea, Eneco, SNS, ASN Bank, Triodos and VGZ. Click a project to read the full case.</p></section>
 <section class="sec" style="padding-top:0">
  <div class="filters rv" role="tablist">${Object.keys(CAT).map(k=>`<button data-f="${k}" class="${k==='all'?'on':''}">${CAT[k]}<sup>${cnt(k)}</sup></button>`).join('')}</div>
@@ -354,18 +354,18 @@ let CD,CASES,HOMECASES,HERO,PF,CAT,SVC,QUOTES,ARTS,V,LANG=null;
 
 /* ---------- language ---------- */
 const STR={
- nl:{nav_portfolio:'Portfolio',nav_art:'Artikelen',nav_about:'Over mij',sub:'Product designer & facilitator',mtag:'Facilitator · AI-prototyping · Product design',close:'Sluiten ✕',
+ nl:{nav_portfolio:'Werk',nav_art:'Artikelen',nav_about:'Over mij',sub:'Product designer & facilitator',mtag:'Facilitator · AI-prototyping · Product design',close:'Sluiten ✕',
   view:'Bekijk',zoom:'Vergroot',lbCase:'Dit project is uitgewerkt als volledige case, met uitdaging, aanpak en resultaat.',lbArch:n=>'Een ontwerp voor '+n+' uit mijn archief.',lbRead:'Lees de case',
   fErr:'Vul je naam, een geldig e-mailadres en je bericht in.',fBusy:'Bezig met versturen…',fOk:n=>'Bedankt, '+n+'! Je bericht is verstuurd. Ik neem zo snel mogelijk contact met je op.',fFail:'Versturen lukte niet. Mail je bericht direct naar <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'Nieuw bericht via brampeulers.com',
-  menu:'Menu openen',titles:{home:'Product designer & facilitator',portfolio:'Portfolio',artikelen:'Artikelen',about:'Over mij',contact:'Contact'}},
- en:{nav_portfolio:'Portfolio',nav_art:'Articles',nav_about:'About',sub:'Product designer & facilitator',mtag:'Facilitator · AI prototyping · Product design',close:'Close ✕',
+  menu:'Menu openen',titles:{home:'Product designer & facilitator',portfolio:'Werk',artikelen:'Artikelen',about:'Over mij',contact:'Contact'}},
+ en:{nav_portfolio:'Work',nav_art:'Articles',nav_about:'About',sub:'Product designer & facilitator',mtag:'Facilitator · AI prototyping · Product design',close:'Close ✕',
   view:'View',zoom:'Zoom',lbCase:'This project is written up as a full case, with challenge, approach and result.',lbArch:n=>'A design for '+n+' from my archive.',lbRead:'Read the case',
   fErr:'Please enter your name, a valid email address and your message.',fBusy:'Sending…',fOk:n=>'Thanks, '+n+'! Your message has been sent. I’ll get back to you as soon as possible.',fFail:'Sending failed. Please email your message directly to <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'New message via brampeulers.com (EN)',
-  menu:'Open menu',titles:{home:'Product designer & facilitator',portfolio:'Portfolio',artikelen:'Articles',about:'About',contact:'Contact'}}
+  menu:'Open menu',titles:{home:'Product designer & facilitator',portfolio:'Work',artikelen:'Articles',about:'About',contact:'Contact'}}
 };
 let S=STR.nl;
 const SITE='https://www.brampeulers.com';
-const SEG={nl:{home:'',portfolio:'portfolio',artikelen:'artikelen',about:'over-mij',contact:'contact'},en:{home:'',portfolio:'portfolio',artikelen:'articles',about:'about',contact:'contact'}};
+const SEG={nl:{home:'',portfolio:'werk',artikelen:'artikelen',about:'over-mij',contact:'contact'},en:{home:'',portfolio:'work',artikelen:'articles',about:'about',contact:'contact'}};
 const pathOf=(l,h)=>{ const p=h.startsWith('case-')?'cases/'+h.slice(5):h.startsWith('art-')?SEG[l].artikelen+'/'+h.slice(4):(SEG[l][h]??''); return '/'+(l==='en'?'en/':'')+(p?p+'/':''); };
 const hl=r=>pathOf(LANG,r);
 const fixLinks=root=>{ root.querySelectorAll('a[href^="#"]').forEach(a=>{const h=a.getAttribute('href'); if(h.length>1) a.setAttribute('href',hl(h.slice(1)))}); };
@@ -394,7 +394,7 @@ function setHead(r,h){
   meta('name','twitter:card','summary_large_image');
   const ld=setTag('script#ld-page',()=>{const sc=document.createElement('script');sc.type='application/ld+json';sc.id='ld-page';return sc});
   const crumbs=[{'@type':'ListItem',position:1,name:'Home',item:SITE+pathOf(LANG,'home')}];
-  if(h!=='home') crumbs.push({'@type':'ListItem',position:2,name:r.c?'Portfolio':r.a?S.titles.artikelen:r.title,item:SITE+pathOf(LANG,r.c?'portfolio':r.a?'artikelen':h)});
+  if(h!=='home') crumbs.push({'@type':'ListItem',position:2,name:r.c?S.titles.portfolio:r.a?S.titles.artikelen:r.title,item:SITE+pathOf(LANG,r.c?'portfolio':r.a?'artikelen':h)});
   if(r.a) crumbs.push({'@type':'ListItem',position:3,name:r.a.title,item:url});
   if(r.c) crumbs.push({'@type':'ListItem',position:3,name:r.c.client+' — '+r.c.title,item:url});
   const g=[{'@type':'WebPage','@id':url,url,name:r.full,description:r.desc,inLanguage:LANG,isPartOf:{'@id':SITE+'/#website'},about:{'@id':SITE+'/#person'}},{'@type':'BreadcrumbList',itemListElement:crumbs}];

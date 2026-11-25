@@ -12,7 +12,7 @@
 ## Key pages
 - [Home (EN)](https://www.brampeulers.com/en/) · [Home (NL)](https://www.brampeulers.com/)
 - [About (EN)](https://www.brampeulers.com/en/about/) · [Over mij (NL)](https://www.brampeulers.com/over-mij/)
-- [Portfolio (EN)](https://www.brampeulers.com/en/portfolio/) · [Portfolio (NL)](https://www.brampeulers.com/portfolio/)
+- [Work (EN)](https://www.brampeulers.com/en/work/) · [Werk (NL)](https://www.brampeulers.com/werk/)
 - [Contact (EN)](https://www.brampeulers.com/en/contact/) · [Contact (NL)](https://www.brampeulers.com/contact/)
 - [Articles (EN)](https://www.brampeulers.com/en/articles/) · [Artikelen (NL)](https://www.brampeulers.com/artikelen/)
 - [Full text of all cases and articles](https://www.brampeulers.com/llms-full.txt)
