@@ -19,7 +19,7 @@ const FEAT=[['essent','Energie-inzicht en betaalprocessen helder gemaakt in de E
  ['ockto-ds','Eén centrale Figma-bibliotheek voor alle Ockto-ontwerpen: white-label, iOS, Android en dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
 const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
-const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digitale producten'],['2210-triodos-3','triodos','Triodos — Hypotheekstraat'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
+const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digitale producten'],['2210-triodos-2-e1666083928218','triodos','Triodos — Hypotheekstraat'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
  ['2402-rabobank-intermediair-portal-1','Rabobank','Intermediair portal','portal','']];
@@ -188,7 +188,7 @@ const FEAT=[['essent','Energy insight and payment processes made clear in the Es
  ['ockto-ds','One central Figma library for all Ockto designs: white-label, iOS, Android and dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
 const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
-const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digital products'],['2210-triodos-3','triodos','Triodos — Mortgage journey'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
+const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digital products'],['2210-triodos-2-e1666083928218','triodos','Triodos — Mortgage journey'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
  ['2402-rabobank-intermediair-portal-1','Rabobank','Intermediary portal','portal','']];
