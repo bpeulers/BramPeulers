@@ -19,18 +19,18 @@ const FEAT=[['essent','Energie-inzicht en betaalprocessen helder gemaakt in de E
  ['ockto-ds','Eén centrale Figma-bibliotheek voor alle Ockto-ontwerpen: white-label, iOS, Android en dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
 const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
-const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digitale producten'],['2210-triodos-2-e1666083928218','triodos','Triodos — Hypotheekstraat'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
+const HERO=[['2611-essent-case','essent','Essent — Digitale klantreizen'],['2603-achmea-mockup','achmea','Achmea — Multimerk oplossingen'],['2502-ipo2','interpolis','Interpolis — Online Team'],['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digitale producten'],['2210-triodos-2-e1666083928218','triodos','Triodos — Hypotheekstraat'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
  ['2402-rabobank-intermediair-portal-1','Rabobank','Intermediair portal','portal','']];
 const CAT={all:'Alle',apps:'Apps',web:'Websites',portal:'Portalen & dashboards',ds:'Design systems',brand:'Branding'};
 
 const SVC=[['Product design','End-to-end UX en UI voor apps, websites en portalen: van user flows en wireframes tot schermen die klaar zijn voor development, gebouwd op een schaalbaar design system en getest met echte gebruikers.'],
- ['UX design','Gebruikersonderzoek, klantbehoeften en interactieontwerp. Ik maak complexe processen begrijpelijk en toegankelijk, zodat gebruikers zonder nadenken hun doel bereiken.'],
- ['Service design','Ik kijk verder dan het scherm: de hele klantreis over kanalen heen, inclusief de processen en systemen erachter. Zo sluiten app, website, klantenservice en backoffice op elkaar aan.'],
- ['Van idee naar prototype','In een paar weken van een idee naar een klikbaar prototype dat met echte gebruikers is getest. Met AI maak ik meerdere richtingen razendsnel tastbaar.'],
- ['Facilitatie & AI-producten','Ik leid teams en beslissers door workshops naar gedragen keuzes, en help AI-functies ontwerpen die gebruikers begrijpen, vertrouwen en kunnen bijsturen.'],
- ['Sectoren & domeinen','Energie is mijn thuisbasis: verbruiksinzicht, dynamische tarieven, zonnepanelen en betaalprocessen. Daarnaast ervaring in finance, verzekeringen, zorg, e-commerce en retail.']];
+ ['Van idee naar prototype','In een paar weken van een idee naar een klikbaar prototype dat met echte gebruikers is getest. Met AI maak ik meerdere richtingen razendsnel tastbaar, zodat je beslist op basis van feedback in plaats van aannames.'],
+ ['UX design','Gebruikersonderzoek, klantbehoeften en interactieontwerp. Ik maak complexe processen begrijpelijk en toegankelijk, zodat gebruikers zonder nadenken hun doel bereiken. Elke keuze onderbouw ik met inzichten uit interviews, data en usability-tests.'],
+ ['Service design','Ik kijk verder dan het scherm: de hele klantreis over kanalen heen, inclusief de processen en systemen erachter. Zo sluiten app, website, klantenservice en backoffice naadloos op elkaar aan en ervaart de klant één geheel.'],
+ ['Workshops & facilitatie','Ik leid teams en beslissers door workshops, van eerste brainstorm tot gedragen besluit. Met heldere werkvormen en direct tastbare schetsen komen product, tech en business samen tot keuzes waar iedereen achter staat.'],
+ ['AI-functies ontwerpen','Ik help AI-functies ontwerpen die gebruikers begrijpen, vertrouwen en kunnen bijsturen. Denk aan uitleg bij suggesties, duidelijke grenzen en altijd de mogelijkheid om zelf in te grijpen of te corrigeren.']];
 
 const QUOTES=[['Bram is sterk in het vertalen van onze requirements naar mobile designs en heeft een goed oog voor ons product en visie.','Ockto','Opdrachtgever'],
  ['Bram denkt erg goed mee en komt met ideeën. Ook de nazorg is erg goed te noemen. Met andere woorden een aanrader!','Huygens & Groenevelt','Financieel advies'],
@@ -106,8 +106,8 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1>
- <div class="apic rv d2">${media('2611-bram-peulers-brug','r32 pf',true,'Bram Peulers op een houten brug in het bos')}</div></section>
+<section class="ph aboutph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1>
+ <div class="apic rv d2">${media('2611-bram-peulers-brug','r45 pf',true,'Bram Peulers op een houten brug in het bos')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>Ik ben Bram Peulers, freelance product designer en eigenaar van De Merkenstudio. Na ruim tien jaar ontwerpen van apps, websites en digitale omgevingen zie ik mezelf steeds meer als regisseur dan als maker.</p>
  <p>Mijn kracht zit in de combinatie. Ik leid teams en beslissers door het proces, van eerste brainstorm tot besluit, en maak tegelijk met AI razendsnel tastbaar wat er op tafel ligt. Geen weken wachten op een ontwerp, maar binnen dezelfde week een prototype om op te reageren. Die combinatie van facilitator en snelle bouwer is nog vrij zeldzaam.</p>
@@ -188,18 +188,18 @@ const FEAT=[['essent','Energy insight and payment processes made clear in the Es
  ['ockto-ds','One central Figma library for all Ockto designs: white-label, iOS, Android and dark mode.',['Design system','Figma','iOS & Android']]];
 const CASES=FEAT.map(([slug,short,tags])=>{const c=CD.find(x=>x.slug===slug)||{};return {slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short,tags}}).filter(c=>c.client);
 const HOMECASES=CD.slice(0,5).map(c=>CASES.find(x=>x.slug===c.slug)||({slug:c.slug,client:c.client,title:c.title,year:c.period,img:c.thumb,short:clip(c.intro),tags:[]}));
-const HERO=[['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digital products'],['2210-triodos-2-e1666083928218','triodos','Triodos — Mortgage journey'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
+const HERO=[['2611-essent-case','essent','Essent — Digital customer journeys'],['2603-achmea-mockup','achmea','Achmea — Multi-brand solutions'],['2502-ipo2','interpolis','Interpolis — Online Team'],['2310-tussenstand-dashboard-3','eneco-app','Eneco — App team'],['2307-sns-large','sns','SNS — Redesign'],['2306-screens','unive','Univé — Digital products'],['2210-triodos-2-e1666083928218','triodos','Triodos — Mortgage journey'],['2310-oxxio','eneco-app','Oxxio — Dynamic pricing app']];
 const PF=[...CD.map(c=>[c.thumb,c.client,c.title,c.cat,'case:'+c.slug]),
  ['2402-knab','Knab','App concept','apps',''],
  ['2402-rabobank-intermediair-portal-1','Rabobank','Intermediary portal','portal','']];
 const CAT={all:'All',apps:'Apps',web:'Websites',portal:'Portals & dashboards',ds:'Design systems',brand:'Branding'};
 
 const SVC=[['Product design','End-to-end UX and UI for apps, websites and portals: from user flows and wireframes to development-ready screens, built on a scalable design system and tested with real users.'],
- ['UX design','User research, customer needs and interaction design. I make complex processes understandable and accessible, so users reach their goal without having to think.'],
- ['Service design','I look beyond the screen: the entire customer journey across channels, including the processes and systems behind it. So app, website, customer service and back office fit together.'],
- ['From idea to prototype','From an idea to a clickable prototype tested with real users, in a matter of weeks. With AI I make several directions tangible at high speed.'],
- ['Facilitation & AI products','I guide teams and decision-makers through workshops towards shared decisions, and help design AI features that users understand, trust and can steer.'],
- ['Sectors & domains','Energy is my home base: usage insight, dynamic pricing, solar panels and payment processes. Plus experience in finance, insurance, healthcare, e-commerce and retail.']];
+ ['From idea to prototype','From an idea to a clickable prototype tested with real users, in a matter of weeks. With AI I make several directions tangible at high speed, so you decide based on feedback instead of assumptions.'],
+ ['UX design','User research, customer needs and interaction design. I make complex processes understandable and accessible, so users reach their goal without having to think. Every choice is backed by insights from interviews, data and usability tests.'],
+ ['Service design','I look beyond the screen: the entire customer journey across channels, including the processes and systems behind it. So app, website, customer service and back office fit together seamlessly and the customer experiences one whole.'],
+ ['Workshops & facilitation','I guide teams and decision-makers through workshops, from first brainstorm to a shared decision. With clear formats and instantly tangible sketches, product, tech and business arrive at choices everyone supports.'],
+ ['Designing AI features','I help design AI features that users understand, trust and can steer. Think of explanations with suggestions, clear boundaries and always the option to step in or correct things yourself.']];
 
 const QUOTES=[['Bram is strong at translating our requirements into mobile designs and has a good eye for our product and vision.','Ockto','Client'],
  ['Bram thinks along really well and comes up with ideas. The aftercare is excellent too. In other words: highly recommended!','Huygens & Groenevelt','Financial advice'],
@@ -275,8 +275,8 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1>
- <div class="apic rv d2">${media('2611-bram-peulers-brug','r32 pf',true,'Bram Peulers on a wooden bridge in the woods')}</div></section>
+<section class="ph aboutph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1>
+ <div class="apic rv d2">${media('2611-bram-peulers-brug','r45 pf',true,'Bram Peulers on a wooden bridge in the woods')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>I’m Bram Peulers, freelance product designer and owner of De Merkenstudio. After more than ten years of designing apps, websites and digital environments, I increasingly see myself as a director rather than a maker.</p>
  <p>My strength lies in the combination. I guide teams and decision-makers through the process, from the first brainstorm to the final decision, and at the same time use AI to make whatever is on the table tangible at speed. No waiting weeks for a design, but a prototype to react to within the same week. That combination of facilitator and fast builder is still fairly rare.</p>
