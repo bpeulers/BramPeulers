@@ -107,7 +107,7 @@ artikelen:()=>`
 
 about:()=>`
 <section class="ph"><h1 class="h1">${L(['Meer regisseur dan maker.','Ik maak ideeën met AI','<span class="grad">razendsnel</span> tastbaar.'])}</h1>
- <div class="apic rv d2">${media('2408-brampeulers-portret','r11 pf',true,'Portret van Bram Peulers')}</div></section>
+ <div class="apic rv d2">${media('2611-bram-peulers-brug','r32 pf',true,'Bram Peulers op een houten brug in het bos')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>Ik ben Bram Peulers, freelance product designer en eigenaar van De Merkenstudio. Na ruim tien jaar ontwerpen van apps, websites en digitale omgevingen zie ik mezelf steeds meer als regisseur dan als maker.</p>
  <p>Mijn kracht zit in de combinatie. Ik leid teams en beslissers door het proces, van eerste brainstorm tot besluit, en maak tegelijk met AI razendsnel tastbaar wat er op tafel ligt. Geen weken wachten op een ontwerp, maar binnen dezelfde week een prototype om op te reageren. Die combinatie van facilitator en snelle bouwer is nog vrij zeldzaam.</p>
@@ -276,7 +276,7 @@ artikelen:()=>`
 
 about:()=>`
 <section class="ph"><h1 class="h1">${L(['More director than maker.','I use AI to make ideas','tangible <span class="grad">at speed</span>.'])}</h1>
- <div class="apic rv d2">${media('2408-brampeulers-portret','r11 pf',true,'Portrait of Bram Peulers')}</div></section>
+ <div class="apic rv d2">${media('2611-bram-peulers-brug','r32 pf',true,'Bram Peulers on a wooden bridge in the woods')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>I’m Bram Peulers, freelance product designer and owner of De Merkenstudio. After more than ten years of designing apps, websites and digital environments, I increasingly see myself as a director rather than a maker.</p>
  <p>My strength lies in the combination. I guide teams and decision-makers through the process, from the first brainstorm to the final decision, and at the same time use AI to make whatever is on the table tangible at speed. No waiting weeks for a design, but a prototype to react to within the same week. That combination of facilitator and fast builder is still fairly rare.</p>
