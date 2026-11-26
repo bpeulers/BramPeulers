@@ -106,7 +106,7 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph aboutph"><h1 class="h1">${L(['Maker én regisseur.','Ik ontwerp zelf en maak','ideeën <span class="grad">razendsnel</span> tastbaar.'])}</h1>
+<section class="ph aboutph"><h1 class="h1">${L(['Designer én prototyper.','Ik ontwerp zelf en maak','ideeën <span class="grad">razendsnel</span> tastbaar.'])}</h1>
  <div class="apic rv d2">${media('2611-bram-peulers-brug','r45 pf',true,'Bram Peulers op een houten brug in het bos')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>Ik ben Bram Peulers, freelance product designer en eigenaar van De Merkenstudio. Al ruim tien jaar ontwerp ik apps, websites en digitale omgevingen, en dat doe ik nog altijd met veel plezier zelf: van flows en wireframes tot pixel-perfect UI en een schaalbaar design system. Tegelijk neem ik steeds vaker de regie, zodat teams sneller tot de juiste keuzes komen.</p>
@@ -275,7 +275,7 @@ artikelen:()=>`
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
 about:()=>`
-<section class="ph aboutph"><h1 class="h1">${L(['Maker and director.','I design hands-on and make','ideas tangible <span class="grad">at speed</span>.'])}</h1>
+<section class="ph aboutph"><h1 class="h1">${L(['Designer and prototyper.','I design hands-on and make','ideas tangible <span class="grad">at speed</span>.'])}</h1>
  <div class="apic rv d2">${media('2611-bram-peulers-brug','r45 pf',true,'Bram Peulers on a wooden bridge in the woods')}</div></section>
 <section class="wrap split solo">
  <div class="prose rv"><p>I’m Bram Peulers, freelance product designer and owner of De Merkenstudio. I’ve been designing apps, websites and digital environments for more than ten years, and I still love doing the hands-on work myself: from flows and wireframes to pixel-perfect UI and a scalable design system. At the same time, I increasingly take the lead so teams reach the right decisions faster.</p>
