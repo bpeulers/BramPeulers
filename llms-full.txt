@@ -728,7 +728,7 @@ An assignment ends; the system remains. Make sure everything you added is well d
 Read more about design systems in The benefits of a design system. Looking for a designer who gets up to speed fast? Feel free to get in touch.
 
 
-## Article: Multi-brand design: one flow for multiple brands
+## Article: Multi-brand design: one flow, different identities
 
 URL: https://www.brampeulers.com/en/articles/multi-brand-design/
 
