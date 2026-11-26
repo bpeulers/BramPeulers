@@ -459,6 +459,73 @@ Project leaders Anneleen Ypma – Diedering and Michel Hofstede asked me to crea
 With moving images, playful graphic elements and an energetic look & feel, we believe we can appeal to young people! Curious? Visit the website at mdtsport.nl.
 
 
+## Article: From Figma to AI prototype: testing faster with real customers
+
+URL: https://www.brampeulers.com/en/articles/prototype-figma-ai/
+
+For many UX designers, a clickable Figma prototype is the standard. For most flows it works fine. But as soon as a design revolves around data, interaction and scenarios, you hit its limits. A chart that changes when you switch from day to month, numbers that add up, a screen that responds to what the user does: in Figma you build that with dozens of separate frames, and it still doesn’t feel real. In this article I show how I turn a Figma design into a working prototype with AI (Claude), and how you then test it with real customers. As an example I use the prototype I made for the Essent energy app.
+
+### The context: energy insight in the Essent app
+At Essent I work on the I Use customer journey: the environment where customers see their energy consumption and generation. Think of live consumption via the smart meter, electricity per hour, day, month and year, solar power, feed-in and self-consumption. Exactly the kind of information that quickly becomes complex. Customers need to understand at a glance what they use, what their solar panels generate and what that means.
+I first designed the screens in Figma, using components from the design system. But to test whether customers really understand the charts and terms, I wanted a prototype that behaves like the real app: tabs that work, data that moves along and details you can open. I built that prototype with Claude. See the Essent case for more background.
+
+### Why not just Figma?
+Figma remains my design tool. That’s where I work out the structure, hierarchy and visual details. But a Figma prototype is essentially a series of images with hotspots. For a usability test with data-heavy screens, that creates three problems:
+- It doesn’t feel real. Participants quickly notice they can only click in one place. They start looking for the ‘right’ button instead of behaving naturally.
+- Data is static. If you switch from day to month, every combination has to exist as a separate frame. One inconsistent value and the story falls apart.
+- Variants are expensive. Want to compare two ways of visualising something? You double the work.
+With AI you can turn the same design into a prototype in real code in a short time, running in the browser or on a phone.
+
+### The step-by-step plan
+
+### Step 1: Start with the research question
+Before you build anything: what do you want to learn? For the Essent prototype the questions included: do customers understand the difference between consumption, feed-in and self-consumption? And can they find their way between live, hour, day, month and year on their own? The research question determines what the prototype must be able to do. Leave out everything that doesn’t contribute to it.
+
+### Step 2: Design the foundation in Figma
+Work out the key screens and flow in Figma, using the components from the design system. Make sure the most important states are there: the default view, a detail view and any empty or error states. This remains the source of truth for the design. AI doesn’t replace this part; it builds on it.
+
+### Step 3: Prepare the handover
+The better your input, the better the result. I give Claude:
+- screenshots or exports of the Figma frames;
+- the basics of the design system: colours, typography, spacing and the key components;
+- a description of the behaviour: what happens when you tap a tab, what opens a detail, which way it scrolls;
+- realistic but made-up data. Never use real customer data in a prompt.
+
+### Step 4: Build the prototype with Claude
+Ask Claude to build the first screen as a single working file, for example in HTML or React, at phone size. Describe exactly what needs to work. For example: “Rebuild this electricity screen. The tabs Live, Hour, Day, Month and Year switch the chart. For each period show solar consumption, grid consumption and feed-in, and calculate self-consumption from those values.” Let the data come from a single source, so all numbers add up on every screen.
+
+### Step 5: Iterate in small steps
+Put the result next to your Figma design and steer with concrete remarks: “the chart bars are too narrow”, “only use the primary colour for the selected period”. Small, specific requests work better than one big one. This is also the moment to create variants, for example two ways of showing feed-in, so you can compare them in the test.
+
+### Step 6: Make it test-ready
+Put the prototype on a shareable link so participants can open it on their own phone. Check the states you need in the test, add a way to return to the starting point, and walk through the whole scenario yourself a few times. Let a colleague try it before the first customer sees it.
+
+### Testing with real customers
+A prototype only becomes valuable when you test it with the people you design for. This is how I approach a usability study:
+- Recruit the right participants. For an energy app that means, for example, customers with and without solar panels. Five to eight participants per round is usually enough to find the biggest problems.
+- Write tasks, not instructions. Not “tap Month”, but “How much electricity did you feed back last month?” That shows whether people find their own way.
+- Let them think aloud. Ask participants to say what they see, expect and understand. With terms like self-consumption you immediately hear where things go wrong.
+- Observe and measure. Note whether a task succeeds, how long it takes and where people hesitate. Afterwards, ask how confident they are about their answer.
+- Analyse and adjust. Cluster the findings, prioritise by impact and update the prototype. With AI an updated version is often ready the same day, so you can plan a second round quickly.
+Share the results with the team and decision-makers, ideally with short clips from the sessions. Nothing is as convincing as a customer hesitating out loud over a chart.
+
+### The benefits
+- More realistic testing. Participants behave more naturally in a prototype that actually responds, so the insights are more reliable.
+- Faster iteration. A change or variant takes hours instead of days.
+- Better conversations with developers. A working prototype shows how something should behave, not just how it looks.
+- Buy-in from decision-makers. Stakeholders can try the prototype on their own phone. That makes choices more concrete.
+
+### What to watch out for
+- It’s still a prototype. The code is meant for learning, not for launching. Development builds the real version.
+- Guard the design. AI sometimes fills in gaps on its own. Always compare with Figma and the design system.
+- No real customer data. Work with made-up but realistic data, and follow your organisation’s agreements on AI use.
+- The designer stays in charge. AI speeds up the making, but the choices about what you test and what you do with it remain yours.
+
+### In conclusion
+Figma and AI aren’t competitors but a strong combination. In Figma you think up and refine the design; with AI you make it real enough to test in a short time. That gets you from idea to tested prototype faster, with insights from real customers instead of assumptions.
+Want to apply this in your team too? Feel free to get in touch.
+
+
 ## Article: UX, UI or visual design: what are the differences?
 
 URL: https://www.brampeulers.com/en/articles/ux-ui-visual-design/

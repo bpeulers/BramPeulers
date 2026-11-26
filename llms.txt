@@ -38,6 +38,7 @@
 - [MDT Sport — New brand identity and website](https://www.brampeulers.com/en/cases/mdt/): Visual designer, 2020.
 
 ## Articles
+- [From Figma to AI prototype: testing faster with real customers](https://www.brampeulers.com/en/articles/prototype-figma-ai/): A step-by-step plan for turning a Figma design into a working prototype with Claude, and testing it with real customers. Using the Essent prototype as an example.
 - [UX, UI or visual design: what are the differences?](https://www.brampeulers.com/en/articles/ux-ui-visual-design/): The terms are often used interchangeably. A clear explanation of three different disciplines.
 - [The benefits of a design system](https://www.brampeulers.com/en/articles/design-system/): How a design system helps organisations keep their digital products consistent.
 - [Why does a consistent brand identity matter?](https://www.brampeulers.com/en/articles/huisstijl/): Recognisability builds trust. Why consistency pays off for every brand.
