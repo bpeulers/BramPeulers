@@ -32,7 +32,7 @@ const SVC=[['Product design','End-to-end UX en UI voor apps, websites en portale
  ['UX design','Gebruikersonderzoek, klantbehoeften en interactieontwerp. Ik maak complexe processen begrijpelijk en toegankelijk, zodat gebruikers zonder nadenken hun doel bereiken. Elke keuze onderbouw ik met inzichten uit interviews, data en usability-tests.'],
  ['Service design','Ik kijk verder dan het scherm: de hele klantreis over kanalen heen, inclusief de processen en systemen erachter. Zo sluiten app, website, klantenservice en backoffice naadloos op elkaar aan en ervaart de klant één geheel.'],
  ['Workshops & facilitatie','Ik leid teams en beslissers door workshops, van eerste brainstorm tot gedragen besluit. Met heldere werkvormen en direct tastbare schetsen komen product, tech en business samen tot keuzes waar iedereen achter staat.'],
- ['AI-functies ontwerpen','Ik help AI-functies ontwerpen die gebruikers begrijpen, vertrouwen en kunnen bijsturen. Denk aan uitleg bij suggesties, duidelijke grenzen en altijd de mogelijkheid om zelf in te grijpen of te corrigeren.']];
+ ['Prototyping met AI','Met AI zet ik een Figma-ontwerp in korte tijd om naar een werkend prototype in echte code, met realistische data, interactie en varianten. Zo test je met klanten iets dat aanvoelt als het echte product.']];
 
 const QUOTES=[['Bram is sterk in het vertalen van onze requirements naar mobile designs en heeft een goed oog voor ons product en visie.','Ockto','Opdrachtgever'],
  ['Bram denkt erg goed mee en komt met ideeën. Ook de nazorg is erg goed te noemen. Met andere woorden een aanrader!','Huygens & Groenevelt','Financieel advies'],
@@ -202,7 +202,7 @@ const SVC=[['Product design','End-to-end UX and UI for apps, websites and portal
  ['UX design','User research, customer needs and interaction design. I make complex processes understandable and accessible, so users reach their goal without having to think. Every choice is backed by insights from interviews, data and usability tests.'],
  ['Service design','I look beyond the screen: the entire customer journey across channels, including the processes and systems behind it. So app, website, customer service and back office fit together seamlessly and the customer experiences one whole.'],
  ['Workshops & facilitation','I guide teams and decision-makers through workshops, from first brainstorm to a shared decision. With clear formats and instantly tangible sketches, product, tech and business arrive at choices everyone supports.'],
- ['Designing AI features','I help design AI features that users understand, trust and can steer. Think of explanations with suggestions, clear boundaries and always the option to step in or correct things yourself.']];
+ ['Prototyping with AI','With AI I turn a Figma design into a working prototype in real code in a short time, with realistic data, interaction and variants. So you test with customers something that feels like the real product.']];
 
 const QUOTES=[['Bram is strong at translating our requirements into mobile designs and has a good eye for our product and vision.','Ockto','Client'],
  ['Bram thinks along really well and comes up with ideas. The aftercare is excellent too. In other words: highly recommended!','Huygens & Groenevelt','Financial advice'],
