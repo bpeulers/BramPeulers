@@ -101,8 +101,8 @@ art:(a)=>{const rel=ARTS.filter(x=>x!==a).map((x,k)=>[x,(x.cat===a.cat?10:/desig
 <div class="relgrid">${rel.map(x=>`<a class="relcard rv" href="#art-${x.slug}" data-c="view">${media(x.img,'r43',false,x.title)}<span class="label">${x.cat}</span><h3>${x.title}</h3><p>${x.summary}</p></a>`).join('')}</div></section>${closer()}`},
 
 artikelen:()=>`
-<section class="ph"><h1 class="h1">${L(['Artikelen over UX,','design systems en <span class="grad">merken</span>.'])}</h1>
-<p class="lead rv d2">Wat ik in de praktijk leer over gebruikerservaring, design systems en merkidentiteit, uitgeschreven voor wie er zelf mee aan de slag wil.</p></section>
+<section class="ph"><h1 class="h1">${L(['Artikelen over UX,','AI en <span class="grad">prototyping</span>.'])}</h1>
+<p class="lead rv d2">Wat ik in de praktijk leer over UX-design, prototypen met AI, testen met echte gebruikers en design systems. Uitgeschreven voor designers, productteams en iedereen die er zelf mee aan de slag wil.</p></section>
 <section class="sec" style="padding-top:0">
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
@@ -271,8 +271,8 @@ art:(a)=>{const rel=ARTS.filter(x=>x!==a).map((x,k)=>[x,(x.cat===a.cat?10:/desig
 <div class="relgrid">${rel.map(x=>`<a class="relcard rv" href="#art-${x.slug}" data-c="view">${media(x.img,'r43',false,x.title)}<span class="label">${x.cat}</span><h3>${x.title}</h3><p>${x.summary}</p></a>`).join('')}</div></section>${closer()}`},
 
 artikelen:()=>`
-<section class="ph"><h1 class="h1">${L(['Articles on UX,','design systems and <span class="grad">brands</span>.'])}</h1>
-<p class="lead rv d2">What I learn in practice about user experience, design systems and brand identity, written up for anyone who wants to put it to work.</p></section>
+<section class="ph"><h1 class="h1">${L(['Articles on UX,','AI and <span class="grad">prototyping</span>.'])}</h1>
+<p class="lead rv d2">What I learn in practice about UX design, prototyping with AI, testing with real users and design systems. Written for designers, product teams and anyone who wants to put it to work.</p></section>
 <section class="sec" style="padding-top:0">
 <div class="alist">${ARTS.map(a=>`<a class="rv" href="#art-${a.slug}" data-c="view">${media(a.img,'r43',false,'')}<span><span class="label">${a.cat}</span><h3>${a.title}</h3><p>${a.summary}</p></span><span class="ar">→</span></a>`).join('')}</div></section>${closer()}`,
 
@@ -374,12 +374,12 @@ const fixLinks=root=>{ root.querySelectorAll('a[href^="#"]').forEach(a=>{const h
 const META={
  nl:{home:'Bram Peulers is freelance product designer en facilitator. Van idee naar getest prototype, met AI en echte gebruikers. UX, service design en design systems.',
   portfolio:'Portfolio van Bram Peulers: apps, websites, portalen en design systems voor Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ en meer.',
-  artikelen:'Artikelen van Bram Peulers over UX, UI, design systems, customer journeys, persona’s en merkidentiteit.',
+  artikelen:'Artikelen van Bram Peulers over UX-design, AI-prototyping, usability-onderzoek, design systems en de samenwerking met development.',
   about:'Over Bram Peulers: product designer en facilitator met ruim 10 jaar ervaring in energie, finance, verzekeringen, zorg, e-commerce en retail. Ook voor lange trajecten.',
   contact:'Neem contact op met Bram Peulers voor product design, UX, service design, AI-prototyping of het faciliteren van workshops.'},
  en:{home:'Bram Peulers is a freelance product designer and facilitator. From idea to tested prototype, with AI and real users. UX, service design and design systems.',
   portfolio:'Portfolio of Bram Peulers: apps, websites, portals and design systems for Essent, Achmea, Eneco, SNS, ASN Bank, Triodos, VGZ and more.',
-  artikelen:'Articles by Bram Peulers on UX, UI, design systems, customer journeys, personas and brand identity.',
+  artikelen:'Articles by Bram Peulers on UX design, AI prototyping, usability research, design systems and collaboration with development.',
   about:'About Bram Peulers: product designer and facilitator with 10+ years of experience in energy, finance, insurance, healthcare, e-commerce and retail. Also for long-term engagements.',
   contact:'Get in touch with Bram Peulers for product design, UX, service design, AI prototyping or workshop facilitation.'}
 };

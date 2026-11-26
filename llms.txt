@@ -39,6 +39,14 @@
 
 ## Articles
 - [From Figma to AI prototype: testing faster with real customers](https://www.brampeulers.com/en/articles/prototype-figma-ai/): A step-by-step plan for turning a Figma design into a working prototype with Claude, and testing it with real customers. Using the Essent prototype as an example.
+- [Five prompts to bring a Figma design to life](https://www.brampeulers.com/en/articles/prompts-figma-prototype/): Concrete prompts for turning a static Figma design into a working prototype with AI, ready for testing.
+- [Designing AI features: trust, explanation and control](https://www.brampeulers.com/en/articles/ai-functies-ontwerpen/): How do you design AI features that users understand, trust and can steer themselves? Three principles and practical design patterns.
+- [When an AI prototype is not the best choice](https://www.brampeulers.com/en/articles/wanneer-geen-ai-prototype/): AI prototypes are powerful, but not always the right step. When you’re better off sketching, staying in Figma or building straight away.
+- [Usability testing with 8 customers: getting the most out of it](https://www.brampeulers.com/en/articles/usability-testen-8-klanten/): With eight participants you find the key problems and see patterns. How to prepare the test, run it and process the results.
+- [From test insight to decision: getting decision-makers on board](https://www.brampeulers.com/en/articles/van-testinzicht-naar-besluit/): Research only matters when it leads to a decision. How to present findings so product owners and management can act on them straight away.
+- [Working within an existing design system as a freelancer](https://www.brampeulers.com/en/articles/design-system-als-freelancer/): As a freelancer you often join an organisation with its own design system. How to become productive quickly, stay consistent and still add value.
+- [Multi-brand design: one flow for multiple brands](https://www.brampeulers.com/en/articles/multi-brand-design/): How do you design one solution that works for several brands, each with its own look? Lessons from working on a claims flow for Achmea.
+- [The handover to development: avoiding surprises](https://www.brampeulers.com/en/articles/overdracht-naar-development/): A good design can still go wrong during the build. How to ensure a smooth handover to development, without misunderstandings afterwards.
 - [UX, UI or visual design: what are the differences?](https://www.brampeulers.com/en/articles/ux-ui-visual-design/): The terms are often used interchangeably. A clear explanation of three different disciplines.
 - [The benefits of a design system](https://www.brampeulers.com/en/articles/design-system/): How a design system helps organisations keep their digital products consistent.
 - [Why does a consistent brand identity matter?](https://www.brampeulers.com/en/articles/huisstijl/): Recognisability builds trust. Why consistency pays off for every brand.

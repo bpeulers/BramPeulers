@@ -527,6 +527,275 @@ Figma and AI aren’t competitors but a strong combination. In Figma you think u
 Want to apply this in your team too? Feel free to get in touch.
 
 
+## Article: Five prompts to bring a Figma design to life
+
+URL: https://www.brampeulers.com/en/articles/prompts-figma-prototype/
+
+In my article on AI prototypes I described how to get from a Figma design to a working prototype. The question I get most often since: what exactly do you type? In this article I share five prompts I use again and again, and why they work. I use them with Claude, but the principle works in any good AI assistant.
+
+### 1. Setting up the foundation
+“Here are three screens from my Figma design for a mobile app. Rebuild the first screen as a single HTML file, 390 pixels wide. Use these colours, this typeface and this spacing: […]. Stick to the design as closely as possible and don’t invent extra elements.”
+Why it works: you give context (what it is), constraints (size, one file) and the building blocks from the design system. The last sentence stops the AI from filling in the gaps creatively.
+
+### 2. Adding behaviour
+“Make the tabs at the top work. On tap, the content below switches without reloading the page. The active tab gets the primary colour. Add a short 200-millisecond transition.”
+Always describe behaviour as cause and effect: when the user does X, Y happens. The more concrete, the less back-and-forth.
+
+### 3. Realistic data
+“Create one data source with made-up but realistic values for thirty days. All screens take their numbers from it, so totals and details always add up.”
+This is the prompt that makes the biggest difference compared to a Figma prototype. Test participants drop out quickly when numbers don’t add up. Never use real customer data.
+
+### 4. Variants for the test
+“Create a second version of this screen in which the chart is replaced by three large numbers with a short explanation. Add a hidden switch so I can toggle between version A and B during the test.”
+That lets you test two directions in one session without managing two prototypes.
+
+### 5. Making it test-ready
+“Add a reset button that returns everything to the starting state, and make sure the prototype works well on a phone without zooming. Check that all buttons are large enough to hit with a thumb.”
+After each session you want to return to the start with one tap. Small details, but they prevent hassle during the test.
+
+### Tips for better prompting
+- One thing at a time. Small, specific requests give better results than one long list.
+- Show what’s wrong. A screenshot with “the spacing here is too large” works better than a long description.
+- Lock in what’s right. Say explicitly which parts must not change any more.
+- Keep comparing with Figma. The design remains the source of truth.
+Want to practise this with your team? Feel free to get in touch.
+
+
+## Article: Designing AI features: trust, explanation and control
+
+URL: https://www.brampeulers.com/en/articles/ai-functies-ontwerpen/
+
+More and more digital products are getting AI features: smart suggestions, automatic summaries, predictions. Technically a lot is possible, but whether users benefit depends on the design. An AI feature that nobody understands or trusts gets ignored. In this article I share three principles I use to design AI features.
+
+### Why AI needs a different kind of design
+Regular software does the same thing predictably. AI doesn’t: the outcome can differ each time and is sometimes simply wrong. That calls for a different kind of design. You don’t just design the moment it goes well, but especially the doubt, the error and the correction.
+
+### Principle 1: Trust has to be earned
+Users only trust an AI feature when it’s right often enough and honest about what it doesn’t know. So design:
+- Expectations up front. Explain what the feature can and can’t do, in plain language.
+- Visible certainty. Show when a prediction is uncertain, for example with “probably” or a range instead of one exact number.
+- Small steps. Start with suggestions the user confirms before letting things happen automatically.
+
+### Principle 2: Explain why
+A suggestion without a reason feels like a guess. A short explanation makes the difference: “We expect your consumption to be higher this month because it’s colder than last year.” Keep the explanation short and relevant to the decision the user needs to make. Technical details about the model are rarely needed.
+
+### Principle 3: The user stays in control
+People must always be able to intervene. So design:
+- a clear way to adjust or reject a suggestion;
+- an undo for everything that happens automatically;
+- an easy way to give feedback when something is wrong;
+- always an alternative without AI, such as filling things in yourself or contacting an employee.
+
+### Design the error
+A good AI feature falls back gracefully when things go wrong. Ask yourself for every screen: what does the user see when the AI has no answer, gives a wrong answer or is slow? Those moments decide whether someone keeps using the feature.
+
+### Test with real users
+You can’t design trust from behind your desk. Build a working prototype with realistic good and bad outcomes and watch how people react. Afterwards, ask how confident they felt and whether they would follow the suggestion.
+
+### In conclusion
+Designing AI features is less about the technology and more about the conversation with the user: what does the system know, how sure is it and what can you do yourself? Want to discuss this for your product? Feel free to get in touch.
+
+
+## Article: When an AI prototype is not the best choice
+
+URL: https://www.brampeulers.com/en/articles/wanneer-geen-ai-prototype/
+
+I’m enthusiastic about prototypes built with AI. They’re fast, realistic and ideal for testing with real customers. But they’re not always the best choice. An honest piece about when you’re better off doing something else.
+
+### 1. When the problem isn’t clear yet
+A working prototype quickly feels like a solution. If the team doesn’t yet know which problem you’re solving or for whom, a polished prototype draws attention to details like colours and buttons. Start with a workshop, paper sketches or a simple flow on a whiteboard. Speed only helps once you’re heading in the right direction.
+
+### 2. When you want to test the big picture
+If you want to know whether people understand the structure or the concept, a simple wireframe or a few loose screens is often enough. The more real something looks, the more people react to the finish rather than the idea.
+
+### 3. When the flow is simple and linear
+For a three-step form or a simple click path, a Figma prototype is fine and quicker to make. An AI prototype pays off mainly with data, interaction and scenarios that would require many separate screens in Figma.
+
+### 4. When it raises expectations you can’t meet
+A prototype that looks perfect and works smoothly can give stakeholders the impression that the product is almost finished. Always make clear that it’s a prototype for learning, not for launching.
+
+### 5. When sensitive data is involved
+If you can’t test the scenario without real customer or company data, or your organisation’s policies don’t allow AI tools? Then a prototype with dummy data in Figma or a secure internal environment is the better choice.
+
+### 6. When you already know what to build
+If the concept has already been tested and chosen, an extra prototype is often duplicate work. Go straight to the real implementation with development and continue testing there.
+
+### The right form for the right question
+The rule of thumb: choose the lightest form that can answer your research question.
+- Do we understand the problem? Workshop, sketches.
+- Is the structure right? Wireframes, simple click model.
+- Do people understand the details and interaction? Figma prototype or AI prototype.
+- Does it work with real data and scenarios? AI prototype.
+Not sure which form fits your question? Let’s talk.
+
+
+## Article: Usability testing with 8 customers: getting the most out of it
+
+URL: https://www.brampeulers.com/en/articles/usability-testen-8-klanten/
+
+You don’t need to talk to hundreds of people to discover where your design goes wrong. Eight customers get you a long way: you find the biggest problems, see patterns recur and have enough room to compare two target groups or two variants. This is how I approach such a test.
+
+### Why eight?
+With five participants you already see most usability problems. With eight you get some extra certainty and can, for example, talk to four people from one target group and four from another. For an energy app, think of customers with and without solar panels. More participants in one round mostly gives repetition. Better: test with eight, improve and test again.
+
+### Preparation
+- Define your research questions. What do you want to know afterwards? Two to four questions is enough.
+- Recruit the right people. Real customers or people from your target group, not colleagues. Spread them across age, experience and situation.
+- Write tasks, not instructions. Not “tap Invoices”, but “You want to know how much you paid last month. How do you find that?”
+- Test your test. Do a pilot session with a colleague to weed out unclear tasks and technical issues.
+
+### During the session
+- Put people at ease. Explain that you’re testing the design, not them. There are no mistakes.
+- Let them think aloud. Ask participants to say what they see, look for and expect.
+- Don’t help. If someone gets stuck, ask “what would you do now?” instead of giving the answer.
+- Probe. “What do you mean by difficult?” often yields the most valuable insights.
+- Close with reflection. How sure were they? What stood out? What would they miss?
+Let a colleague observe and take notes, so you can focus on the conversation. Record the sessions if the participant consents.
+
+### What you measure
+- Does the task succeed: independently, with difficulty or not at all?
+- How long does it take, and where do people hesitate?
+- Do they understand the terms and numbers?
+- How confident are they about their answer?
+
+### After the test
+List all observations, group them by theme and count how often something occurs. Prioritise by impact: what stops people from reaching their goal? Link every problem to a concrete improvement. With an AI prototype you process those improvements quickly, so a second round can happen within a few days.
+
+### In conclusion
+Eight conversations with real customers yield more than weeks of debate about assumptions. Want to set up a usability test for your product? Feel free to get in touch.
+
+
+## Article: From test insight to decision: getting decision-makers on board
+
+URL: https://www.brampeulers.com/en/articles/van-testinzicht-naar-besluit/
+
+You’ve run a good usability test, the insights are clear and the team is enthusiastic. And then? Too often research ends up in a report nobody reads. Research only matters when it leads to a decision. This is how I make sure decision-makers come along.
+
+### Involve decision-makers from the start
+The best way to build support is to involve decision-makers before anything is tested. Draft the research questions together: what do we need to know to make a decision? Invite them to watch one or two sessions. Anyone who has seen a customer struggle doesn’t need convincing any more.
+
+### Start with the decision, not the method
+Decision-makers want to know what to do, not how you set up the research. So start with the conclusion and the advice, for example: “Choose variant B. Seven out of eight customers understood their consumption right away; with variant A it was half.” The supporting evidence comes after.
+
+### Let the customer speak
+A short video of a customer hesitating out loud convinces more than ten slides of charts. Pick two or three clips of no more than thirty seconds that show the key insight. Quotes work well too, as long as you keep them anonymous.
+
+### Make it concrete and prioritise
+- Stick to the key findings. Three to five is enough; the rest goes in the appendix.
+- Link each finding to an action. What do we change, who does it and when?
+- Make the impact visible. What does doing nothing cost? Think of customer contact, drop-off or wrong expectations.
+- Be honest about uncertainty. Eight participants isn’t statistics. Say what you know for sure and what you still want to test.
+
+### Choose the right moment and format
+You don’t make a decision by email. Plan a short session of thirty to sixty minutes with the people who need to decide. Show the prototype, play the clips and close with a concrete proposal. Facilitate the discussion towards a choice and record it.
+
+### Keep the next step small
+Big changes trigger resistance. So propose a small first step that shows results quickly, such as one improved screen you test again. Success there makes the next step easier.
+
+### In conclusion
+Good research only changes something when it leads to a shared decision. Besides research skills, that takes direction: the right people, the right moment and a clear proposal. Want help turning insights into decisions? Feel free to get in touch.
+
+
+## Article: Working within an existing design system as a freelancer
+
+URL: https://www.brampeulers.com/en/articles/design-system-als-freelancer/
+
+As a freelance product designer I regularly join organisations that have their own design system. That’s a big advantage: many choices have already been made and you can get going quickly. But it also asks something of you. In this article I share how I become productive fast, stay consistent and still add something.
+
+### Week 1: learning how the system thinks
+A design system is more than a component library. It reflects the team’s choices. So I start with:
+- Reading the documentation. Not just what exists, but why: principles, accessibility, writing guidelines.
+- Studying existing screens. How are components used in practice, and where does it deviate?
+- Meeting the owners. Who maintains the system, how do you propose a change and how often are there updates?
+- Learning the structure in Figma. How are variables, variants and tokens set up?
+
+### Use what’s there before making something new
+It’s tempting to design your own solution. But every new component makes the system more complex. So look first: is there already something that solves the problem, perhaps with a small tweak? Only if not do you design something new, and then in the style of the system.
+
+### New components: design them for everyone
+If something new really is needed, design it so other teams can use it too. Think of all states (default, hover, active, disabled, error), different screen sizes and accessibility. Align it with the design system owners so it earns a place in the system instead of staying a one-off.
+
+### Staying consistent under time pressure
+- Always work with the components and styles from the library, never with detached copies.
+- Use the fixed spacing and colour variables, even when it “just needs to be quick”.
+- Have your work reviewed regularly by someone from the design system team.
+
+### Adding value as an outsider
+As a freelancer you look with fresh eyes. You see more quickly where components fall short, where documentation is unclear or where teams build their own workarounds. Share those observations constructively. That way you help not only your own project but the system as a whole.
+
+### Handing over when you leave
+An assignment ends; the system remains. Make sure everything you added is well documented and has an owner. That keeps your work valuable after you’ve gone.
+Read more about design systems in The benefits of a design system. Looking for a designer who gets up to speed fast? Feel free to get in touch.
+
+
+## Article: Multi-brand design: one flow for multiple brands
+
+URL: https://www.brampeulers.com/en/articles/multi-brand-design/
+
+More and more organisations have several brands under one roof. Each brand has its own look and its own customers, but behind the scenes the processes are often very similar. So why design and build the same flow again for every brand? At Achmea I work on exactly that question: one generic claims flow for Centraal Beheer, Interpolis and FBTO, on the web and in the native apps. See the Achmea case for more background.
+
+### The promise of multi-brand
+- Efficiency. Design, build and maintain once instead of three times.
+- Quality. Every improvement benefits all brands.
+- Consistency. Customers get the same well-tested experience everywhere.
+
+### The challenge: one flow, multiple identities
+Brands want to stay recognisable. A customer of one brand shouldn’t feel they’ve landed at another. The trick is to separate what can be shared from what must stay brand-specific.
+
+### What do you share, and what not?
+Shared: the structure of the flow, the order of the steps, the logic, the components and the way of validating.
+Per brand: colours, typography, imagery, icons, tone of voice and sometimes specific texts or products.
+Technically you handle this with design tokens: variables for colour, typeface, spacing and corner radius that get a different value per brand. In Figma you work with variables and modes, so one click shows how a screen looks in each brand.
+
+### Designing for the exceptions
+Brands differ not only in look, but sometimes also in products and terms. Map those differences early. Design the flow so steps or fields can be switched on or off per brand without changing the foundation. The fewer exceptions the better, but don’t deny them.
+
+### Web and app
+A flow that has to work on the web and in native apps needs extra attention. Design the steps platform-independently and then translate them into each platform’s patterns. Align early with the developers of all channels, so you don’t have to fix things afterwards.
+
+### Test with customers of each brand
+A flow that works for one brand doesn’t automatically work for another. Customers differ in expectations and knowledge. So test with a mix of customers from all brands and watch where the tone of voice or explanation needs to differ.
+
+### In conclusion
+Multi-brand design is about the balance between efficiency and recognisability. With a clear separation between the shared foundation and the brand-specific layer, and good agreements with everyone involved, you build one solution that feels like its own for every brand. Working on multiple brands too? Let’s talk.
+
+
+## Article: The handover to development: avoiding surprises
+
+URL: https://www.brampeulers.com/en/articles/overdracht-naar-development/
+
+Your design has been tested, approved and is ready. Then the build starts, and a few weeks later you see something that doesn’t quite look as intended. Familiar? The handover to development is one of the moments where things most often go wrong. Fortunately, much of it can be prevented.
+
+### Handover isn’t a moment, it’s a process
+The biggest mistake is throwing the design “over the wall” only at the end. Involve developers early: let them think along about feasibility, share sketches and prototypes and discuss technical constraints before the design is fixed. The more they’ve contributed, the less needs explaining.
+
+### What a good handover contains
+- All states. Not just the nice screen, but also loading, empty, error, long texts and exceptions.
+- Behaviour and interaction. What happens on a tap, a swipe or an error? A working prototype shows this better than a description.
+- Responsiveness. How does the screen behave at small, medium and large sizes?
+- Design system components. Refer to existing components instead of specifying everything again.
+- Texts and content. Final copy, including error messages and empty states.
+- Accessibility. Order, screen-reader labels, contrast and focus.
+
+### Make the Figma file readable
+A messy file leads to mistakes. Put the final screens on a separate page, use clear names, group by flow and mark what’s ready for development. Use components and variables instead of loose layers, so Dev Mode shows the right values.
+
+### Walk through it together
+Plan a short walkthrough with the developers who will build it. Go through the flow, discuss the tricky parts and answer questions right away. Half an hour together prevents days of misunderstandings.
+
+### Stay involved during the build
+- Be available for questions, ideally in the same channel as the team.
+- Review what’s been built along the way, not only at the end.
+- Accept that there’s sometimes a better technical solution, and think along.
+- Record deviations and decisions so design and code stay in sync.
+
+### Check before going live
+Do a design review on a test environment: does it work on different devices, do all states work and is it accessible? Make a short list of points, prioritised by impact, and discuss it together.
+
+### In conclusion
+A good handover starts early and only ends at go-live. Designers and developers who work together build better products in less time. Want to improve this process in your team? Feel free to get in touch.
+
+
 ## Article: UX, UI or visual design: what are the differences?
 
 URL: https://www.brampeulers.com/en/articles/ux-ui-visual-design/
