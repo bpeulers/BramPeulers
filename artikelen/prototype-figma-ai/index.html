@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=202611261458">
+<link rel="stylesheet" href="/css/style.css?v=202611261500">
 </head>
 <body>
 <canvas id="stars"></canvas>
@@ -75,6 +75,7 @@
 <h3>Stap 2: Ontwerp de basis in Figma</h3><p>Werk de kernschermen en de flow uit in Figma, met de componenten uit het design system. Zorg dat de belangrijkste toestanden er zijn: de standaardweergave, een detailweergave en eventuele lege of foutstaten. Dit blijft de bron van waarheid voor het ontwerp. AI vervangt dit stuk niet; het bouwt erop voort.</p>
 <h3>Stap 3: Bereid de overdracht voor</h3><p>Hoe beter je input, hoe beter het resultaat. Ik geef Claude:</p><ul><li>schermafbeeldingen of exports van de Figma-frames;</li><li>de basis van het design system: kleuren, typografie, afstanden en de belangrijkste componenten;</li><li>een beschrijving van het gedrag: wat gebeurt er als je op een tabblad tikt, wat opent een detail, welke scrollrichting;</li><li>realistische, maar verzonnen data. Gebruik nooit echte klantgegevens in een prompt.</li></ul>
 <h3>Stap 4: Bouw het prototype met Claude</h3><p>Vraag Claude om het eerste scherm als één werkend bestand te bouwen, bijvoorbeeld in HTML of React, op het formaat van een telefoon. Beschrijf daarbij precies wat er moet werken. Bijvoorbeeld: <em>“Bouw dit stroomscherm na. De tabs Live, Uur, Dag, Maand en Jaar wisselen de grafiek. Toon per periode verbruik zonnestroom, netstroom en teruglevering, en bereken de zelfconsumptie uit die waarden.”</em> Laat de data uit één bron komen, zodat alle getallen op elk scherm met elkaar kloppen.</p>
+<figure class="cvid avid"><video src="/media/2611-essent-prototype-mockup.mp4" autoplay="" muted="" loop="" playsinline="" preload="metadata"></video><figcaption>Het werkende prototype voor de Essent-app (concept).</figcaption></figure>
 <h3>Stap 5: Itereer in kleine stappen</h3><p>Leg het resultaat naast je Figma-ontwerp en stuur bij met concrete opmerkingen: “de grafiekbalken zijn te smal”, “gebruik de primaire kleur alleen voor de geselecteerde periode”. Kleine, specifieke vragen werken beter dan één grote. Dit is ook het moment om varianten te maken, bijvoorbeeld twee manieren om teruglevering te tonen, zodat je die in de test kunt vergelijken.</p>
 <h3>Stap 6: Maak het testklaar</h3><p>Zet het prototype op een deelbare link, zodat deelnemers het op hun eigen telefoon kunnen openen. Controleer de toestanden die je in de test nodig hebt, voeg een manier toe om terug te gaan naar de beginsituatie en loop het hele scenario zelf een paar keer door. Laat ook een collega het proberen voordat de eerste klant het ziet.</p>
 <h2>Testen met echte klanten</h2><p>Een prototype is pas waardevol als je het test met de mensen voor wie je ontwerpt. Zo pak ik een usability-onderzoek aan:</p><ol><li><strong>Werf de juiste deelnemers.</strong> Bij een energie-app betekent dat bijvoorbeeld klanten met en zonder zonnepanelen. Vijf tot acht deelnemers per ronde is meestal genoeg om de grootste problemen te vinden.</li><li><strong>Schrijf taken, geen instructies.</strong> Niet “tik op Maand”, maar “Hoeveel stroom heb je vorige maand teruggeleverd?” Zo zie je of mensen de weg zelf vinden.</li><li><strong>Laat hardop denken.</strong> Vraag deelnemers te vertellen wat ze zien, verwachten en begrijpen. Juist bij begrippen als zelfconsumptie hoor je dan direct waar het misgaat.</li><li><strong>Observeer en meet.</strong> Noteer of een taak lukt, hoe lang het duurt en waar mensen twijfelen. Vraag na afloop hoe zeker ze zijn van hun antwoord.</li><li><strong>Analyseer en pas aan.</strong> Bundel de bevindingen, prioriteer op impact en pas het prototype aan. Met AI is een aangepaste versie vaak dezelfde dag klaar, zodat je een tweede ronde snel kunt plannen.</li></ol><p>Deel de resultaten met het team en de beslissers, liefst met korte fragmenten uit de sessies. Niets overtuigt zo sterk als een klant die hardop twijfelt over een grafiek.</p>
@@ -86,10 +87,10 @@
 <div class="zoom" id="zoom" role="dialog" aria-label="Vergrote afbeelding" data-lenis-prevent><button class="btn ghost zx" data-t="close">Sluiten ✕</button><img alt=""></div>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="/js/dims.js?v=202611261458"></script>
-<script src="/js/cases.js?v=202611261458"></script>
-<script src="/js/cases-en.js?v=202611261458"></script>
-<script src="/js/articles.js?v=202611261458"></script>
-<script src="/js/main.js?v=202611261458"></script>
+<script src="/js/dims.js?v=202611261500"></script>
+<script src="/js/cases.js?v=202611261500"></script>
+<script src="/js/cases-en.js?v=202611261500"></script>
+<script src="/js/articles.js?v=202611261500"></script>
+<script src="/js/main.js?v=202611261500"></script>
 </body>
 </html>

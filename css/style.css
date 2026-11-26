@@ -481,3 +481,6 @@ html{transition:background-color .4s}
 .aboutph .apic .media img{object-position:42% 30%}
 @media (max-width:720px){.aboutph{display:flex;flex-direction:column;gap:28px}.aboutph .apic{width:min(52vw,210px);justify-self:auto}.aboutph .apic .media{aspect-ratio:1/1}.aboutph .apic .media img{object-position:42% 22%}}
 .sec>.media.r169{border-radius:var(--rad)!important;overflow:hidden}
+.atext .avid{margin:clamp(32px,4vw,56px) 0}
+.atext .avid video{display:block;width:100%;height:auto;border-radius:var(--rad)}
+.atext .avid figcaption{margin-top:12px;font-size:13px;color:var(--mute)}

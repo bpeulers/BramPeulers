@@ -494,6 +494,7 @@ The better your input, the better the result. I give Claude:
 ### Step 4: Build the prototype with Claude
 Ask Claude to build the first screen as a single working file, for example in HTML or React, at phone size. Describe exactly what needs to work. For example: “Rebuild this electricity screen. The tabs Live, Hour, Day, Month and Year switch the chart. For each period show solar consumption, grid consumption and feed-in, and calculate self-consumption from those values.” Let the data come from a single source, so all numbers add up on every screen.
 
+The working prototype for the Essent app (concept).
 ### Step 5: Iterate in small steps
 Put the result next to your Figma design and steer with concrete remarks: “the chart bars are too narrow”, “only use the primary colour for the selected period”. Small, specific requests work better than one big one. This is also the moment to create variants, for example two ways of showing feed-in, so you can compare them in the test.
 
