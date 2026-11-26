@@ -90,14 +90,15 @@ portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').inc
  <div class="txt"><span class="label" id="lbc"></span><h2 class="h2" id="lbt" style="margin:12px 0 20px"></h2><p id="lbd"></p><a class="btn" id="lbl" data-c="link">Bekijk project</a><div class="nx"><button class="btn ghost" id="lbp">← Vorige</button><button class="btn ghost" id="lbn">Volgende →</button></div></div>
 </div>${closer()}`},
 
-art:(a)=>{const i=ARTS.indexOf(a),n=ARTS[(i+1)%ARTS.length];
+art:(a)=>{const rel=ARTS.filter(x=>x!==a).map((x,k)=>[x,(x.cat===a.cat?10:/design/i.test(x.cat)&&/design/i.test(a.cat)?6:0)-k]).sort((p,q)=>q[1]-p[1]).slice(0,3).map(r=>r[0]);
  return `
 <section class="ph aph"><a class="ulink rv" href="#artikelen">← Alle artikelen</a>
  <span class="label rv d1" style="display:block;margin-top:28px">Artikel · ${a.cat}</span>
  <h1 class="h1 ah1" style="margin-top:14px">${L([a.title])}</h1></section>
 <section class="cmedia acover"><figure class="cimg full rv" style="--r:${(()=>{const d=DIMS[a.img]||[16,9];return (d[0]/d[1]).toFixed(4)})()}"><div class="media ok"><img src="/media/${a.img}.webp" alt="${a.title}" decoding="async" fetchpriority="high" data-z></div></figure></section>
 <section class="ctext w1 atext"><div class="prose cx rv">${a.body}</div></section>
-<a class="next" href="#art-${n.slug}" data-c="view"><span class="label">Volgend artikel</span><span class="big nbig">${n.title} <em>→</em></span></a>${closer()}`},
+<section class="wrap relart"><div class="head"><h2 class="h2">${L(['Meer <span class="grad">artikelen</span>'])}</h2><a class="ulink rv" href="#artikelen">Alle artikelen →</a></div>
+<div class="relgrid">${rel.map(x=>`<a class="relcard rv" href="#art-${x.slug}" data-c="view">${media(x.img,'r43',false,x.title)}<span class="label">${x.cat}</span><h3>${x.title}</h3><p>${x.summary}</p></a>`).join('')}</div></section>${closer()}`},
 
 artikelen:()=>`
 <section class="ph"><h1 class="h1">${L(['Artikelen over UX,','design systems en <span class="grad">merken</span>.'])}</h1>
@@ -259,14 +260,15 @@ portfolio:()=>{const cnt=k=>k==='all'?PF.length:PF.filter(p=>p[3].split(' ').inc
  <div class="txt"><span class="label" id="lbc"></span><h2 class="h2" id="lbt" style="margin:12px 0 20px"></h2><p id="lbd"></p><a class="btn" id="lbl" data-c="link">View project</a><div class="nx"><button class="btn ghost" id="lbp">← Previous</button><button class="btn ghost" id="lbn">Next →</button></div></div>
 </div>${closer()}`},
 
-art:(a)=>{const i=ARTS.indexOf(a),n=ARTS[(i+1)%ARTS.length];
+art:(a)=>{const rel=ARTS.filter(x=>x!==a).map((x,k)=>[x,(x.cat===a.cat?10:/design/i.test(x.cat)&&/design/i.test(a.cat)?6:0)-k]).sort((p,q)=>q[1]-p[1]).slice(0,3).map(r=>r[0]);
  return `
 <section class="ph aph"><a class="ulink rv" href="#artikelen">← All articles</a>
  <span class="label rv d1" style="display:block;margin-top:28px">Article · ${a.cat}</span>
  <h1 class="h1 ah1" style="margin-top:14px">${L([a.title])}</h1></section>
 <section class="cmedia acover"><figure class="cimg full rv" style="--r:${(()=>{const d=DIMS[a.img]||[16,9];return (d[0]/d[1]).toFixed(4)})()}"><div class="media ok"><img src="/media/${a.img}.webp" alt="${a.title}" decoding="async" fetchpriority="high" data-z></div></figure></section>
 <section class="ctext w1 atext"><div class="prose cx rv">${a.body}</div></section>
-<a class="next" href="#art-${n.slug}" data-c="view"><span class="label">Next article</span><span class="big nbig">${n.title} <em>→</em></span></a>${closer()}`},
+<section class="wrap relart"><div class="head"><h2 class="h2">${L(['More <span class="grad">articles</span>'])}</h2><a class="ulink rv" href="#artikelen">All articles →</a></div>
+<div class="relgrid">${rel.map(x=>`<a class="relcard rv" href="#art-${x.slug}" data-c="view">${media(x.img,'r43',false,x.title)}<span class="label">${x.cat}</span><h3>${x.title}</h3><p>${x.summary}</p></a>`).join('')}</div></section>${closer()}`},
 
 artikelen:()=>`
 <section class="ph"><h1 class="h1">${L(['Articles on UX,','design systems and <span class="grad">brands</span>.'])}</h1>

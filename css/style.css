@@ -484,3 +484,14 @@ html{transition:background-color .4s}
 .atext .avid{margin:clamp(32px,4vw,56px) 0}
 .atext .avid video{display:block;width:100%;height:auto;border-radius:var(--rad)}
 .atext .avid figcaption{margin-top:12px;font-size:13px;color:var(--mute)}
+/* gerelateerde artikelen */
+.relart{padding-top:clamp(60px,8vw,120px);padding-bottom:clamp(40px,6vw,80px)}
+.relgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2vw,32px);margin-top:clamp(28px,3vw,44px)}
+.relcard{display:flex;flex-direction:column;gap:12px}
+.relcard .media{border-radius:var(--rad);overflow:hidden}
+.relcard .media img{transition:transform 1.2s var(--out)}
+.relcard:hover .media img{transform:scale(1.04)}
+.relcard .label{margin-top:6px}
+.relcard h3{font:400 clamp(20px,1.7vw,24px)/1.25 var(--serif);margin:0}
+.relcard p{color:var(--mute);font-size:15px;margin:0}
+@media (max-width:900px){.relgrid{grid-template-columns:minmax(0,1fr)}}
