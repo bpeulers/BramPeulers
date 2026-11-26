@@ -2,6 +2,8 @@
 {
 const MAIL='info@demerkenstudio.nl';
 const LI='https://www.linkedin.com/in/brampeulers/', DR='https://www.dribbble.com/brampeulers';
+const ICO={li:'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.05c.53-1 1.84-2.05 3.78-2.05 4.05 0 4.8 2.66 4.8 6.12v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9H10z"/></svg>',dr:'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="M8.2 3.9c3.4 4.3 5.9 9.6 7.3 15.7M3.3 10.2c5.2.3 10.2-.9 14.5-3.9M5.6 18.4c3.3-4.6 8.6-6.4 15.2-5.1"/></svg>',ml:'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'};
+
 
 const DIMS=window.DIMS||{};
 const CLINK={'Essent':'essent','Achmea':'achmea','Centraal Beheer':'achmea','Eneco':'eneco-app','Oxxio':'eneco-app','Interpolis':'interpolis','de Volksbank':'sns','Univé':'unive','VGZ':'salut','KNVB':'mdt'};
@@ -41,7 +43,7 @@ const ARTS=window.ARTICLES.nl;
 
 
 const closer=(cs)=>`<section class="closer"><p class="label rv">Laten we samenwerken</p><a class="big" href="#contact" data-c="link">Plan een kennismaking <em>→</em></a></section>
-<footer class="ftr"><div class="soc"><a${ext(LI)}>LinkedIn</a><a${ext(DR)}>Dribbble</a></div></footer>`;
+<footer class="ftr"><div class="soc"><a${ext(LI)}>${ICO.li}LinkedIn</a><a${ext(DR)}>${ICO.dr}Dribbble</a></div></footer>`;
 
 const card=(c,i)=>`<a class="card rv ${i%2?'d2':''}" href="#case-${c.slug}" data-c="view">${media(c.img,'r45',true,c.client+' — '+c.title)}<div class="meta"><b>${c.client} — ${c.title}</b><span class="mute">${c.year}</span></div><p>${c.short}</p><div class="tags">${c.tags.map(t=>`<span>${t}</span>`).join('')}</div></a>`;
 
@@ -142,9 +144,9 @@ contact:()=>`
  <div><h1 class="h1">${L(['Laten we iets','bouwen dat','<span class="grad">werkt</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">Een idee, een team dat vastzit of een concept dat nog ontworpen moet worden? Plan een vrijblijvend gesprek. Binnen een paar weken heb je iets tastbaars om te testen.</p>
  <div class="clinks rv d3"><span class="label">Direct contact</span>
-  <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
-  <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
-  <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
+  <a class="ulink icl" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">${ICO.ml}E-mail — info@demerkenstudio.nl</a>
+  <a class="ulink icl" style="align-self:flex-start"${ext(LI)}>${ICO.li}LinkedIn — linkedin.com/in/brampeulers ↗</a>
+  <a class="ulink icl" style="align-self:flex-start"${ext(DR)}>${ICO.dr}Dribbble — dribbble.com/brampeulers ↗</a>
  </div></div>
  <form class="form rv d2" id="form" novalidate>
   <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
@@ -156,7 +158,7 @@ contact:()=>`
   <p class="note" id="note" role="status"></p>
  </form>
 </section>
-<footer class="ftr"><div class="soc"><a${ext(LI)}>LinkedIn</a><a${ext(DR)}>Dribbble</a></div></footer>`,
+<footer class="ftr"><div class="soc"><a${ext(LI)}>${ICO.li}LinkedIn</a><a${ext(DR)}>${ICO.dr}Dribbble</a></div></footer>`,
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
@@ -211,7 +213,7 @@ const ARTS=window.ARTICLES.en;
 
 
 const closer=(cs)=>`<section class="closer"><p class="label rv">Let’s work together</p><a class="big" href="#contact" data-c="link">Schedule an intro call <em>→</em></a></section>
-<footer class="ftr"><div class="soc"><a${ext(LI)}>LinkedIn</a><a${ext(DR)}>Dribbble</a></div></footer>`;
+<footer class="ftr"><div class="soc"><a${ext(LI)}>${ICO.li}LinkedIn</a><a${ext(DR)}>${ICO.dr}Dribbble</a></div></footer>`;
 
 const card=(c,i)=>`<a class="card rv ${i%2?'d2':''}" href="#case-${c.slug}" data-c="view">${media(c.img,'r45',true,c.client+' — '+c.title)}<div class="meta"><b>${c.client} — ${c.title}</b><span class="mute">${c.year}</span></div><p>${c.short}</p><div class="tags">${c.tags.map(t=>`<span>${t}</span>`).join('')}</div></a>`;
 
@@ -312,9 +314,9 @@ contact:()=>`
  <div><h1 class="h1">${L(['Let’s build','something that','<span class="grad">works</span>.'])}</h1>
  <p class="lead rv d2" style="color:var(--ink2);font-size:16px;max-width:30em;margin-top:28px">An idea, a team that’s stuck or a concept that still needs to be designed? Schedule a no-obligation call. Within a few weeks you’ll have something tangible to test.</p>
  <div class="clinks rv d3"><span class="label">Direct contact</span>
-  <a class="ulink" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">E-mail — info@demerkenstudio.nl</a>
-  <a class="ulink" style="align-self:flex-start"${ext(LI)}>LinkedIn — linkedin.com/in/brampeulers ↗</a>
-  <a class="ulink" style="align-self:flex-start"${ext(DR)}>Dribbble — dribbble.com/brampeulers ↗</a>
+  <a class="ulink icl" style="align-self:flex-start" href="mailto:info@demerkenstudio.nl">${ICO.ml}E-mail — info@demerkenstudio.nl</a>
+  <a class="ulink icl" style="align-self:flex-start"${ext(LI)}>${ICO.li}LinkedIn — linkedin.com/in/brampeulers ↗</a>
+  <a class="ulink icl" style="align-self:flex-start"${ext(DR)}>${ICO.dr}Dribbble — dribbble.com/brampeulers ↗</a>
  </div></div>
  <form class="form rv d2" id="form" novalidate>
   <input type="text" name="_honey" id="f-h" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
@@ -326,7 +328,7 @@ contact:()=>`
   <p class="note" id="note" role="status"></p>
  </form>
 </section>
-<footer class="ftr"><div class="soc"><a${ext(LI)}>LinkedIn</a><a${ext(DR)}>Dribbble</a></div></footer>`,
+<footer class="ftr"><div class="soc"><a${ext(LI)}>${ICO.li}LinkedIn</a><a${ext(DR)}>${ICO.dr}Dribbble</a></div></footer>`,
 
 case:(c)=>{const i=CD.indexOf(c),n=CD[(i+1)%CD.length];
  const R=k=>{const d=DIMS[k]||[4,3];return (d[0]/d[1]).toFixed(4)};
