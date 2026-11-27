@@ -358,11 +358,11 @@ let CD,CASES,HOMECASES,HERO,PF,CAT,SVC,QUOTES,ARTS,V,LANG=null;
 
 /* ---------- language ---------- */
 const STR={
- nl:{nav_portfolio:'Werk',nav_art:'Artikelen',nav_about:'Over mij',sub:'Product designer & facilitator',mtag:'Facilitator · AI-prototyping · Product design',close:'Sluiten ✕',
+ nl:{nav_portfolio:'Werk',nav_art:'Artikelen',nav_about:'Over mij',sub:'Product designer & facilitator',mtag:'Product design · AI-prototyping',close:'Sluiten ✕',
   view:'Bekijk',zoom:'Vergroot',lbCase:'Dit project is uitgewerkt als volledige case, met uitdaging, aanpak en resultaat.',lbArch:n=>'Een ontwerp voor '+n+' uit mijn archief.',lbRead:'Lees de case',
   fErr:'Vul je naam, een geldig e-mailadres en je bericht in.',fBusy:'Bezig met versturen…',fOk:n=>'Bedankt, '+n+'! Je bericht is verstuurd. Ik neem zo snel mogelijk contact met je op.',fFail:'Versturen lukte niet. Mail je bericht direct naar <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'Nieuw bericht via brampeulers.com',
   menu:'Menu openen',titles:{home:'Product designer & facilitator',portfolio:'Werk',artikelen:'Artikelen',about:'Over mij',contact:'Contact'}},
- en:{nav_portfolio:'Work',nav_art:'Articles',nav_about:'About',sub:'Product designer & facilitator',mtag:'Facilitator · AI prototyping · Product design',close:'Close ✕',
+ en:{nav_portfolio:'Work',nav_art:'Articles',nav_about:'About',sub:'Product designer & facilitator',mtag:'Product design · AI prototyping',close:'Close ✕',
   view:'View',zoom:'Zoom',lbCase:'This project is written up as a full case, with challenge, approach and result.',lbArch:n=>'A design for '+n+' from my archive.',lbRead:'Read the case',
   fErr:'Please enter your name, a valid email address and your message.',fBusy:'Sending…',fOk:n=>'Thanks, '+n+'! Your message has been sent. I’ll get back to you as soon as possible.',fFail:'Sending failed. Please email your message directly to <a class="ulink" href="mailto:'+MAIL+'">'+MAIL+'</a>.',fSubj:'New message via brampeulers.com (EN)',
   menu:'Open menu',titles:{home:'Product designer & facilitator',portfolio:'Work',artikelen:'Articles',about:'About',contact:'Contact'}}
